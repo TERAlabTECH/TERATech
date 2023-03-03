@@ -12,5 +12,7 @@ Cuando se le da click a la barra de espacio comienzan a caer enemigos de color y
 
 
 > [Video Demostración](https://youtu.be/0dzLyAhne1g)
+> 
+> <img width="400" alt="Captura de Pantalla 2023-03-02 a la(s) 23 03 38" src="https://user-images.githubusercontent.com/28845920/222635865-bc368cc4-b0db-4bca-9087-38e8ae385a3d.png">
 
 
