@@ -20,6 +20,11 @@ public class Explosion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CrearEnemigo();
+    }
+
+    private void CrearEnemigo()
+    {
         GameObject nuevoEnemigo;
         if (Input.GetButtonDown("Jump"))
         {
@@ -28,15 +33,7 @@ public class Explosion : MonoBehaviour
             nuevoEnemigo.transform.parent = enemigoJerarquia.gameObject.transform;
 
         }
-
-
-        //if (Input.GetButtonDown("Jump")) //Checa que la tecla está asignada a 'Jump' (en input dentro de project settings) se haya hecho click
-        //{
-        //    Instantiate(enemigo, transform.position + new Vector3(0, 5, 0), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición de la esfera + 5 en y, no lo rota.
-
-        //}
     }
-
     //Cuando el mouse está haciendo click
     private void OnMouseDown()
     {
@@ -45,6 +42,10 @@ public class Explosion : MonoBehaviour
 
     public void ExplotarEnemigos()
     {
-        //enemigo.Explotar(pos)
+        foreach (var enemigo in lista_enemigos)
+        {
+           Enemigo e = enemigo.GetComponent<Enemigo>(); //por cada elemento de la lista busco su componente enemigo (que es el script)
+            e.Explotar(pos);
+        }
     }
 }
