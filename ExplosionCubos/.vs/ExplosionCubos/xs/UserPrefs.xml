@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{C99DCF6D-6E54-A548-DCA9-413D1D0B91DF}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="26951314-91cd-4f39-ae35-7e3424659f78" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Explosion.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemigo.cs">
     <Files>
-      <File FileName="Assets/Scripts/Enemigo.cs" Line="23" Column="6" />
-      <File FileName="Assets/Scripts/Explosion.cs" Line="27" Column="145" />
+      <File FileName="Assets/Scripts/Enemigo.cs" Line="5" Column="4" />
+      <File FileName="Assets/Scripts/Explosion.cs" Line="10" Column="61" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -20,7 +22,5 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="e22d5825-8af5-4a1b-8b3d-a0bf40a7bfc7" />
 </Properties>
