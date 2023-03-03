@@ -10,6 +10,11 @@ public class Explosion : MonoBehaviour
     [SerializeField] private List<GameObject> lista_enemigos = new List<GameObject>();
     private GameObject enemigoJerarquia;
 
+    public List<GameObject> Lista_enemigos {
+        get => lista_enemigos;
+        set => lista_enemigos = value;
+    }
+
     void Start()
     {
         pos = transform.position;
@@ -30,7 +35,7 @@ public class Explosion : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             nuevoEnemigo = Instantiate(enemigo, transform.position + new Vector3(Random.Range(-8.5f,8.5f),15, Random.Range(-7.1f, 5.9f)), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición aleatorio y no lo rota.
-            lista_enemigos.Add(nuevoEnemigo.gameObject);
+            Lista_enemigos.Add(nuevoEnemigo.gameObject);
             nuevoEnemigo.transform.parent = enemigoJerarquia.gameObject.transform; //Lo pone dentro de una jerarquia
 
         }
@@ -43,7 +48,7 @@ public class Explosion : MonoBehaviour
 
     public void ExplotarEnemigos()
     {
-        foreach (var enemigo in lista_enemigos)
+        foreach (var enemigo in Lista_enemigos)
         {
            Enemigo e = enemigo.GetComponent<Enemigo>(); //por cada elemento de la lista busco su componente enemigo (que es el script)
             e.Explotar(pos);
@@ -53,7 +58,7 @@ public class Explosion : MonoBehaviour
     //Cuando la altura de un enemigo es menor a x, vuelve a caer
     public void VerificarAltura()
     {
-        foreach (var enemigo in lista_enemigos)
+        foreach (var enemigo in Lista_enemigos)
         {
             if(enemigo.transform.position.y < -40)
             {
