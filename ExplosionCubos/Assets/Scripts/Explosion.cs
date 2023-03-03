@@ -21,6 +21,7 @@ public class Explosion : MonoBehaviour
     void Update()
     {
         CrearEnemigo();
+        VerificarAltura();
     }
 
     private void CrearEnemigo()
@@ -46,6 +47,18 @@ public class Explosion : MonoBehaviour
         {
            Enemigo e = enemigo.GetComponent<Enemigo>(); //por cada elemento de la lista busco su componente enemigo (que es el script)
             e.Explotar(pos);
+        }
+    }
+
+    //Cuando la altura de un enemigo es menor a x, vuelve a caer
+    public void VerificarAltura()
+    {
+        foreach (var enemigo in lista_enemigos)
+        {
+            if(enemigo.transform.position.y < -6)
+            {
+                enemigo.transform.position = new Vector3(0, 15, 0);
+            }
         }
     }
 }
