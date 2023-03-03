@@ -29,9 +29,9 @@ public class Explosion : MonoBehaviour
         GameObject nuevoEnemigo;
         if (Input.GetButtonDown("Jump"))
         {
-            nuevoEnemigo = Instantiate(enemigo, transform.position + new Vector3(Random.Range(-8.5f,8.5f),15, Random.Range(-7.1f, 5.9f)), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición de la esfera + 5 en y, no lo rota.
+            nuevoEnemigo = Instantiate(enemigo, transform.position + new Vector3(Random.Range(-8.5f,8.5f),15, Random.Range(-7.1f, 5.9f)), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición aleatorio y no lo rota.
             lista_enemigos.Add(nuevoEnemigo.gameObject);
-            nuevoEnemigo.transform.parent = enemigoJerarquia.gameObject.transform;
+            nuevoEnemigo.transform.parent = enemigoJerarquia.gameObject.transform; //Lo pone dentro de una jerarquia
 
         }
     }
