@@ -29,7 +29,7 @@ public class Explosion : MonoBehaviour
         GameObject nuevoEnemigo;
         if (Input.GetButtonDown("Jump"))
         {
-            nuevoEnemigo = Instantiate(enemigo, transform.position + new Vector3(0, 5, 0), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición de la esfera + 5 en y, no lo rota.
+            nuevoEnemigo = Instantiate(enemigo, transform.position + new Vector3(0, 15, 0), Quaternion.Euler(0, 0, 0)); //Instancia un objeto de tipo enemigo en la posición de la esfera + 5 en y, no lo rota.
             lista_enemigos.Add(nuevoEnemigo.gameObject);
             nuevoEnemigo.transform.parent = enemigoJerarquia.gameObject.transform;
 
@@ -55,9 +55,9 @@ public class Explosion : MonoBehaviour
     {
         foreach (var enemigo in lista_enemigos)
         {
-            if(enemigo.transform.position.y < -6)
+            if(enemigo.transform.position.y < -40)
             {
-                enemigo.transform.position = new Vector3(0, 15, 0);
+                enemigo.transform.position = new Vector3(pos.x, pos.y + 15, pos.z);
             }
         }
     }
