@@ -6,6 +6,7 @@ public class Enemigo: MonoBehaviour
 {
 
     [SerializeField] private new Rigidbody rigidbody; //SerializeField permite que se vea la variable privada en el editor de Unity
+    private Renderer rend;
 
     public Rigidbody Rigidbody {
         get => rigidbody;
@@ -16,6 +17,9 @@ public class Enemigo: MonoBehaviour
     void Start()
     {
         rigidbody = GetComponent<Rigidbody>(); //Busca en el objeto la variable que puse en <>
+        rend = GetComponent<Renderer>(); //El mesh render es el que controla el material
+
+        rend.material.color = new Color(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)); //Cada que se genera un enemigo va a tener un color diferente
     }
 
     // Update is called once per frame
