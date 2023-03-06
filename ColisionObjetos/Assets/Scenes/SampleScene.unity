@@ -156,6 +156,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &701488957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6591512536492341480, guid: 61681f0ba53cf4d77af3e8c4823ed09b, type: 3}
+  m_PrefabInstance: {fileID: 6591512537340499338}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -309,7 +314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bala: {fileID: 8399088140600637956, guid: 2467d6b34d54442bca4ebf94cce3ccca, type: 3}
-  pistola: {fileID: 6591512536492341480, guid: 61681f0ba53cf4d77af3e8c4823ed09b, type: 3}
+  pistola: {fileID: 701488957}
   listaBalas: []
 --- !u!4 &797585539 stripped
 Transform:
@@ -405,6 +410,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6591512536492341484, guid: 61681f0ba53cf4d77af3e8c4823ed09b, type: 3}
   m_PrefabInstance: {fileID: 6591512537340499338}
   m_PrefabAsset: {fileID: 0}
+--- !u!54 &1050553706
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701488957}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1393872763
 GameObject:
   m_ObjectHideFlags: 0
