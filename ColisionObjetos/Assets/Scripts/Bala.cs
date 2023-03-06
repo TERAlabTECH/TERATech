@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bala : MonoBehaviour
 {
     [SerializeField] private GameObject bala;
+    [SerializeField] private GameObject pistola;
     [SerializeField] List<GameObject> listaBalas = new List<GameObject>();
 
     // Start is called before the first frame update
@@ -19,14 +20,6 @@ public class Bala : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             agregarBala();
-            //if (listaBalas.Count == 0)
-            //{
-            //    GameObject balaIns = Instantiate(bala, new Vector3(2.8f, 2.5f, -3.2f), Quaternion.Euler(0, 0, 0));
-            //}
-            //else
-            //{
-
-            //}
         }
         
     }
@@ -35,7 +28,8 @@ public class Bala : MonoBehaviour
     {
         if (listaBalas.Count == 0)
         {
-            GameObject balaIns = Instantiate(bala, new Vector3(2.8f, 2.5f, -3.2f), Quaternion.Euler(0, 0, 0));
+            Debug.Log(pistola.transform.position);
+            GameObject balaIns = Instantiate(bala, pistola.transform.position - new Vector3(0f, 1.8f, 0f), Quaternion.Euler(0, 0, 0));
             listaBalas.Add(balaIns);
         }
         else
