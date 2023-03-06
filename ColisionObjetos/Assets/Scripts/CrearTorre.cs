@@ -10,15 +10,24 @@ public class CrearTorre : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PiezaHier = new GameObject();
+        PiezaHier.name = "Torre";
+
+        construirTorre();
+
+
+
+    }
+
+    public void construirTorre()
+    {
         Vector3 posInicial = new Vector3(-0.43f, 0.53f, 5.8f);
         //Vector3 cambioPosX = new Vector3(-1.19f, 0.0f, 0f);
         float cX = 0f; //cambio en x
         float cZ = 0f;
         float cY = 0f;
-
-        PiezaHier = new GameObject();
-        PiezaHier.name = "Torre";
-        for (int k=0; k<5; k++)
+        
+        for (int k = 0; k < 5; k++)
         {
             cZ = 0f;
             for (int j = 0; j < 5; j++)
@@ -33,12 +42,8 @@ public class CrearTorre : MonoBehaviour
                 }
                 cZ += 1f;
             }
-            cY += 1.1f; 
+            cY += 1.1f;
         }
-        
-
-
-
     }
 
     // Update is called once per frame

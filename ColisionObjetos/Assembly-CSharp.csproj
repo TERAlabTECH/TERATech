@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/CrearTorre.cs" />
+    <Compile Include="Assets/Scripts/Bala.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
