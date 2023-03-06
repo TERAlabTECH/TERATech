@@ -13,17 +13,25 @@ public class CrearTorre : MonoBehaviour
         Vector3 posInicial = new Vector3(-0.43f, 0.53f, 5.8f);
         //Vector3 cambioPosX = new Vector3(-1.19f, 0.0f, 0f);
         float cX = 0f; //cambio en x
+        float cZ = 0.0f;
 
         PiezaHier = new GameObject();
-        PiezaHier.name = "Torre"; 
-
-        for(int i=0; i<5; i++)
+        PiezaHier.name = "Torre";
+        for (int j = 0; j < 5; j++)
         {
-            GameObject piezaIns = Instantiate(piezaTorre, new Vector3(0.3f + cX, 0.53f, 5.8f), Quaternion.Euler(0, 0, 0));
-            piezaIns.name = "ParteTorre"+(i+1);
-            piezaIns.transform.parent = PiezaHier.transform;
-            cX += 1.2f;
+            cX = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                GameObject piezaIns = Instantiate(piezaTorre, new Vector3(0.3f + cX, 0.53f, 5.8f + cZ), Quaternion.Euler(0, 0, 0));
+                piezaIns.name = "ParteTorre" + (i + 1);
+                piezaIns.transform.parent = PiezaHier.transform;
+                cX += 1.2f;
+            }
+            cZ += 1.2f;
         }
+
+
+
     }
 
     // Update is called once per frame
