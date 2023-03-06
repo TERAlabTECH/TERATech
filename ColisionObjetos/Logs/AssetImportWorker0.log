@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/marielsgtzz/Desktop/TERA/ColisionObjetos
+/Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-62266
-Successfully changed project path to: /Users/marielsgtzz/Desktop/TERA/ColisionObjetos
-/Users/marielsgtzz/Desktop/TERA/ColisionObjetos
+61741
+Successfully changed project path to: /Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos
+/Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -54,15 +54,15 @@ Successfully changed project path to: /Users/marielsgtzz/Desktop/TERA/ColisionOb
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [4405200256] Host "[IP] 10.10.8.77 [Port] 0 [Flags] 2 [Guid] 1711603367 [EditorId] 1711603367 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [4396483968] Host "[IP] 10.10.8.162 [Port] 0 [Flags] 2 [Guid] 473102548 [EditorId] 473102548 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [4405200256] Host "[IP] 10.10.8.77 [Port] 0 [Flags] 2 [Guid] 1711603367 [EditorId] 1711603367 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [4396483968] Host "[IP] 10.10.8.162 [Port] 0 [Flags] 2 [Guid] 473102548 [EditorId] 473102548 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 60.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 62.72 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.3.18f1 (3129e69bc0c7)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/marielsgtzz/Desktop/TERA/ColisionObjetos/Assets
+[Subsystems] Discovering subsystems at path /Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M1 Pro (high power)
 Metal devices available: 1
@@ -73,37 +73,37 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56259
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56986
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: /Applications/Unity/Hub/Editor/2021.3.18f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.000601 seconds.
+Registered in 0.000650 seconds.
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 63.14 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 64.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.409 seconds
+- Completed reload, in  0.405 seconds
 Domain Reload Profiling:
-	ReloadAssembly (409ms)
-		BeginReloadAssembly (31ms)
+	ReloadAssembly (405ms)
+		BeginReloadAssembly (32ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (0ms)
-		EndReloadAssembly (307ms)
-			LoadAssemblies (31ms)
+		EndReloadAssembly (300ms)
+			LoadAssemblies (32ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (74ms)
+			SetupTypeCache (76ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (176ms)
+			RebuildScriptCaches (19ms)
+			SetupLoadedEditorAssemblies (178ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (63ms)
+				RefreshPlugins (65ms)
 				BeforeProcessingInitializeOnLoad (1ms)
 				ProcessInitializeOnLoadAttributes (81ms)
 				ProcessInitializeOnLoadMethodAttributes (27ms)
@@ -113,38 +113,38 @@ Domain Reload Profiling:
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001009 seconds.
+Registered in 0.001158 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image /Users/marielsgtzz/Desktop/TERA/ColisionObjetos/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image /Users/marielsgtzz/Desktop/TERA/ColisionObjetos/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image /Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/marielsgtzz/Desktop/TERA/TERA/ColisionObjetos/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.614 seconds
+- Completed reload, in  0.621 seconds
 Domain Reload Profiling:
-	ReloadAssembly (614ms)
-		BeginReloadAssembly (61ms)
+	ReloadAssembly (621ms)
+		BeginReloadAssembly (63ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (3ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (18ms)
-		EndReloadAssembly (480ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (483ms)
 			LoadAssemblies (31ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
+			SetupTypeCache (183ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (203ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (201ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (50ms)
-				ProcessInitializeOnLoadAttributes (137ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (133ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
 				AfterProcessingInitializeOnLoad (1ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -157,9 +157,9 @@ Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
 Refreshing native plugins compatible for Editor in 0.35 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3048 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 24 unused Assets / (88.1 KB). Loaded Objects now: 3508.
-Memory consumption went from 102.0 MB to 101.9 MB.
-Total: 2.030708 ms (FindLiveObjects: 0.089500 ms CreateObjectMapping: 0.032584 ms MarkObjects: 1.825083 ms  DeleteObjects: 0.082916 ms)
+Unloading 23 unused Assets / (65.9 KB). Loaded Objects now: 3509.
+Memory consumption went from 102.2 MB to 102.1 MB.
+Total: 2.123125 ms (FindLiveObjects: 0.091917 ms CreateObjectMapping: 0.035958 ms MarkObjects: 1.932583 ms  DeleteObjects: 0.062042 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
@@ -173,43 +173,19 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 85092.451185 seconds.
-  path: Assets/Materiales
-  artifactKey: Guid(8203f3612abf345709bb68dad53bbe89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales using Guid(8203f3612abf345709bb68dad53bbe89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '615bfe91fed22db4dcbb451337d08df3') in 0.004638 seconds 
+  Time since last request: 88786.684465 seconds.
+  path: Assets/Prefabs/Bala.prefab
+  artifactKey: Guid(2467d6b34d54442bca4ebf94cce3ccca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Bala.prefab using Guid(2467d6b34d54442bca4ebf94cce3ccca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c44b51556bbdbabca2380dd074157e') in 0.494587 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 18.506585 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(87ddaa815607e413b928aa6d56a8c57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(87ddaa815607e413b928aa6d56a8c57a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8b5d5d9fd0e5e84f50b2a9ace5c887') in 0.000620 seconds 
+  Time since last request: 1.042868 seconds.
+  path: Assets/Prefabs/Piso.prefab
+  artifactKey: Guid(3202fd5f020524cfdb226b5716dd536f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Piso.prefab using Guid(3202fd5f020524cfdb226b5716dd536f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f01ca2fd9026effcbfbd3d2122043cef') in 0.005455 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.445182 seconds.
-  path: Assets/Materiales/Piso.mat
-  artifactKey: Guid(1874f38f6dbdc475db2674e59be01efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/Piso.mat using Guid(1874f38f6dbdc475db2674e59be01efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1844f5fee26707c059b92f592fd6d6a') in 0.567636 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 29.915057 seconds.
-  path: Assets/Materiales/PisoMat.mat
-  artifactKey: Guid(1874f38f6dbdc475db2674e59be01efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/PisoMat.mat using Guid(1874f38f6dbdc475db2674e59be01efe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '372d57e2cee57ccee576b457c39b6ca1') in 0.005709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.671999 seconds.
-  path: Assets/Materiales/SphereMat.mat
-  artifactKey: Guid(9d5e705959fdf4fd79c3c255bf7cbd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materiales/SphereMat.mat using Guid(9d5e705959fdf4fd79c3c255bf7cbd6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59409ab1629e76057da383fe987da049') in 0.004859 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 75.792594 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f74b9f0782f3ffe8a654b2b60a9f33c') in 0.223997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 131.389477 seconds.
-  path: ProjectSettings/TagManager.asset
-  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1871bacce45e645e1d1f59b19cc8a7be') in 0.002008 seconds 
+  Time since last request: 23.801290 seconds.
+  path: Assets/Prefabs/Pistola.prefab
+  artifactKey: Guid(61681f0ba53cf4d77af3e8c4823ed09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Pistola.prefab using Guid(61681f0ba53cf4d77af3e8c4823ed09b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1512f9b5840fedf1548ec43549b4ec0e') in 0.004779 seconds 
