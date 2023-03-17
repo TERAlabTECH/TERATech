@@ -49,7 +49,7 @@ public class Bala : MonoBehaviour
                 Vector3 posUltimaBala = ultimoNodoLista.transform.position;
                 Quaternion ultimaRot = ultimoNodoLista.transform.rotation;
 
-                posUltimaBala.y -= 0.75f;
+                posUltimaBala.y -= ultimoNodoLista.transform.localScale.y;
 
                 GameObject balaIns = Instantiate(bala, posUltimaBala, ultimaRot);
 
@@ -57,6 +57,8 @@ public class Bala : MonoBehaviour
                 hj.connectedBody = ultimoNodoLista.GetComponent<Rigidbody>();
 
                 listaBalas.Add(balaIns);
+                balaIns.transform.parent = BalasHier.transform;
+                balaIns.name = "Bala "+(tamanoLista-1);
             }
         }
     }
