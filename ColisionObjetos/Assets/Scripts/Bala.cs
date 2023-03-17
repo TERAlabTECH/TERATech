@@ -42,7 +42,22 @@ public class Bala : MonoBehaviour
         }
         else
         {
+            if (Input.GetButtonDown("Jump"))
+            {
+                int tamanoLista = listaBalas.Count;
+                GameObject ultimoNodoLista = listaBalas[tamanoLista - 1];
+                Vector3 posUltimaBala = ultimoNodoLista.transform.position;
+                Quaternion ultimaRot = ultimoNodoLista.transform.rotation;
 
+                posUltimaBala.y -= 0.75f;
+
+                GameObject balaIns = Instantiate(bala, posUltimaBala, ultimaRot);
+
+                HingeJoint hj = balaIns.GetComponent<HingeJoint>();
+                hj.connectedBody = ultimoNodoLista.GetComponent<Rigidbody>();
+
+                listaBalas.Add(balaIns);
+            }
         }
     }
 }
