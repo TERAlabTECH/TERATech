@@ -26,7 +26,7 @@ public class Bala : MonoBehaviour
         {
             if(listaBalas.Count > 0)
             {
-                eliminarBala();
+                dispararBala();
             } else
             {
                 Debug.Log("No hay balas!");
@@ -71,10 +71,17 @@ public class Bala : MonoBehaviour
         }
     }
 
-    public void eliminarBala()
+    //Quita la vala y la dispara
+    public void dispararBala()
     {
         Destroy(listaBalas[listaBalas.Count-1]);
         listaBalas.RemoveAt(listaBalas.Count-1);
+
+        GameObject balaIns = Instantiate(bala, pistola.transform.position + new Vector3(0, 0, 1), Quaternion.Euler(90, 0, 00));
+        balaIns.transform.localScale = new Vector3(balaIns.transform.localScale.x + 0.5f, balaIns.transform.localScale.y + 0.5f, balaIns.transform.localScale.z + 0.5f);
+        Destroy(balaIns.GetComponent<HingeJoint>());
+        Rigidbody rb = balaIns.GetComponent<Rigidbody>();
+        rb.AddForce(0, 0, 70, ForceMode.Impulse);
 
     }
 }
