@@ -472,27 +472,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalScale.x
-      value: 22
+      value: 53.9176
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3639696
+      value: 2.3688505
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalScale.z
-      value: 22
+      value: 52.491997
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.14236
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -1.88
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -2.697
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -525,6 +525,22 @@ PrefabInstance:
     - target: {fileID: 2900259429877527069, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900259429877527070, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
+      propertyPath: m_Size.x
+      value: 1.2015402
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900259429877527070, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
+      propertyPath: m_Size.z
+      value: 1.2777064
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900259429877527070, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.004460248
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900259429877527070, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
+      propertyPath: m_Center.z
+      value: 0.088451974
       objectReference: {fileID: 0}
     - target: {fileID: 2900259429877527265, guid: 3202fd5f020524cfdb226b5716dd536f, type: 3}
       propertyPath: m_Name

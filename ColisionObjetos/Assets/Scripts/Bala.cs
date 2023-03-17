@@ -22,10 +22,18 @@ public class Bala : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             agregarBala();
+        } else if (Input.GetButtonDown("Fire1"))
+        {
+            if(listaBalas.Count > 0)
+            {
+                eliminarBala();
+            } else
+            {
+                Debug.Log("No hay balas!");
+            }
         }
         
     }
-
     public void agregarBala()
     {
         if (listaBalas.Count == 0)
@@ -61,5 +69,12 @@ public class Bala : MonoBehaviour
                 balaIns.name = "Bala "+(tamanoLista-1);
             }
         }
+    }
+
+    public void eliminarBala()
+    {
+        Destroy(listaBalas[listaBalas.Count-1]);
+        listaBalas.RemoveAt(listaBalas.Count-1);
+
     }
 }
