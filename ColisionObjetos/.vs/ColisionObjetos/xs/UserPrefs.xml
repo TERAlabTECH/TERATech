@@ -1,13 +1,9 @@
 ﻿<Properties StartupConfiguration="{10500B2F-2A90-2F63-69BC-878C3FFCFC55}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Bala.cs">
     <Files>
-      <File FileName="Assets/Scripts/CrearTorre.cs" Line="39" Column="83" />
-      <File FileName="Assets/Scripts/CrearBala.cs" Line="20" Column="18" />
+      <File FileName="Assets/Scripts/CrearTorre.cs" />
+      <File FileName="Assets/Scripts/Bala.cs" Line="84" Column="28" />
+      <File FileName="../ExplosionCubos/Assets/Scripts/Enemigo.cs" Line="34" Column="30" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,6 +17,11 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7ad209dd-ed69-422d-a949-a2a05b6f829e" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="ce0a00fa-be04-40af-b36b-9f3a786768d3" />
 </Properties>
