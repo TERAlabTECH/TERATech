@@ -13,7 +13,7 @@ public class MoverFondo : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate() //la velocidad con la que corre es diferente dependiendo de la computadora --> para eso el FixedUpdate, para que no dependa de los refrescamientos
     {
         Vector2 offset = new Vector2(Time.time * vel, 0); //El tiempo que ha pasado por la velocidad (que tan rápido vamos a mover la tectura)
         rend.material.mainTextureOffset = offset; //En que direccion muevo la textura
