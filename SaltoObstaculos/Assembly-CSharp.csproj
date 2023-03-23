@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/MoverFondo.cs" />
+    <Compile Include="Assets/Scripts/Personaje.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

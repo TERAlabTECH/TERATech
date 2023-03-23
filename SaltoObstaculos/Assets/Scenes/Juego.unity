@@ -549,6 +549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PersonajeFinal
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: de815409f9a4848ee802f4ea6684acfd, type: 3}
+      propertyPath: m_TagString
+      value: Personaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: de815409f9a4848ee802f4ea6684acfd, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: de9a2f0476d0a40fbb90ab844e566746, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de815409f9a4848ee802f4ea6684acfd, type: 3}
 --- !u!1 &2089725791
