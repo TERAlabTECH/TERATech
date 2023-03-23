@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Fondo
   - Personaje
+  - Piso
   layers:
   - Default
   - TransparentFX
