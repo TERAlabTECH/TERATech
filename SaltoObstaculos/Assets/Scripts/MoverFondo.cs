@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MoverFondo : MonoBehaviour
 {
-    private float vel = 0.2f;
+    private float vel = 0.3f;
     private Renderer rend;
     // Start is called before the first frame update
     void Start()
