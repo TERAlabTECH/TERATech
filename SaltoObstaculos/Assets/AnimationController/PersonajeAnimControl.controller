@@ -8,7 +8,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAC_ARMATURE|SaltandoFin
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -1122834750345895710}
@@ -35,7 +35,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAC_ARMATURE|SaltandoIni
-  m_Speed: 1
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -1001217219865581651}
@@ -71,8 +71,8 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25000006
-  m_TransitionOffset: 0.09057653
+  m_TransitionDuration: 0.16683191
+  m_TransitionOffset: 0.090576544
   m_ExitTime: 0.98800814
   m_HasExitTime: 0
   m_HasFixedDuration: 1
@@ -93,8 +93,8 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.24999997
-  m_TransitionOffset: 0.003888132
+  m_TransitionDuration: 0.22920801
+  m_TransitionOffset: 0.003888128
   m_ExitTime: 0.9988129
   m_HasExitTime: 1
   m_HasFixedDuration: 1
@@ -134,7 +134,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: MAC_ARMATURE|Corriendo
-  m_Speed: 1.5
+  m_Speed: 2
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -689176741534269264}
