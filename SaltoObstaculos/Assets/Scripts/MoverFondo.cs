@@ -6,6 +6,7 @@ public class MoverFondo : MonoBehaviour
 {
     private float vel = 0.5f;
     private Renderer rend;
+
     // Start is called before the first frame update
     void Start()
     {
