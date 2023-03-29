@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "packages": {
+    "com.ptc.vuforia.engine": {
+      "tarball": {
+        "hash": "64a4bf61052d",
+        "mtime": 1678983054143,
+        "size": 147494112,
+        "localPath": "/Users/marielsgtzz/Desktop/TERA/ARproject/Packages/com.ptc.vuforia.engine-10.14.4.tgz"
+      }
+    }
+  }
+}
