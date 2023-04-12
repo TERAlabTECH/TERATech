@@ -1,6 +1,6 @@
 # TERA
 
-##Intro a Unity
+## Intro a Unity
 ### ExplosiónCubos || Curso Udemy-Unity || Proyecto 1
 
 > Reflecciones y rigidbodies.
