@@ -1,0 +1,1299 @@
+Unity Editor version:    2022.3.10f1 (ff3792e53c62)
+Branch:                  2022.3/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 12.4 (Build 21F79)
+Darwin version:          21.5.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        32768 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/marielsgtzz/Desktop/TERA/Dinousaurios
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+57479
+Successfully changed project path to: /Users/marielsgtzz/Desktop/TERA/Dinousaurios
+/Users/marielsgtzz/Desktop/TERA/Dinousaurios
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [4472210816] Host "[IP] 192.168.100.43 [Port] 0 [Flags] 2 [Guid] 4020568956 [EditorId] 4020568956 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [4472210816] Host "[IP] 192.168.100.43 [Port] 0 [Flags] 2 [Guid] 4020568956 [EditorId] 4020568956 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-de-Mariel.local) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 3.24 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 7.88 ms.
+Initialize engine version: 2022.3.10f1 (ff3792e53c62)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/marielsgtzz/Desktop/TERA/Dinousaurios/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 Pro (high power)
+Metal devices available: 1
+0: Apple M1 Pro (high power)
+Using device Apple M1 Pro (high power)
+Initializing Metal device caps: Apple M1 Pro
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56232
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: /Applications/Unity/Hub/Editor/2022.3.10f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
+Registered in 0.000950 seconds.
+- Loaded All Assemblies, in  0.223 seconds
+[usbmuxd] Start listen thread
+[usbmuxd] Listen thread started
+[usbmuxd] Send listen message
+[usbmuxd] Attached: 4 00008103-000918E92263401E
+Native extension for iOS target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 58 ms
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.277 seconds
+Domain Reload Profiling: 500ms
+	BeginReloadAssembly (49ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (0ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (50ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (104ms)
+				TypeCache.ScanAssembly (94ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (277ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (238ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (151ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (56ms)
+			ProcessInitializeOnLoadMethodAttributes (27ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.423 seconds
+Refreshing native plugins compatible for Editor in 1.91 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.430 seconds
+Domain Reload Profiling: 854ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (22ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (277ms)
+		LoadAssemblies (156ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (158ms)
+			TypeCache.Refresh (137ms)
+				TypeCache.ScanAssembly (122ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (430ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (301ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (39ms)
+			ProcessInitializeOnLoadAttributes (199ms)
+			ProcessInitializeOnLoadMethodAttributes (40ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+database is locked
+database is locked
+Launching external process: /Applications/Unity/Hub/Editor/2022.3.10f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.04 seconds
+Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 3.81 ms.
+Unloading 5027 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 105 unused Assets / (1.3 MB). Loaded Objects now: 5776.
+Memory consumption went from 327.0 MB to 325.7 MB.
+Total: 2.999000 ms (FindLiveObjects: 0.177875 ms CreateObjectMapping: 0.063625 ms MarkObjects: 2.333083 ms  DeleteObjects: 0.423625 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 47991.297729 seconds.
+  path: Assets/Realistic_Furniture_And_Interior_Props_Pack
+  artifactKey: Guid(733a8491340060f4aa385e1b43cdb016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Realistic_Furniture_And_Interior_Props_Pack using Guid(733a8491340060f4aa385e1b43cdb016) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ece0c8506b1957c52687e3132fdf398') in 0.001197 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.911717 seconds.
+  path: Assets/ModelosDinosaurios
+  artifactKey: Guid(5051cb6f0288f40cdae8bdd778f00527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios using Guid(5051cb6f0288f40cdae8bdd778f00527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e8a80fc7376743fdc188512605b8557') in 0.000435 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 38.983535 seconds.
+  path: Assets/ModelosDinosaurios/TREXflesh
+  artifactKey: Guid(17fa6caef248f49d4b1e980600671ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXflesh using Guid(17fa6caef248f49d4b1e980600671ab9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb263f232e07ecbbb9fd4b541dfec49b') in 0.000301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.495297 seconds.
+  path: Assets/ModelosDinosaurios/TREXbones
+  artifactKey: Guid(68fa61c35e9b2486c96a8af16612f6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXbones using Guid(68fa61c35e9b2486c96a8af16612f6b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c3b0616f8d9d115eedcb9cb9e9143ae') in 0.000723 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.836338 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSflesh
+  artifactKey: Guid(ae87dadeb02d5472591a13d14b2a01d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSflesh using Guid(ae87dadeb02d5472591a13d14b2a01d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32e21cccb6008aad704548038a4b3b66') in 0.000315 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.411646 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones
+  artifactKey: Guid(ac37f9e137c9049f595761869835a9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones using Guid(ac37f9e137c9049f595761869835a9ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bdc3f0cc9fd25e340378a79986e635c6') in 0.000261 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 79.485099 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones/source
+  artifactKey: Guid(0352e93df600142019525a0559635212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones/source using Guid(0352e93df600142019525a0559635212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4952de5202de80fe8601332e4c8c202') in 0.000311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.660935 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus
+  artifactKey: Guid(b782a80960a744548a380f23cfd7e901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus using Guid(b782a80960a744548a380f23cfd7e901) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a73648e94fc67daa1792ee5becb9e08') in 0.000259 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.073173 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus/Stegosaurus_Texture.jpg
+  artifactKey: Guid(9edfece13dd5c4a0fa36e80ce8efcf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus/Stegosaurus_Texture.jpg using Guid(9edfece13dd5c4a0fa36e80ce8efcf50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c341523415370449f8c7a0836be1ad07') in 0.028039 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus/STEGOSAURUSbones.fbx
+  artifactKey: Guid(a6c4e9bf67b894077b57415fd77fb695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones/source/Stegosaurus/STEGOSAURUSbones.fbx using Guid(a6c4e9bf67b894077b57415fd77fb695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a80c3b7347cecefed5bd0fb785ccfa8') in 0.250410 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 91
+========================================================================
+Received Import Request.
+  Time since last request: 107.873981 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSbones.prefab
+  artifactKey: Guid(eedb925cd560247818c58cdd9ef9411d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSbones.prefab using Guid(eedb925cd560247818c58cdd9ef9411d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9aea9aa518cf2565f0330d4decafbb3c') in 0.007036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 160
+========================================================================
+Received Import Request.
+  Time since last request: 5.909888 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSflesh/source
+  artifactKey: Guid(203d681bc559d489fb7c14eda842e5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSflesh/source using Guid(203d681bc559d489fb7c14eda842e5a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c0993b743fa2bec019988256a34958a') in 0.000394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.056698 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSflesh/source/STEGOSAURUSflesh1.fbx
+  artifactKey: Guid(af31407c4202f43da828629b291e3fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSflesh/source/STEGOSAURUSflesh1.fbx using Guid(af31407c4202f43da828629b291e3fca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c8cbe2031f5ab57ad3758fd5795c58') in 0.140044 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 42.903042 seconds.
+  path: Assets/ModelosDinosaurios/STEGOSAURUSflesh1.prefab
+  artifactKey: Guid(39de71d5edb894dddb7c54056a2cbe53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/STEGOSAURUSflesh1.prefab using Guid(39de71d5edb894dddb7c54056a2cbe53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a09271d5804ea1335d6239731460d396') in 0.009732 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 33
+========================================================================
+Received Import Request.
+  Time since last request: 5.478376 seconds.
+  path: Assets/ModelosDinosaurios/TREXbones/source
+  artifactKey: Guid(2f00be3cdebfe45a290e85c67cb438c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXbones/source using Guid(2f00be3cdebfe45a290e85c67cb438c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '342d0467cf6841fd21214411a6e471f4') in 0.000471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.060928 seconds.
+  path: Assets/ModelosDinosaurios/TREXbones/source/TREXbones.fbx
+  artifactKey: Guid(4444c99a3fda04fb29601a5a3d53d5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXbones/source/TREXbones.fbx using Guid(4444c99a3fda04fb29601a5a3d53d5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aca75705a92b924632a17a975ece7ce3') in 0.046248 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 59
+========================================================================
+Received Import Request.
+  Time since last request: 58.630592 seconds.
+  path: Assets/ModelosDinosaurios/TREXbones.prefab
+  artifactKey: Guid(5fb06723680d94d0aa490f8b5cb04f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXbones.prefab using Guid(5fb06723680d94d0aa490f8b5cb04f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3bf63c399533644f94eea3a1648207') in 0.022746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 96
+========================================================================
+Received Import Request.
+  Time since last request: 5.768974 seconds.
+  path: Assets/ModelosDinosaurios/TREXflesh/TrexBump012714.jpg
+  artifactKey: Guid(17961596d0ca24041a0c53a2468616f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXflesh/TrexBump012714.jpg using Guid(17961596d0ca24041a0c53a2468616f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0e4548b27a88ec9150c3e3557829f03') in 0.013616 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/ModelosDinosaurios/TREXflesh/TREXflesh.fbx
+  artifactKey: Guid(d408cd4a624ad40c48fdd7942a26844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXflesh/TREXflesh.fbx using Guid(d408cd4a624ad40c48fdd7942a26844d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be404bdd5c09ab0bcf4404df3fa03991') in 0.220863 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 57
+========================================================================
+Received Import Request.
+  Time since last request: 33.231702 seconds.
+  path: Assets/ModelosDinosaurios/TREXflesh.prefab
+  artifactKey: Guid(43fc957e7a97a4bd396cabf41c554c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/TREXflesh.prefab using Guid(43fc957e7a97a4bd396cabf41c554c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd13887ba1ab6fd69bf8c28dcb7407372') in 0.010469 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 92
+========================================================================
+Received Import Request.
+  Time since last request: 1.534018 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORbones
+  artifactKey: Guid(c4588b3e15fd6456e91121c3f0ce07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORbones using Guid(c4588b3e15fd6456e91121c3f0ce07ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef57a9888dac0520c2cde0964060e892') in 0.000512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.218260 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORbones/source
+  artifactKey: Guid(796ad8aef194e4c43932f4d67f19ff5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORbones/source using Guid(796ad8aef194e4c43932f4d67f19ff5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0304872d855af9f434cda8dc45e1e812') in 0.000296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.274854 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORbones/source/UTAHRAPTORbones1.fbx
+  artifactKey: Guid(19b62c22930c14ebc9e0ae710b9608de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORbones/source/UTAHRAPTORbones1.fbx using Guid(19b62c22930c14ebc9e0ae710b9608de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0df4911a6918e6d87bf4848bc98a37e') in 1.421311 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1198
+========================================================================
+Received Import Request.
+  Time since last request: 61.476637 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORbones1.prefab
+  artifactKey: Guid(02b576eef4d664f9ba74b7f3f2351f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORbones1.prefab using Guid(02b576eef4d664f9ba74b7f3f2351f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f14e8580edadd6810d7f424e88ecd6b5') in 0.031237 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2090
+========================================================================
+Received Import Request.
+  Time since last request: 3.811042 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORflesh
+  artifactKey: Guid(7b2ec1eff482f44c7944e9d7c2bafac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORflesh using Guid(7b2ec1eff482f44c7944e9d7c2bafac9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19bf6d93affb1742442ca677215660a7') in 0.000694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.385445 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORflesh/source
+  artifactKey: Guid(0e10be80cf6d24c7db8c29b929aac80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORflesh/source using Guid(0e10be80cf6d24c7db8c29b929aac80c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6b62810bf43a3002e9bbbc043b07d8') in 0.000334 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.083843 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORflesh/source/UTAHRAPTORflesh1.fbx
+  artifactKey: Guid(35b881273a04842738365af63b3c4f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORflesh/source/UTAHRAPTORflesh1.fbx using Guid(35b881273a04842738365af63b3c4f96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5bac2ce466afed0f850e42e4dfa4a594') in 0.023134 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 46
+========================================================================
+Received Import Request.
+  Time since last request: 36.211811 seconds.
+  path: Assets/ModelosDinosaurios/UTAHRAPTORflesh1.prefab
+  artifactKey: Guid(a628588527149469083c90cf4fcb7ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/UTAHRAPTORflesh1.prefab using Guid(a628588527149469083c90cf4fcb7ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db3651ef1036501a12063dc43cd641e9') in 0.008928 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 861.166714 seconds.
+  path: Assets/Editor
+  artifactKey: Guid(833e12f1d550f2c4b96eb6fa3a5ea199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Editor using Guid(833e12f1d550f2c4b96eb6fa3a5ea199) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b891e177fe62b0c0ad32623378ad7a2') in 0.002360 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 7.414739 seconds.
+  path: Assets/Realistic_Furniture_And_Interior_Props_Pack/Prefabs
+  artifactKey: Guid(07b415b61abdb554fb603fa8d6fcd561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Realistic_Furniture_And_Interior_Props_Pack/Prefabs using Guid(07b415b61abdb554fb603fa8d6fcd561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cd779054373fb9aeacde70e6deb884e') in 0.000305 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 3.602802 seconds.
+  path: Assets/Resources
+  artifactKey: Guid(d9a15a7ff8b36465fbd7736341c6c713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Resources using Guid(d9a15a7ff8b36465fbd7736341c6c713) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c5a130e2339ad6c39b3cfa98ff4fff9') in 0.000318 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.899325 seconds.
+  path: Assets/TextMesh Pro
+  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30796653c4dfc1f2480bca9d8b60487c') in 0.000306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 13.220506 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset
+  artifactKey: Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset using Guid(8a89fa14b10d46a99122fd4f73fca9a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd012866ea6affb6250bb240d1f47dc') in 0.038092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 6
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png
+  artifactKey: Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png using Guid(a0fc465d6cf04254a2938578735e2383) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6727fa248d1d428991881bef6a090ce') in 0.004743 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000071 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat
+  artifactKey: Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat using Guid(6522f30e342599e4e9dd4cc2cc03c830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e616b9b58228fb41895eeb0b41d817') in 0.160244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat
+  artifactKey: Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat using Guid(f4e195ac1e204eff960149d1cb34e18c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64cd8b029293bcd3e029ba95a151d306') in 0.298455 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 22.433075 seconds.
+  path: Assets/ModelosDinosaurios/Sprites
+  artifactKey: Guid(3084ca17b6b994fbd9a8e8582be27685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites using Guid(3084ca17b6b994fbd9a8e8582be27685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8303392f1ebdc65a0248c19704e7006') in 0.000423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.386268 seconds.
+  path: Assets/ModelosDinosaurios/Modelos
+  artifactKey: Guid(a070311d92e48490fba94ea20b7b181a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos using Guid(a070311d92e48490fba94ea20b7b181a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3346d71d1fb50159175e77ac9f9b91a6') in 0.000396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 11.754935 seconds.
+  path: Assets/ModelosDinosaurios/src
+  artifactKey: Guid(c780321c5996a457ca1b954f6b8dc7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/src using Guid(c780321c5996a457ca1b954f6b8dc7e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e231f308f4f4b558a90c0df29299abd3') in 0.000390 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.475771 seconds.
+  path: Assets/Scripts/Furniture.cs
+  artifactKey: Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Furniture.cs using Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30d8115f5a22c61fbf130840fa3a2e49') in 0.000320 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 50.793460 seconds.
+  path: Assets/Scripts/Furniture.cs
+  artifactKey: Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Furniture.cs using Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1b24a4cf949effda49f3c5d8f4713ff') in 0.000437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 8.270130 seconds.
+  path: Assets/Scripts/Dinosaurio.cs
+  artifactKey: Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Dinosaurio.cs using Guid(d4b16788de0544fd78f648c20027d034) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617cf983b4983681f83ac343d845b3f0') in 0.000327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.689055 seconds.
+  path: Assets/Scripts/DinosaurioObject.cs
+  artifactKey: Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DinosaurioObject.cs using Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e65777a9c43619a84857b480178c5bd') in 0.000303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 22.289840 seconds.
+  path: Assets/Scripts/FurnitureSO.cs
+  artifactKey: Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/FurnitureSO.cs using Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892687253c963cb62e7978f6a298ab5a') in 0.000295 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.421823 seconds.
+  path: Assets/Scripts/DinosaurioSO.cs
+  artifactKey: Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DinosaurioSO.cs using Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b514c16b71b02474b63e1e693a6c657c') in 0.000266 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 27.055486 seconds.
+  path: Assets/Scripts/DinosaurioSO.cs
+  artifactKey: Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DinosaurioSO.cs using Guid(2e300f2d7ae1f4b51809232cead23d85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad5a17b116142d5bb8f5847c182f941e') in 0.000272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.602621 seconds.
+  path: Assets/Scripts/AppController.cs
+  artifactKey: Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AppController.cs using Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8970b547f19cc9b11063514146fccb7b') in 0.000273 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 55.833964 seconds.
+  path: Assets/Scripts/AppController.cs
+  artifactKey: Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AppController.cs using Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f529cfaa5fae12cc5c08ea7932bacae6') in 0.000378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 14.361454 seconds.
+  path: Assets/Scripts/AppController.cs
+  artifactKey: Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AppController.cs using Guid(4f2812bc104ef4bfc89c3a395cf40623) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6d6ea8a8cfa5c0349fa0cebc6ade0ea') in 0.000302 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 70.870130 seconds.
+  path: Assets/Scripts/DinosaurioObject.cs
+  artifactKey: Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DinosaurioObject.cs using Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c4a015545cc0c82096109bd95adad11') in 0.000313 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16df9b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.331 seconds
+Refreshing native plugins compatible for Editor in 1.63 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.920 seconds
+Domain Reload Profiling: 1251ms
+	BeginReloadAssembly (95ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (189ms)
+		LoadAssemblies (159ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (60ms)
+			TypeCache.Refresh (9ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (31ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (921ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (267ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (173ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.59 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 3.94 ms.
+Unloading 4916 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 80 unused Assets / (1.3 MB). Loaded Objects now: 5829.
+Memory consumption went from 301.2 MB to 299.9 MB.
+Total: 3.031334 ms (FindLiveObjects: 0.203000 ms CreateObjectMapping: 0.069125 ms MarkObjects: 2.347208 ms  DeleteObjects: 0.411375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24.714876 seconds.
+  path: Assets/Scripts/DinosaurioObject.cs
+  artifactKey: Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/DinosaurioObject.cs using Guid(632455b3b1970450fb1998516ca48fbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f60d3173a6f18dd6a5aabb25066044bd') in 0.001059 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 24.709062 seconds.
+  path: Assets/Data/d_TRexHuesos.asset
+  artifactKey: Guid(60dc2b7d9afc14f8ba0d3c6f2079dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_TRexHuesos.asset using Guid(60dc2b7d9afc14f8ba0d3c6f2079dd64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7108a371b98d752bff9ebaadfe689e83') in 0.005869 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 14.867327 seconds.
+  path: Assets/Data/d_TrexPiel.asset
+  artifactKey: Guid(32f6b34e50e2e4541be5c9ed95f3f842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_TrexPiel.asset using Guid(32f6b34e50e2e4541be5c9ed95f3f842) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c192dce46544c7ee56ba6b8b151689b8') in 0.000715 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 23.623745 seconds.
+  path: Assets/Data/d_StegosaurusHuesos.asset
+  artifactKey: Guid(3429e52507fa043c0aa0d0be0dcab348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_StegosaurusHuesos.asset using Guid(3429e52507fa043c0aa0d0be0dcab348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb75ad22662cebb41d2d04bcfa735c94') in 0.000762 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.275021 seconds.
+  path: Assets/Data/d_StegosaurusPiel.asset
+  artifactKey: Guid(1dea548d573b948248dfb45e8580300a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_StegosaurusPiel.asset using Guid(1dea548d573b948248dfb45e8580300a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5d52782d769a0543f3e013d8344ae558') in 0.000710 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 16.517040 seconds.
+  path: Assets/Data/d_UtahraptorPiel.asset
+  artifactKey: Guid(1d5c856025a0e46d486f15804395ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_UtahraptorPiel.asset using Guid(1d5c856025a0e46d486f15804395ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4261e02e9812b0d3470a18d097e6e19') in 0.000860 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.495060 seconds.
+  path: Assets/Data/d_UtahraptorHuesos.asset
+  artifactKey: Guid(4cb4c4044ccc14148896453bda644170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/d_UtahraptorHuesos.asset using Guid(4cb4c4044ccc14148896453bda644170) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8169d05253cd0a2d7d57412d9c198d2f') in 0.000657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.177480 seconds.
+  path: Assets/Data/ModelosEsqueleto
+  artifactKey: Guid(2b885a98955f244c5bbad94da03473b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ModelosEsqueleto using Guid(2b885a98955f244c5bbad94da03473b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0af877b3973966cc6ed2b56a9857a5') in 0.000344 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 9.342728 seconds.
+  path: Assets/Data/ModelosPiel
+  artifactKey: Guid(a74172110b1fc4203a8fe79011a1da82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ModelosPiel using Guid(a74172110b1fc4203a8fe79011a1da82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b9c3cd194b417d63a01aacc989a4a9b') in 0.000355 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 48.120714 seconds.
+  path: Assets/ModelosDinosaurios/Modelos/STEGOSAURUSbones.prefab
+  artifactKey: Guid(eedb925cd560247818c58cdd9ef9411d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos/STEGOSAURUSbones.prefab using Guid(eedb925cd560247818c58cdd9ef9411d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed3ed5453ac8321ac2e216a486fa8c2a') in 0.041371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 160
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ModelosDinosaurios/Modelos/UTAHRAPTORbones1.prefab
+  artifactKey: Guid(02b576eef4d664f9ba74b7f3f2351f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos/UTAHRAPTORbones1.prefab using Guid(02b576eef4d664f9ba74b7f3f2351f64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477fba9c51775c69c71d9358130a5107') in 0.053702 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2090
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/ModelosDinosaurios/Modelos/TREXflesh.prefab
+  artifactKey: Guid(43fc957e7a97a4bd396cabf41c554c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos/TREXflesh.prefab using Guid(43fc957e7a97a4bd396cabf41c554c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16670bc1de5162355908724a8dc9db88') in 0.013393 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 92
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/ModelosDinosaurios/Modelos/UTAHRAPTORflesh1.prefab
+  artifactKey: Guid(a628588527149469083c90cf4fcb7ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos/UTAHRAPTORflesh1.prefab using Guid(a628588527149469083c90cf4fcb7ced) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6600beeed6831e739e26283294ed38c') in 0.009452 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 73
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/ModelosDinosaurios/Modelos/TREXbones.prefab
+  artifactKey: Guid(5fb06723680d94d0aa490f8b5cb04f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Modelos/TREXbones.prefab using Guid(5fb06723680d94d0aa490f8b5cb04f53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc74feaff1f099954711d8a894dfaf36') in 0.034632 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 96
+========================================================================
+Received Import Request.
+  Time since last request: 8.858141 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/StegosaurusCarne.png
+  artifactKey: Guid(3706192522f034e0dac33650ff50cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/StegosaurusCarne.png using Guid(3706192522f034e0dac33650ff50cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7a1e48bd0f377ad6a1810705e7d0b75') in 0.008633 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/TrexCarne.png
+  artifactKey: Guid(3eeacbc04b3814c5da08ee10f335d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/TrexCarne.png using Guid(3eeacbc04b3814c5da08ee10f335d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b37fc43f2e1378d1b7701eb596578eb') in 0.004511 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/UtahraptorHuesos.png
+  artifactKey: Guid(be1ffec41bff34d618423900be4c7863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/UtahraptorHuesos.png using Guid(be1ffec41bff34d618423900be4c7863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'decfb3a9e9613243f3dffe55d04020a0') in 0.004226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 39.012037 seconds.
+  path: Assets/Prefab/FurnitureBtn.prefab
+  artifactKey: Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/FurnitureBtn.prefab using Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1974b3241e5ec7f3a32d28dd8eba2867') in 0.031294 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 17.171212 seconds.
+  path: Assets/ModelosDinosaurios/src/STEGOSAURUSbones/source/Stegosaurus/STEGOSAURUSbones.fbx
+  artifactKey: Guid(a6c4e9bf67b894077b57415fd77fb695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/src/STEGOSAURUSbones/source/Stegosaurus/STEGOSAURUSbones.fbx using Guid(a6c4e9bf67b894077b57415fd77fb695) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ba465fb0927c5283047dd96e0fdc2a1') in 0.094250 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 91
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf
+  artifactKey: Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf using Guid(c9f6d0e7bc8541498c9a4799ba184ede) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '588fd3c93ea6ad1bac595a2b01713fdb') in 0.010064 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf
+  artifactKey: Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf using Guid(4beb055f07aaff244873dec698d0363e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89255ab77fa082514148cf9366848136') in 0.005612 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF
+  artifactKey: Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF using Guid(8a2b9e2a607dd2143b58c44bc32410b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1aa932037ac9b934167e8d52ae456f5d') in 0.005904 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce64b593ab206e47e57ebe2b2ead4831') in 0.005272 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf
+  artifactKey: Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf using Guid(5dd49b3eacc540408c98eee0de38e0f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2dc5615ad7f6cbed352da1407184ac8') in 0.007343 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.000136 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg
+  artifactKey: Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg using Guid(85ac55597b97403c82fc6601a93cf241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26184f9d28ea59a491ae592ccdd2e53') in 0.004924 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg
+  artifactKey: Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg using Guid(283f897e4925411ebbaa758b4cb13fc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4887f7a93b661d68e50376535ea6082') in 0.005002 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0db25671e028b9cb6b989fc7f9f31eca') in 0.005495 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 0.269623 seconds.
+  path: Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_albedo.png
+  artifactKey: Guid(4dd41292bc80e8c44b5d0dc45eccde68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_albedo.png using Guid(4dd41292bc80e8c44b5d0dc45eccde68) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1893d1643a6e10b84a1500322e85438c') in 0.004027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_ao.png
+  artifactKey: Guid(8ca7a20197cd9b945a8c5857f1e30b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_ao.png using Guid(8ca7a20197cd9b945a8c5857f1e30b89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dea037488933e7813ef653f52bfddb2') in 0.003622 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_nm.png
+  artifactKey: Guid(e4c50557fad2bd64a89432498eceab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Realistic_Furniture_And_Interior_Props_Pack/Texrures/RFAIPP_Pouf_nm.png using Guid(e4c50557fad2bd64a89432498eceab62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e4887f6ea82e5e15677ca8413f55828') in 0.004229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 67.279705 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/StegosaurusCarne.png
+  artifactKey: Guid(3706192522f034e0dac33650ff50cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/StegosaurusCarne.png using Guid(3706192522f034e0dac33650ff50cbff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecd72481b1a3335c939c2c54e6f443e4') in 0.015636 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 10.457762 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/StegosaurusHuesos.png
+  artifactKey: Guid(9158d79d48bb2400aa4998a4421df2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/StegosaurusHuesos.png using Guid(9158d79d48bb2400aa4998a4421df2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26555ce5a53542b363b180d2e103a70a') in 0.008292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.471394 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/TrexCarne.png
+  artifactKey: Guid(3eeacbc04b3814c5da08ee10f335d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/TrexCarne.png using Guid(3eeacbc04b3814c5da08ee10f335d704) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbef235e966138920095465e3c6bc33e') in 0.007256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.901379 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/TrexHuesos.png
+  artifactKey: Guid(0d7c727b1ab5a4eb89395fc7d054f07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/TrexHuesos.png using Guid(0d7c727b1ab5a4eb89395fc7d054f07f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a2163ffbccc6a6f605bf49549daa396') in 0.008052 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 4.382216 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/UtahraptorCarne.png
+  artifactKey: Guid(2e4dd21574d8947a09588edf3facf19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/UtahraptorCarne.png using Guid(2e4dd21574d8947a09588edf3facf19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50807f759978c666a15fd595303e4346') in 0.007213 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 3.976764 seconds.
+  path: Assets/ModelosDinosaurios/Sprites/UtahraptorHuesos.png
+  artifactKey: Guid(be1ffec41bff34d618423900be4c7863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ModelosDinosaurios/Sprites/UtahraptorHuesos.png using Guid(be1ffec41bff34d618423900be4c7863) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad98f5cca09b9773cbe914f60d606050') in 0.006174 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 173.680759 seconds.
+  path: Assets/Data/ModelosPiel/d_UtahraptorPiel.asset
+  artifactKey: Guid(1d5c856025a0e46d486f15804395ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Data/ModelosPiel/d_UtahraptorPiel.asset using Guid(1d5c856025a0e46d486f15804395ba2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ca2d1cdeae1e96f15a86decd25fe29') in 0.002639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x2cb687000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.283 seconds
+Refreshing native plugins compatible for Editor in 1.58 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.832 seconds
+Domain Reload Profiling: 1115ms
+	BeginReloadAssembly (94ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (41ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (140ms)
+		LoadAssemblies (139ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (32ms)
+			TypeCache.Refresh (8ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (832ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (263ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (168ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.45 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 3.79 ms.
+Unloading 4916 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (1.3 MB). Loaded Objects now: 5839.
+Memory consumption went from 300.3 MB to 299.0 MB.
+Total: 2.921666 ms (FindLiveObjects: 0.202417 ms CreateObjectMapping: 0.068958 ms MarkObjects: 2.207167 ms  DeleteObjects: 0.442250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16df9b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.246 seconds
+Refreshing native plugins compatible for Editor in 1.45 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.461 seconds
+Domain Reload Profiling: 707ms
+	BeginReloadAssembly (87ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (113ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (30ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (1ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (461ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (249ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (37ms)
+			ProcessInitializeOnLoadAttributes (157ms)
+			ProcessInitializeOnLoadMethodAttributes (34ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.77 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 4.01 ms.
+Unloading 4916 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 80 unused Assets / (1.3 MB). Loaded Objects now: 5843.
+Memory consumption went from 300.5 MB to 299.2 MB.
+Total: 2.639250 ms (FindLiveObjects: 0.178375 ms CreateObjectMapping: 0.062792 ms MarkObjects: 1.981958 ms  DeleteObjects: 0.415708 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 166.642159 seconds.
+  path: Assets/Prefab/DinosaurioBtn.prefab
+  artifactKey: Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/DinosaurioBtn.prefab using Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51822e6a1cc4fa3d25e7c4f141758187') in 0.044037 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16df9b000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.281 seconds
+Refreshing native plugins compatible for Editor in 1.64 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.900 seconds
+Domain Reload Profiling: 1182ms
+	BeginReloadAssembly (93ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (14ms)
+	LoadAllAssembliesAndSetupDomain (141ms)
+		LoadAssemblies (159ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (900ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (263ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (169ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.52 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 3.69 ms.
+Unloading 4916 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (1.3 MB). Loaded Objects now: 5847.
+Memory consumption went from 299.5 MB to 298.2 MB.
+Total: 2.706542 ms (FindLiveObjects: 0.199750 ms CreateObjectMapping: 0.062166 ms MarkObjects: 1.999000 ms  DeleteObjects: 0.444875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 743.812064 seconds.
+  path: Assets/Prefab/PrevDinosaurioBtn.prefab
+  artifactKey: Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/PrevDinosaurioBtn.prefab using Guid(00f208271efe544f78a203f8c5796de0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a1fe4ce407e5ebe41e485b0c589c5a') in 0.043766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 3.557152 seconds.
+  path: Assets/Prefab/DinosaurioBtn Variant.prefab
+  artifactKey: Guid(3d09429095b894ab984b2ceb5794dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab/DinosaurioBtn Variant.prefab using Guid(3d09429095b894ab984b2ceb5794dff2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4fe113de2686509007b6dcda23be44a') in 0.015473 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 37
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x2cb687000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.261 seconds
+Refreshing native plugins compatible for Editor in 1.71 ms, found 6 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.830 seconds
+Domain Reload Profiling: 1092ms
+	BeginReloadAssembly (90ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (123ms)
+		LoadAssemblies (139ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (14ms)
+			TypeCache.Refresh (5ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (831ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (251ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (159ms)
+			ProcessInitializeOnLoadMethodAttributes (33ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 3.70 ms, found 6 plugins.
+Preloading 4 native plugins for Editor in 5.27 ms.
+Unloading 4916 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 81 unused Assets / (1.3 MB). Loaded Objects now: 5851.
+Memory consumption went from 298.4 MB to 297.1 MB.
+Total: 2.883542 ms (FindLiveObjects: 0.223292 ms CreateObjectMapping: 0.062791 ms MarkObjects: 2.139292 ms  DeleteObjects: 0.457167 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: a3ef5dd2817f97addfee359851a9dba5 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e300f2d7ae1f4b51809232cead23d85, type: 3}
+  m_Name: d_StegosaurusPiel
+  m_EditorClassIdentifier: 
+  nombre: Stegosauros
+  imgDinosaurio: {fileID: 21300000, guid: 3706192522f034e0dac33650ff50cbff, type: 3}
+  prefab: {fileID: 1800835506180380681, guid: 39de71d5edb894dddb7c54056a2cbe53, type: 3}
