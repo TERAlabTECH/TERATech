@@ -62,14 +62,43 @@ public class AppController : MonoBehaviour
     private void ChangeDinosaurio(DinosaurioSO dinosaurioSO) {
         titleTxt.text = dinosaurioSO.nombre; //Cambia el titulo en la UI
         dinosaurioObject.SetObject(dinosaurioSO.prefab); //El obj que esta almacenado en el scriptable object se agrega 
-        if (_primerClick == 1) {
+        if (_primerClick == 1) { //Para que los botones de tipo solo aparezcan despues de haber seleccionado el dinosaurio
             CreatePrefabs(1);
             _primerClick += 1;
         }
         _primerClick += 1;
     }
 
+    //Falta hacerlo no dependiente de strings
     private void ChangeTipoDinosaurio(TipoDinosaurioSO tipoDinosaurioSO) {
         Debug.Log(tipoDinosaurioSO.nombre);
+
+        if (tipoDinosaurioSO.nombre.Equals("Esqueleto")&&!_esEsqueleto) { //Estoy en tipo piel y quiero pasar a tipo esqueleto
+            //Buscar una forma más eficiente de esto, para que no tenga que ser con strings
+            if (titleTxt.text.Equals(dinoPiel[0].nombre)) { //Entonces esta seleccionado el primer dinosaurio
+                ChangeDinosaurio(dinoHueso[0]);
+            } else if (titleTxt.text.Equals(dinoPiel[1].nombre)) { //Entonces esta seleccionado el segundo dinosaurio
+                ChangeDinosaurio(dinoHueso[1]);
+            }
+            else
+            { //Entonces esta seleccionado el tercer dinosaurio
+                ChangeDinosaurio(dinoHueso[2]);
+            }
+            _esEsqueleto = true; //para evitar re-renders inecesarios
+        } else if (tipoDinosaurioSO.nombre.Equals("Piel") && _esEsqueleto) {
+            if (titleTxt.text.Equals(dinoHueso[0].nombre))
+            { //Entonces esta seleccionado el primer dinosaurio
+                ChangeDinosaurio(dinoPiel[0]);
+            }
+            else if (titleTxt.text.Equals(dinoHueso[1].nombre))
+            { //Entonces esta seleccionado el segundo dinosaurio
+                ChangeDinosaurio(dinoPiel[1]);
+            }
+            else
+            { //Entonces esta seleccionado el tercer dinosaurio
+                ChangeDinosaurio(dinoPiel[2]);
+            }
+            _esEsqueleto = false;
+        }
     }
 }
