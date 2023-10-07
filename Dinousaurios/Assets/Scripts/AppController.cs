@@ -26,11 +26,12 @@ public class AppController : MonoBehaviour
     private Dinosaurio _dinosaurio;
     private TipoDinosaurio _tipoDinosaurio;
     private Boolean _esEsqueleto = false;
-    private int _primerClick = 0;
 
     private void Start()
     {
         CreatePrefabs(0); //Instancia todos los btns
+        CreatePrefabs(1);
+
         ChangeDinosaurio(dinoPiel[startIndex]);
 
     }
@@ -62,11 +63,7 @@ public class AppController : MonoBehaviour
     private void ChangeDinosaurio(DinosaurioSO dinosaurioSO) {
         titleTxt.text = dinosaurioSO.nombre; //Cambia el titulo en la UI
         dinosaurioObject.SetObject(dinosaurioSO.prefab); //El obj que esta almacenado en el scriptable object se agrega 
-        if (_primerClick == 1) { //Para que los botones de tipo solo aparezcan despues de haber seleccionado el dinosaurio
-            CreatePrefabs(1);
-            _primerClick += 1;
-        }
-        _primerClick += 1;
+        _esEsqueleto = false;
     }
 
     //Falta hacerlo no dependiente de strings
