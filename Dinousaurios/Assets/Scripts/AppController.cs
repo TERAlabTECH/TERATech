@@ -26,7 +26,7 @@ public class AppController : MonoBehaviour
     private Dinosaurio _dinosaurio;
     private TipoDinosaurio _tipoDinosaurio;
     private Boolean _esEsqueleto = false;
-    private Boolean _primerClick = false;
+    private int _primerClick = 0;
 
     private void Start()
     {
@@ -51,6 +51,8 @@ public class AppController : MonoBehaviour
                 _tipoDinosaurio = Instantiate(tipoDinousaurioPrefab, tipoDinosaurioContainer); // instancio el obj en el scroll view
                 _tipoDinosaurio.Init(tipoDinoBtn[i]); //Guarda toda la info del SO
                 int index = i; //para evitar el error de usar una funcion lambda dentro de un ciclo
+                _tipoDinosaurio.SetButton(() => ChangeTipoDinosaurio(tipoDinoBtn[index])); //Se le otorga la funcionalidad al btn
+
             }
         }
         
@@ -60,17 +62,14 @@ public class AppController : MonoBehaviour
     private void ChangeDinosaurio(DinosaurioSO dinosaurioSO) {
         titleTxt.text = dinosaurioSO.nombre; //Cambia el titulo en la UI
         dinosaurioObject.SetObject(dinosaurioSO.prefab); //El obj que esta almacenado en el scriptable object se agrega 
-        if (_primerClick) {
+        if (_primerClick == 1) {
             CreatePrefabs(1);
-            _primerClick = false;
+            _primerClick += 1;
         }
-        _primerClick = true;
+        _primerClick += 1;
     }
 
-    private void ChangeTipoDinosaurio(DinosaurioSO dinosaurioSO) {
-        dinosaurioObject.SetObject(dinosaurioSO.prefab); //El obj que esta almacenado en el scriptable object se agrega
-        if (_primerClick) {
-            CreatePrefabs(1);
-        }
+    private void ChangeTipoDinosaurio(TipoDinosaurioSO tipoDinosaurioSO) {
+        Debug.Log(tipoDinosaurioSO.nombre);
     }
 }
