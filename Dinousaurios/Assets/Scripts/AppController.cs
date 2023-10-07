@@ -24,6 +24,7 @@ public class AppController : MonoBehaviour
     {
         CreatePrefabs(); //Instancia todos los btns
         ChangeDinosaurio(data[startIndex]);
+        Debug.Log("Hola");
     }
 
     //Crea un btn por cada obj
