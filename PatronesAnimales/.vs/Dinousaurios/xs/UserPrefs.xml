@@ -1,0 +1,28 @@
+﻿<Properties StartupConfiguration="{1695D5E4-6A51-2E21-33EC-EB3FFD7BDFD2}|">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="693bcbc9-130a-4d9a-8f82-c8e8861920e7" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AppController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/AppController.cs" Line="34" Column="1" />
+      <File FileName="Assets/Scripts/DinosaurioSO.cs" />
+      <File FileName="Assets/Scripts/TipDinosaurio.cs" />
+      <File FileName="Assets/Scripts/TipoDinosaurioSO.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Dinousaurios" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
