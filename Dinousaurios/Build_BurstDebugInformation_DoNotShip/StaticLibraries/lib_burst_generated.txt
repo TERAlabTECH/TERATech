@@ -26,7 +26,7 @@ Library: /Users/marielsgtzz/Desktop/TERA/Dinousaurios/Temp/BurstOutput/StaticLib
 --assembly-defines=Vuforia.Unity.Engine;
 --assembly-defines=Vuforia.Unity.Wrapper;
 --assembly-defines=VuforiaScripts;
---linker-options=min-ios-version=16.0
+--linker-options=min-ios-version=14.0
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/marielsgtzz/Desktop/TERA/Dinousaurios/Temp/Burst
 --debug=Full
@@ -69,7 +69,7 @@ Library: /Users/marielsgtzz/Desktop/TERA/Dinousaurios/Temp/BurstOutput/StaticLib
 --assembly-defines=Vuforia.Unity.Engine;
 --assembly-defines=Vuforia.Unity.Wrapper;
 --assembly-defines=VuforiaScripts;
---linker-options=min-ios-version=16.0
+--linker-options=min-ios-version=14.0
 --generate-link-xml=Temp/burst.link.xml
 --temp-folder=/Users/marielsgtzz/Desktop/TERA/Dinousaurios/Temp/Burst
 --debug=Full
