@@ -31,6 +31,9 @@ public class GameController : MonoBehaviour
     private Personaje p2T3;
     private Personaje p3T3;
 
+    private float[] pT1Radio;
+
+
     float timeCounter = 0;
 
     private void Start()
@@ -44,7 +47,14 @@ public class GameController : MonoBehaviour
             p1T1.gameObject.transform.position - suelo.transform.position,
             p2T1.gameObject.transform.position - suelo.transform.position,
             p3T1.gameObject.transform.position - suelo.transform.position
-        }; 
+        };
+
+        pT1Radio = new float[3];
+        for (int i = 0; i < 3; i++)
+        {
+            pT1Radio[i] = restrictCircularMovement(pT1initialOffset[i]);
+        }
+
 
 
         //originalPos = new Vector3(p1T1.gameObject.transform.position.x, p1T1.gameObject.transform.position.y, p1T1.gameObject.transform.position.z);
@@ -66,9 +76,9 @@ public class GameController : MonoBehaviour
         float x, z;
         float radioCirculo;
         for (int i = 0; i < 3; i++) {
-            radioCirculo = restrictCircularMovement(pT1initialOffset[i]);
-            x = suelo.gameObject.transform.position.x + pT1initialOffset[i].x - radioCirculo * Mathf.Cos(timeCounter);
-            z = suelo.gameObject.transform.position.z + pT1initialOffset[i].z - radioCirculo * Mathf.Sin(timeCounter);
+            radioCirculo = pT1Radio[i];
+            x = suelo.gameObject.transform.position.x + pT1initialOffset[i].x - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Cos(timeCounter));
+            z = suelo.gameObject.transform.position.z + pT1initialOffset[i].z - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Sin(timeCounter));
 
             switch (i) {
                 case 0:
@@ -95,6 +105,6 @@ public class GameController : MonoBehaviour
 
         res = Mathf.Min(distanceToEdgeX, distanceToEdgeZ);
 
-        return res;
+        return UnityEngine.Random.Range(0.05f, res); 
     }
 }
