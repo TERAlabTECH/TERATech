@@ -4,6 +4,11 @@ using UnityEngine;
 using TMPro;
 using System;
 
+
+// Como un futuro paso podemos:
+//      - hacer que se randomice también la posición inicial de cada personaje
+//      - en vez de que se tengan que inicializar cada personaje individualmente, podríamos generarlos dinámicamente en este script
+
 public class GameController : MonoBehaviour
 {
     [Header("Personaje Tipo 1")] //Los diferentes objetos que están en la escena que quiero asociar para darles funcionamiento/obtener info
@@ -32,6 +37,7 @@ public class GameController : MonoBehaviour
     private Personaje p3T3;
 
     private float[] pT1Radio;
+    private float[] pT1Speed;
 
 
     float timeCounter = 0;
@@ -55,11 +61,11 @@ public class GameController : MonoBehaviour
             pT1Radio[i] = restrictCircularMovement(pT1initialOffset[i]);
         }
 
-
-
-        //originalPos = new Vector3(p1T1.gameObject.transform.position.x, p1T1.gameObject.transform.position.y, p1T1.gameObject.transform.position.z);
-        //Debug.Log(originalPos);
-        //Debug.Log("Suelo" + posSuelo);
+        pT1Speed = new float[] {
+            UnityEngine.Random.Range(0.8f, 6),
+            UnityEngine.Random.Range(0.8f, 6),
+            UnityEngine.Random.Range(0.8f, 6),
+        };
     }
 
     //Se llama en cada frame
@@ -77,8 +83,8 @@ public class GameController : MonoBehaviour
         float radioCirculo;
         for (int i = 0; i < 3; i++) {
             radioCirculo = pT1Radio[i];
-            x = suelo.gameObject.transform.position.x + pT1initialOffset[i].x - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Cos(timeCounter));
-            z = suelo.gameObject.transform.position.z + pT1initialOffset[i].z - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Sin(timeCounter));
+            x = suelo.gameObject.transform.position.x + pT1initialOffset[i].x - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Cos(timeCounter * pT1Speed[i]));
+            z = suelo.gameObject.transform.position.z + pT1initialOffset[i].z - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Sin(timeCounter * pT1Speed[i]));
 
             switch (i) {
                 case 0:
@@ -94,6 +100,11 @@ public class GameController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="initialOffset"></param>
+    /// <returns></returns>
     public float restrictCircularMovement(Vector3 initialOffset) {
         float res;
         float quadrantSize = suelo.gameObject.transform.localScale.z / 2;//Supone que el suelo es un cuadrado no rectangulo
@@ -107,4 +118,11 @@ public class GameController : MonoBehaviour
 
         return UnityEngine.Random.Range(0.05f, res); 
     }
+
+    public float differentSpeeds() {
+        float res = 0.0f;
+
+        return res;
+    }
+
 }
