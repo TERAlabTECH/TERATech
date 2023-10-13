@@ -338,7 +338,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.78836125, y: 0.029257, z: 0.7650051}
+  m_LocalScale: {x: 0.78836125, y: 0.029257, z: 0.7764802}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2036130225}
@@ -782,6 +782,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb369f9dc437f4cbcbe8b6d1abaf93e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  personaje: {fileID: 1833156436}
+  suelo: {fileID: 1130795162}
 --- !u!1 &1833156436
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +796,7 @@ GameObject:
   - component: {fileID: 1833156440}
   - component: {fileID: 1833156439}
   - component: {fileID: 1833156438}
+  - component: {fileID: 1833156441}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -810,7 +813,7 @@ Transform:
   m_GameObject: {fileID: 1833156436}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.035, z: -0.216}
+  m_LocalPosition: {x: 0, y: 0.035, z: 0.18}
   m_LocalScale: {x: 0.07685282, y: 0.07685282, z: 0.07685282}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -887,6 +890,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1833156436}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1833156441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833156436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 090b3e55f0e2340c98f3c7ee1b00eb94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2036130221
 GameObject:
   m_ObjectHideFlags: 0
