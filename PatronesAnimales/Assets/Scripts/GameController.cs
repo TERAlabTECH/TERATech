@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using System;
 
 
@@ -28,17 +25,8 @@ public class GameController : MonoBehaviour
     private Personaje p2T1;
     private Personaje p3T1;
 
-    private Personaje p1T2;
-    private Personaje p2T2;
-    private Personaje p3T2;
-
-    private Personaje p1T3;
-    private Personaje p2T3;
-    private Personaje p3T3;
-
     private float[] pT1Radio;
     private float[] pT1Speed;
-
 
     float timeCounter = 0;
 
