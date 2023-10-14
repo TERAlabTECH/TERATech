@@ -8,7 +8,11 @@ public class CargarNivel : MonoBehaviour
         if (n == 1) {
             SceneManager.LoadScene("Nivel1");
         }
-        
+        else if (n == 2)
+        {
+            SceneManager.LoadScene("Nivel2");
+        }
+
     }
 
     public void nivelGanado() {
