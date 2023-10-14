@@ -76,6 +76,7 @@ public class GameController : MonoBehaviour
     private float[] pT3Arista; //Arreglo de las aristas para los movimientos para los personajes tipo 2
     private float[] pT3Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 2
 
+    private Boolean gano = false;
     float timeCounter = 0;
 
     //Se llama al inicio (1 vez) cuando se carga el juego
@@ -145,7 +146,7 @@ public class GameController : MonoBehaviour
         };
 
         btnModelo = new Button[] { btnModelo1, btnModelo2 , btnModelo3 };
-        btnTrayectoria = new Button[] { btnTrayectoria1, btnTrayectoria2, btnTrayectoria3 };
+        btnTrayectoria = new Button[] { btnTrayectoria3, btnTrayectoria1, btnTrayectoria2,  };
 
         foreach (Button btn in btnModelo)
         {
@@ -173,10 +174,12 @@ public class GameController : MonoBehaviour
     void Update()
     {
         timeCounter += Time.deltaTime;
-
-        moverPersonajeTipo1();
-        moverPersonajeTipo2();
-        moverPersonajeTipo3();
+        if(!gano) {
+            moverPersonajeTipo1();
+            moverPersonajeTipo2();
+            moverPersonajeTipo3();
+        }
+        
     }
 
     private void Awake()
@@ -264,6 +267,7 @@ public class GameController : MonoBehaviour
         }
     }
 
+    //Mueve los objetos en una trayectoria triangular
     public void moverPersonajeTipo3()
     {
         for (int i = 0; i < 3; i++)
@@ -398,7 +402,29 @@ public class GameController : MonoBehaviour
         if (!todosClick) {
             mensaje = "Empareja a todos los animales";
         } else {
-            Debug.Log("hola");
+            i = 0;
+            Boolean seleccionCorrecta = true;
+            while (i < btnModelo.Length && seleccionCorrecta)
+            {
+                ColorBlock cb1 = btnModelo[i].colors;
+                ColorBlock cb2 = btnTrayectoria[i].colors;
+
+                if (cb1.normalColor != cb2.normalColor)
+                {
+                    seleccionCorrecta = false;
+                }
+
+                i++;
+            }
+
+            if (!seleccionCorrecta)
+            {
+                mensaje = "La selección de patrones no es correcta";
+            } else {
+                mensaje = "La selección de patrones es correcta";
+                gano = true;
+            }
+
         }
 
         txtNivel.text = mensaje;
