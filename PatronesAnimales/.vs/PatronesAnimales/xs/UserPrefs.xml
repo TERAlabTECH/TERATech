@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{4395D92C-B0D8-4E60-D4A0-C5471AC4571E}|">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GameController.cs" Line="116" Column="6" />
+      <File FileName="Assets/Scripts/Personaje.cs" Line="1" Column="1" />
+      <File FileName="Assets/Anterior/Scripts/DinosaurioObject.cs" Line="12" Column="25" />
+      <File FileName="Assets/Anterior/Scripts/TipDinosaurio.cs" Line="1" Column="1" />
+      <File FileName="Assets/Anterior/Scripts/TipoDinosaurioSO.cs" Line="1" Column="1" />
+      <File FileName="Assets/Anterior/Scripts/AppController.cs" Line="10" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PatronesAnimales" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6ebfeb18-cd35-4344-9274-d136f7eff894" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
