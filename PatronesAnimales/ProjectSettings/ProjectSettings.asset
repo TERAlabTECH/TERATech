@@ -158,7 +158,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.UnityTechnologies.com.unity.template.urpblank
     Standalone: com.Unity-Technologies.com.unity.template.urp-blank
-    iPhone: com.Tera-ExperienciaDinosaurios
+    iPhone: com.Tera-IdentificacionPatrones
   buildNumber:
     Standalone: 0
     VisionOS: 0

@@ -14,4 +14,9 @@ public class CargarNivel : MonoBehaviour
     public void nivelGanado() {
         SceneManager.LoadScene("InterfazTrancision");
     }
+
+    public void pantallaDeInicio()
+    {
+        SceneManager.LoadScene("Inicio");
+    }
 }
