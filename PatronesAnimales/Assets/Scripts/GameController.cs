@@ -327,16 +327,16 @@ public class GameController : MonoBehaviour
             Color newColor = Color.white;
             if (selectedButtons == 0 || selectedButtons == 1)
             {
-                newColor = Color.blue;
+                newColor = makeRGBcolor(247,249,166);
             }
             else if (selectedButtons == 2 || selectedButtons == 3)
             {
-                newColor = Color.green;
+                newColor = makeRGBcolor(3, 152, 158);
 
             }
             else if (selectedButtons == 4 || selectedButtons == 5)
             {
-                newColor = Color.red;
+                newColor = makeRGBcolor(1, 134, 203);
 
             }
 
@@ -369,6 +369,8 @@ public class GameController : MonoBehaviour
         }
     }
 
-
+    private Color makeRGBcolor(float r, float g, float b) {
+        return new Color(r / 255f, g / 255f, b / 255f);
+    }
 
     }
