@@ -1,13 +1,15 @@
 ﻿<Properties StartupConfiguration="{1695D5E4-6A51-2E21-33EC-EB3FFD7BDFD2}|">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="8190957a-9545-4a08-8ed1-337e628f4f9a" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AppController.cs">
     <Files>
-      <File FileName="Assets/Scripts/AppController.cs" Line="42" Column="48" />
+      <File FileName="../PatronesAnimales/Assets/Scripts/GameController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/AppController.cs" Line="64" Column="9" />
       <File FileName="Assets/Scripts/DinosaurioSO.cs" />
       <File FileName="Assets/Scripts/TipDinosaurio.cs" />
       <File FileName="Assets/Scripts/TipoDinosaurioSO.cs" />
@@ -17,12 +19,13 @@
         <State name="__root__">
           <Node name="Dinousaurios" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="AppController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="7e6a9162-0f41-4adf-8c0c-a5deb7d0677c" />
 </Properties>

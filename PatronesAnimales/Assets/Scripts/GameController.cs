@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using System.Collections.Generic;
 using UnityEngine.UI;
+using TMPro;
 
 // Como un futuro paso podemos:
 //      - hacer que se randomice también la posición inicial de cada personaje
@@ -29,6 +30,9 @@ public class GameController : MonoBehaviour
 
     [Header("Suelo")]//Agregamos un suelo a la experiencia para que no se pierdan los modelos con el suelo real
     [SerializeField] private GameObject suelo; //Debería de ser cuadrado, no rectangular
+
+    [Header("Texto")]
+    [SerializeField] private TextMeshProUGUI txtNivel; //Debería de ser cuadrado, no rectangular
 
     [Header("Botones")]
     [SerializeField] private Button btnModelo1;
@@ -156,6 +160,8 @@ public class GameController : MonoBehaviour
         }
 
         btnReset.onClick.AddListener(() => ResetBtnClicked());
+
+        btnCheck.onClick.AddListener(() => CheckAnswers());
     }
 
     public void ButtonClicked(ButtonClickHandler btnHandler)
@@ -373,4 +379,28 @@ public class GameController : MonoBehaviour
         return new Color(r / 255f, g / 255f, b / 255f);
     }
 
+    private void CheckAnswers() {
+        //Checa que en efecto todos los botones estén clickeados
+        String mensaje = "Nivel 1";
+        int i = 0;
+        Boolean todosClick = true;
+        while ( i < btnModelo.Length && todosClick) {
+            ColorBlock cb1 = btnModelo[i].colors;
+            ColorBlock cb2 = btnTrayectoria[i].colors;
+
+            if (cb1.normalColor == Color.white || cb2.normalColor == Color.white) {
+                todosClick = false;
+            }
+
+            i++;
+        }
+
+        if (!todosClick) {
+            mensaje = "Empareja a todos los animales";
+        } else {
+            Debug.Log("hola");
+        }
+
+        txtNivel.text = mensaje;
     }
+}
