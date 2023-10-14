@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:PatronesAnimales/Assets/Scenes/Nivel2.unity.meta
+guid: 25cfd812e03024896be3e06ee7898b7b
+========
 guid: c61ccc6c0e68e4dd79ca096b90cd9dce
 folderAsset: yes
+>>>>>>>> main:PatronesAnimales/Assets/Materials.meta
 DefaultImporter:
   externalObjects: {}
   userData: 

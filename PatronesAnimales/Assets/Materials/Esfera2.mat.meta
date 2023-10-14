@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:PatronesAnimales/Assets/Scenes/InterfazTrancision.unity.meta
+guid: ca25279a1593b432eb8af5f2c689f9db
+DefaultImporter:
+========
 guid: 0681e5775a0204775ae9e57e92a26c8e
 NativeFormatImporter:
+>>>>>>>> main:PatronesAnimales/Assets/Materials/Esfera2.mat.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 

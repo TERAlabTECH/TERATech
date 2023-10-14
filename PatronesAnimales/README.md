@@ -8,4 +8,6 @@ La primera versión de la experiencia consiste de tres niveles.
 2. 4 modelos y figuras complejas
 3. Son 2 modelos con 3 instancias, toca identificar cual instancia de cada modelo no sigue el patrón del modelo
 
-Cada nivel es una escena diferente dentro del proyecto.
+## Interfaz Gráfica
+
+La vista preferida es `landscape`. Hay un panel a la derecha de la pantalla con botones que representan los patrones y los modelos. Aparte hay dos botones adicionales, uno para reiniciar la selección y otro para revisar la conexión.

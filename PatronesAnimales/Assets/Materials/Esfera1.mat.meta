@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:PatronesAnimales/Assets/Materials/Canvas.prefab.meta
+guid: f07ca603e8c9a43898b0849b5da5d176
+PrefabImporter:
+========
 guid: 0e5abfca288a1485a83f74fc23826865
 NativeFormatImporter:
+>>>>>>>> main:PatronesAnimales/Assets/Materials/Esfera1.mat.meta
   externalObjects: {}
   mainObjectFileID: 2100000
   userData: 
