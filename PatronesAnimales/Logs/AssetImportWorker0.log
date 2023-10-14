@@ -391,3 +391,253 @@ Received Import Request.
 Start importing Assets/Images/Cuadrado.png using Guid(8384cf623ac48442eb546ef46bab9d13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f608a786bb87ece3d1af78d9f4e207f') in 0.005403 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 74.331952 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(ef91e502f190349c5aaa72c45e0c80a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(ef91e502f190349c5aaa72c45e0c80a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07a8539a09f10ae93bfcf692c4b32641') in 0.000301 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.868228 seconds.
+  path: Assets/Scenes/Interfaz Nivel 3.unity
+  artifactKey: Guid(eca862c797d344eb0b2c95a190d9d10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interfaz Nivel 3.unity using Guid(eca862c797d344eb0b2c95a190d9d10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65f464f07bcce522d5dab69167b4aeed') in 0.000621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.687250 seconds.
+  path: Assets/Scenes/Nivel2.unity
+  artifactKey: Guid(b4bef5181a7b1fa43ab2c73e32403c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel2.unity using Guid(b4bef5181a7b1fa43ab2c73e32403c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a88966e5a050dcbd4a620e23b19d7c24') in 0.000558 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.907669 seconds.
+  path: Assets/Scenes/Interfaz Nivel 2.unity
+  artifactKey: Guid(8960ae7c4266c47bd898f9a4fc4bc13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interfaz Nivel 2.unity using Guid(8960ae7c4266c47bd898f9a4fc4bc13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3949e16ba0a38a9fdfc8955593fe2916') in 0.000555 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.373140 seconds.
+  path: Assets/Scenes/Interfaz Nivel 1.unity
+  artifactKey: Guid(1ca4145beb3a84f02a75ae40731f99fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interfaz Nivel 1.unity using Guid(1ca4145beb3a84f02a75ae40731f99fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324e58326450d6fa8e562f7688c6ca85') in 0.000544 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.451368 seconds.
+  path: Assets/Scenes/InterfazTrancisión.unity
+  artifactKey: Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/InterfazTrancisión.unity using Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5584022b5ba0c0bf341fa2a079621145') in 0.000408 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1.718169 seconds.
+  path: Assets/Scenes/Interfaz trancisión.unity
+  artifactKey: Guid(55d5b95b18eea4837b9f1cca9caf8aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interfaz trancisión.unity using Guid(55d5b95b18eea4837b9f1cca9caf8aa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '901b418ced3d87e901ced38f556ee521') in 0.000279 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 5.789281 seconds.
+  path: Assets/Scenes/Nivel1.unity
+  artifactKey: Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel1.unity using Guid(99c9720ab356a0642a771bea13969a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e35ec4f2310ca3953b4db6bfc83f386d') in 0.000283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.004107 seconds.
+  path: Assets/Scenes/Interfaz Nivel 2.unity
+  artifactKey: Guid(8960ae7c4266c47bd898f9a4fc4bc13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Interfaz Nivel 2.unity using Guid(8960ae7c4266c47bd898f9a4fc4bc13b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cae4e41ac4959dcfa349dec4a6eed06') in 0.001467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 2.554266 seconds.
+  path: Assets/Scenes/Nivel3.unity
+  artifactKey: Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel3.unity using Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1c43055ca24fc96bf5c2511f0db15f') in 0.000269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 156.005862 seconds.
+  path: Assets/Scenes/Nivel3.unity
+  artifactKey: Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel3.unity using Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ac83719020ac6771474dbe26c0cbaa2') in 0.000389 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x17e0b3000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.161 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 4 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.208 seconds
+Domain Reload Profiling: 370ms
+	BeginReloadAssembly (69ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (16ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (50ms)
+		LoadAssemblies (74ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (209ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (117ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (16ms)
+			ProcessInitializeOnLoadAttributes (69ms)
+			ProcessInitializeOnLoadMethodAttributes (11ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.81 ms, found 4 plugins.
+Preloading 4 native plugins for Editor in 4.89 ms.
+Unloading 401 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (112.3 KB). Loaded Objects now: 1236.
+Memory consumption went from 69.6 MB to 69.4 MB.
+Total: 1.807084 ms (FindLiveObjects: 0.042125 ms CreateObjectMapping: 0.013125 ms MarkObjects: 1.673291 ms  DeleteObjects: 0.077959 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+========================================================================
+Received Import Request.
+  Time since last request: 65.004465 seconds.
+  path: Assets/Scenes/Nivel2.unity
+  artifactKey: Guid(b4bef5181a7b1fa43ab2c73e32403c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel2.unity using Guid(b4bef5181a7b1fa43ab2c73e32403c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df8d9d2f0b3cb36bc54f37debc289c13') in 0.001535 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x1700f3000 may have been prematurely finalized
+- Loaded All Assemblies, in  0.158 seconds
+Refreshing native plugins compatible for Editor in 0.85 ms, found 4 plugins.
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.205 seconds
+Domain Reload Profiling: 363ms
+	BeginReloadAssembly (69ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (15ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (13ms)
+	LoadAllAssembliesAndSetupDomain (46ms)
+		LoadAssemblies (71ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (206ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (114ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (16ms)
+			ProcessInitializeOnLoadAttributes (67ms)
+			ProcessInitializeOnLoadMethodAttributes (10ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (2ms)
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 4 native plugins for Editor in 4.67 ms.
+Unloading 401 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 25 unused Assets / (120.3 KB). Loaded Objects now: 1236.
+Memory consumption went from 73.4 MB to 73.3 MB.
+Total: 1.734250 ms (FindLiveObjects: 0.038625 ms CreateObjectMapping: 0.013042 ms MarkObjects: 1.603875 ms  DeleteObjects: 0.078292 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+========================================================================
+Received Import Request.
+  Time since last request: 42.210526 seconds.
+  path: Assets/Scenes/Nivel3.unity
+  artifactKey: Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Nivel3.unity using Guid(d64846db6ab1dd649af95b5f9774ad84) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c803136455c5210d8ff3d953c8e7cd24') in 0.002051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 259.613461 seconds.
+  path: Assets/Scenes/InterfazTrancisión.unity
+  artifactKey: Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/InterfazTrancisión.unity using Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef297fa41a3998f38273f665d6b34950') in 0.000387 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 4.053795 seconds.
+  path: Assets/Scenes/InterfazTrancision.unity
+  artifactKey: Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/InterfazTrancision.unity using Guid(9c840246b51bb6147b0b6fe3ce112373) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4be409126f7564be8a9a06d846df2621') in 0.000262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
