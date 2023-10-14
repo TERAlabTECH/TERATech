@@ -14,12 +14,17 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject personaje2Tipo1;
     [SerializeField] private GameObject personaje3Tipo1;
 
-    // Aquí va a ser similar pero con los otros modelos
     [Header("Personaje Tipo 2")]
     [SerializeField] private GameObject personaje1Tipo2;
     [SerializeField] private GameObject personaje2Tipo2;
     [SerializeField] private GameObject personaje3Tipo2;
-    //Agregamos un suelo a la experiencia para que no se pierdan los modelos con el suelo real
+
+    [Header("Personaje Tipo 3")]
+    [SerializeField] private GameObject personaje1Tipo3;
+    [SerializeField] private GameObject personaje2Tipo3;
+    [SerializeField] private GameObject personaje3Tipo3;
+
+    [Header("Suelo")]//Agregamos un suelo a la experiencia para que no se pierdan los modelos con el suelo real
     [SerializeField] private GameObject suelo; //Debería de ser cuadrado, no rectangular
 
     //Personajes de tipo 1 (son del mismo modelo) y se mueven en trayectoria circular
@@ -32,16 +37,24 @@ public class GameController : MonoBehaviour
     private Personaje p2T2;
     private Personaje p3T2;
 
+    //Personajes de tipo 3 (son del mismo modelo) y se mueven en trayectoria triangular
+    private Personaje p1T3;
+    private Personaje p2T3;
+    private Personaje p3T3;
+
     //Variables internas a la clase
     private Personaje[] pT; //Arreglo de los personajes de tipo 1 
     private Vector3[] pT1initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 1
     private Vector3[] pT2initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 2
+    private Vector3[] pT3initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 3
 
 
     private float[] pT1Radio; //Arreglo de los radios para los movimientos para los personajes tipo 1
     private float[] pT1Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 1
     private float[] pT2Arista; //Arreglo de las aristas para los movimientos para los personajes tipo 2
     private float[] pT2Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 2
+    private float[] pT3Arista; //Arreglo de las aristas para los movimientos para los personajes tipo 2
+    private float[] pT3Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 2
 
     float timeCounter = 0;
 
@@ -58,10 +71,9 @@ public class GameController : MonoBehaviour
         p2T2 = personaje2Tipo2.gameObject.GetComponent<Personaje>();
         p3T2 = personaje3Tipo2.gameObject.GetComponent<Personaje>();
 
-        pT = new Personaje[] {
-            p1T1, p2T1, p3T1,
-            p1T2, p2T2, p3T2
-        };
+        p1T3 = personaje1Tipo3.gameObject.GetComponent<Personaje>();
+        p2T3 = personaje2Tipo3.gameObject.GetComponent<Personaje>();
+        p3T3 = personaje3Tipo3.gameObject.GetComponent<Personaje>();
 
         pT1initialOffset = new Vector3[] {
             p1T1.gameObject.transform.position - suelo.transform.position,
@@ -75,18 +87,22 @@ public class GameController : MonoBehaviour
             p3T2.gameObject.transform.position - suelo.transform.position
         };
 
+        pT3initialOffset = new Vector3[] {
+            p1T3.gameObject.transform.position - suelo.transform.position,
+            p2T3.gameObject.transform.position - suelo.transform.position,
+            p3T3.gameObject.transform.position - suelo.transform.position
+        };
+
         pT1Radio = new float[3];
+        pT2Arista = new float[3];
+        pT3Arista = new float[3];
+
         //Para que la trayectoria circular de cada personaje sea diferente entre partidas
         for (int i = 0; i < 3; i++)
         {
             pT1Radio[i] = restrictCircularMovement(pT1initialOffset[i]);
-        }
-
-        pT2Arista = new float[3];
-        //Para que la trayectoria circular de cada personaje sea diferente entre partidas
-        for (int i = 0; i < 3; i++)
-        {
-            pT2Arista[i] = restrictCircularMovement(pT1initialOffset[i]);
+            pT2Arista[i] = restrictCircularMovement(pT2initialOffset[i]);
+            pT3Arista[i] = restrictCircularMovement(pT3initialOffset[i]);
         }
 
         //Para que la velocidad de cada personaje sea diferente entre partidas
@@ -101,6 +117,12 @@ public class GameController : MonoBehaviour
             UnityEngine.Random.Range(0.8f, 6),
             UnityEngine.Random.Range(0.8f, 6),
         };
+
+        pT3Speed = new float[] {
+            UnityEngine.Random.Range(0.8f, 6),
+            UnityEngine.Random.Range(0.8f, 6),
+            UnityEngine.Random.Range(0.8f, 6),
+        };
     }
 
     //Se llama en cada frame
@@ -110,6 +132,7 @@ public class GameController : MonoBehaviour
 
         moverPersonajeTipo1();
         moverPersonajeTipo2();
+        moverPersonajeTipo3();
     }
 
     //Mueve los objetos en una trayectoria circular
@@ -136,24 +159,6 @@ public class GameController : MonoBehaviour
                     break;
             }
         }
-    }
-
-    //Toma la posición del personaje y se asegura que el radio sea menor al espacio que queda
-    //entre el personaje y el borde del suelo.
-    //Esto con la intencion de que la trayectoria circular no ocurra fuera del suelo.
-    public float restrictCircularMovement(Vector3 initialOffset)
-    {
-        float res;
-        float quadrantSize = suelo.gameObject.transform.localScale.z / 2; //Supone que el suelo es un cuadrado no rectangulo
-        float x = Math.Abs(initialOffset.x);
-        float z = Math.Abs(initialOffset.z);
-
-        float distanceToEdgeX = quadrantSize - x;
-        float distanceToEdgeZ = quadrantSize - z;
-
-        res = Mathf.Min(distanceToEdgeX, distanceToEdgeZ);
-
-        return UnityEngine.Random.Range(0.05f, res);
     }
 
     //Mueve los objetos en una trayectoria cuadrangular
@@ -205,6 +210,69 @@ public class GameController : MonoBehaviour
                     break;
             }
         }
+    }
+
+    public void moverPersonajeTipo3()
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            float x = pT3initialOffset[i].x;
+            float z = pT3initialOffset[i].z;
+            float aristaSize = pT3Arista[i];
+            float speed = pT3Speed[i];
+
+            float progress = (timeCounter * speed) % 3;
+
+            if (progress < 1)
+            {
+                x += aristaSize * progress;
+            }
+            else if (progress < 2)
+            {
+                x += aristaSize;
+                z += aristaSize * (progress - 1);
+            }
+            else
+            {
+                x += aristaSize * (3 - progress);
+                z += aristaSize * (3 - progress);
+            }
+
+            x += suelo.gameObject.transform.position.x;
+            z += suelo.gameObject.transform.position.z;
+
+            switch (i)
+            {
+                case 0:
+                    p1T3.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+                    break;
+                case 1:
+                    p2T3.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+                    break;
+                case 2:
+                    p3T3.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+                    break;
+            }
+        }
+    }
+
+
+    //Toma la posición del personaje y se asegura que el radio sea menor al espacio que queda
+    //entre el personaje y el borde del suelo.
+    //Esto con la intencion de que la trayectoria circular no ocurra fuera del suelo.
+    public float restrictCircularMovement(Vector3 initialOffset)
+    {
+        float res;
+        float quadrantSize = suelo.gameObject.transform.localScale.z / 2; //Supone que el suelo es un cuadrado no rectangulo
+        float x = Math.Abs(initialOffset.x);
+        float z = Math.Abs(initialOffset.z);
+
+        float distanceToEdgeX = quadrantSize - x;
+        float distanceToEdgeZ = quadrantSize - z;
+
+        res = Mathf.Min(distanceToEdgeX, distanceToEdgeZ);
+
+        return UnityEngine.Random.Range(0.05f, res);
     }
 
 
