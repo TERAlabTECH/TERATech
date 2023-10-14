@@ -1,6 +1,7 @@
 using UnityEngine;
 using System;
-
+using System.Collections.Generic;
+using UnityEngine.UI;
 
 // Como un futuro paso podemos:
 //      - hacer que se randomice también la posición inicial de cada personaje
@@ -8,6 +9,8 @@ using System;
 
 public class GameController : MonoBehaviour
 {
+    public static GameController Instance;
+
     //Los diferentes objetos que están en la escena que quiero asociar para darles funcionamiento/obtener info
     [Header("Personaje Tipo 1")]
     [SerializeField] private GameObject personaje1Tipo1;
@@ -26,6 +29,20 @@ public class GameController : MonoBehaviour
 
     [Header("Suelo")]//Agregamos un suelo a la experiencia para que no se pierdan los modelos con el suelo real
     [SerializeField] private GameObject suelo; //Debería de ser cuadrado, no rectangular
+
+    [Header("Botones")]
+    [SerializeField] private Button btnModelo1;
+    [SerializeField] private Button btnModelo2;
+    [SerializeField] private Button btnModelo3;
+    [SerializeField] private Button btnTrayectoria1;
+    [SerializeField] private Button btnTrayectoria2;
+    [SerializeField] private Button btnTrayectoria3;
+    [SerializeField] private Button btnReset;
+    [SerializeField] private Button btnCheck;
+
+    private Button[] btnModelo;
+    private Button[] btnTrayectoria;
+    private int selectedButtons = 0;
 
     //Personajes de tipo 1 (son del mismo modelo) y se mueven en trayectoria circular
     private Personaje p1T1;
@@ -47,7 +64,6 @@ public class GameController : MonoBehaviour
     private Vector3[] pT1initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 1
     private Vector3[] pT2initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 2
     private Vector3[] pT3initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 3
-
 
     private float[] pT1Radio; //Arreglo de los radios para los movimientos para los personajes tipo 1
     private float[] pT1Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 1
@@ -123,6 +139,28 @@ public class GameController : MonoBehaviour
             UnityEngine.Random.Range(0.8f, 6),
             UnityEngine.Random.Range(0.8f, 6),
         };
+
+        btnModelo = new Button[] { btnModelo1, btnModelo2 , btnModelo3 };
+        btnTrayectoria = new Button[] { btnTrayectoria1, btnTrayectoria2, btnTrayectoria3 };
+
+        foreach (Button btn in btnModelo)
+        {
+            Button currentBtn = btn;
+            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); // Change to your desired color for the Modelo buttons
+        }
+
+        foreach (Button btn in btnTrayectoria)
+        {
+            Button currentBtn = btn;
+            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); // Change to your desired color for the Trayectoria buttons
+        }
+
+        btnReset.onClick.AddListener(() => ResetBtnClicked());
+    }
+
+    public void ButtonClicked(ButtonClickHandler btnHandler)
+    {
+        // Your logic here
     }
 
     //Se llama en cada frame
@@ -133,6 +171,14 @@ public class GameController : MonoBehaviour
         moverPersonajeTipo1();
         moverPersonajeTipo2();
         moverPersonajeTipo3();
+    }
+
+    private void Awake()
+    {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(gameObject);
     }
 
     //Mueve los objetos en una trayectoria circular
@@ -275,6 +321,54 @@ public class GameController : MonoBehaviour
         return UnityEngine.Random.Range(0.05f, res);
     }
 
+    private void ChangePressedColor(Button btn)
+    {
+        if (selectedButtons >= 0 && selectedButtons < 6) {
+            Color newColor = Color.white;
+            if (selectedButtons == 0 || selectedButtons == 1)
+            {
+                newColor = Color.blue;
+            }
+            else if (selectedButtons == 2 || selectedButtons == 3)
+            {
+                newColor = Color.green;
+
+            }
+            else if (selectedButtons == 4 || selectedButtons == 5)
+            {
+                newColor = Color.red;
+
+            }
+
+            ColorBlock cb = btn.colors;
+            cb.normalColor = newColor;
+            cb.selectedColor = newColor;
+            btn.colors = cb;
+            selectedButtons++;
+
+        }
+    }
+
+    private void ResetBtnClicked()
+    {
+        selectedButtons = 0;
+        foreach (Button btn in btnModelo)
+        {
+            Button currentBtn = btn;
+            ColorBlock cb = currentBtn.colors;
+            cb.normalColor = Color.white;
+            btn.colors = cb;
+        }
+
+        foreach (Button btn in btnTrayectoria)
+        {
+            Button currentBtn = btn;
+            ColorBlock cb = currentBtn.colors;
+            cb.normalColor = Color.white;
+            btn.colors = cb;
+        }
+    }
 
 
-}
+
+    }
