@@ -74,3 +74,4 @@ Icon
 
 # Add other ignores as necessary based on your project's needs.
 # AR2/Packages/com.ptc.vuforia.engine-10.17.4.tgz
+.DS_Store
