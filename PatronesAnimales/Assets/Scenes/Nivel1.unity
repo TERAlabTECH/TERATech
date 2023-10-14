@@ -2111,6 +2111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb369f9dc437f4cbcbe8b6d1abaf93e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  referenciaCargarNivel: {fileID: 1753817936}
   personaje1Tipo1: {fileID: 783761748}
   personaje2Tipo1: {fileID: 338501979}
   personaje3Tipo1: {fileID: 67441250}
@@ -2130,6 +2131,50 @@ MonoBehaviour:
   btnTrayectoria3: {fileID: 1248618184}
   btnReset: {fileID: 965279840}
   btnCheck: {fileID: 608725632}
+--- !u!1 &1753817935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1753817937}
+  - component: {fileID: 1753817936}
+  m_Layer: 0
+  m_Name: CargarNivel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1753817936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753817935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d153d7973ad74917b37430e627415ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1753817937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753817935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1009.2895, y: 317.9523, z: -15.821561}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2012340991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2383,3 +2428,4 @@ SceneRoots:
   - {fileID: 2036130225}
   - {fileID: 573172798}
   - {fileID: 1085214505}
+  - {fileID: 1753817937}

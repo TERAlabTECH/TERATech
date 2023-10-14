@@ -12,6 +12,9 @@ public class GameController : MonoBehaviour
 {
     public static GameController Instance;
 
+    [Header("Scripts")]
+    public CargarNivel referenciaCargarNivel; 
+
     //Los diferentes objetos que están en la escena que quiero asociar para darles funcionamiento/obtener info
     [Header("Personaje Tipo 1")]
     [SerializeField] private GameObject personaje1Tipo1;
@@ -423,6 +426,11 @@ public class GameController : MonoBehaviour
             } else {
                 mensaje = "La selección de patrones es correcta";
                 gano = true;
+                if (referenciaCargarNivel != null)
+                {
+                    referenciaCargarNivel.nivelGanado(); 
+                }
+
             }
 
         }
