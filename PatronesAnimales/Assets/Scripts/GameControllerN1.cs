@@ -12,15 +12,20 @@ using Vector3 = UnityEngine.Vector3;
 
 public class GameController : MonoBehaviour
 {
+
     public static GameController Instance;
 
     [Header("Scripts")]
-    public CargarNivel referenciaCargarNivel;
+    public CargarNivel referenciaCargarNivel; //El script que se encarga de la transición entre niveles
 
     [Header("Nivel")]
-    public int nivel;
+    public int nivel; //Parámetro que dan los botones para indicar qué nivel se va a cargar a continuación
 
     //Los diferentes objetos que están en la escena que quiero asociar para darles funcionamiento/obtener info
+    //Los primeros 3 personajes son los utilizados en el primer nivel
+
+    //Si queremos que el personaje de cada tipo sea el mismo modelo, hay que ver si es posible
+    //arrastrar al game controller un unico modelo por tipo para no repetir cada tipo 3 veces
     [Header("Personaje Tipo 1")]
     [SerializeField] private GameObject personaje1Tipo1;
     [SerializeField] private GameObject personaje2Tipo1;
@@ -36,41 +41,42 @@ public class GameController : MonoBehaviour
     [SerializeField] private GameObject personaje2Tipo3;
     [SerializeField] private GameObject personaje3Tipo3;
 
-    [Header("Personaje Tipo 4")]
-    [SerializeField] private GameObject personaje1Tipo4;
-    [SerializeField] private GameObject personaje2Tipo4;
-    [SerializeField] private GameObject personaje3Tipo4;
+    //Los otros personajes no se están utilizando realmente pq se planificó usarlos en otros niveles, pero el funcionamiento sería similar
+    //[Header("Personaje Tipo 4")]
+    //[SerializeField] private GameObject personaje1Tipo4;
+    //[SerializeField] private GameObject personaje2Tipo4;
+    //[SerializeField] private GameObject personaje3Tipo4;
 
-    [Header("Personaje Tipo 5")]
-    [SerializeField] private GameObject personaje1Tipo5;
-    [SerializeField] private GameObject personaje2Tipo5;
-    [SerializeField] private GameObject personaje3Tipo5;
+    //[Header("Personaje Tipo 5")]
+    //[SerializeField] private GameObject personaje1Tipo5;
+    //[SerializeField] private GameObject personaje2Tipo5;
+    //[SerializeField] private GameObject personaje3Tipo5;
 
-    [Header("Personaje Tipo 6")]
-    [SerializeField] private GameObject personaje1Tipo6;
-    [SerializeField] private GameObject personaje2Tipo6;
-    [SerializeField] private GameObject personaje3Tipo6;
+    //[Header("Personaje Tipo 6")]
+    //[SerializeField] private GameObject personaje1Tipo6;
+    //[SerializeField] private GameObject personaje2Tipo6;
+    //[SerializeField] private GameObject personaje3Tipo6;
 
-    [Header("Personaje Tipo 7")]
-    [SerializeField] private GameObject personaje1Tipo7;
-    [SerializeField] private GameObject personaje2Tipo7;
-    [SerializeField] private GameObject personaje3Tipo7;
+    //[Header("Personaje Tipo 7")]
+    //[SerializeField] private GameObject personaje1Tipo7;
+    //[SerializeField] private GameObject personaje2Tipo7;
+    //[SerializeField] private GameObject personaje3Tipo7;
 
     [Header("Suelo")]//Agregamos un suelo a la experiencia para que no se pierdan los modelos con el suelo real
     [SerializeField] private GameObject suelo; //Debería de ser cuadrado, no rectangular
 
     [Header("Texto")]
-    [SerializeField] private TextMeshProUGUI txtNivel; //Debería de ser cuadrado, no rectangular
+    [SerializeField] private TextMeshProUGUI txtNivel; //Es el indicador de nivel que está dentro de la GUI
 
     [Header("Botones")]
-    [SerializeField] private Button btnModelo1;
-    [SerializeField] private Button btnModelo2;
-    [SerializeField] private Button btnModelo3;
-    [SerializeField] private Button btnTrayectoria1;
-    [SerializeField] private Button btnTrayectoria2;
-    [SerializeField] private Button btnTrayectoria3;
-    [SerializeField] private Button btnReset;
-    [SerializeField] private Button btnCheck;
+    [SerializeField] private Button btnModelo1; //El boton con la figura del modelo 1
+    [SerializeField] private Button btnModelo2; //El boton con la figura del modelo 2
+    [SerializeField] private Button btnModelo3; //El boton con la figura del modelo 3
+    [SerializeField] private Button btnTrayectoria1; //El boton con la figura de la trayectoria 1 (ej. cuadrado
+    [SerializeField] private Button btnTrayectoria2; //El boton con la figura de la trayectoria 2 
+    [SerializeField] private Button btnTrayectoria3; //El boton con la figura de la trayectoria 3 
+    [SerializeField] private Button btnReset; //Botón para deshacer la selección de patrones
+    [SerializeField] private Button btnCheck; //Botón para revisar las selecciones
 
     private Button[] btnModelo;
     private Button[] btnTrayectoria;
@@ -94,32 +100,32 @@ public class GameController : MonoBehaviour
     private Personaje p3T3;
 
 
-    //Personajes de tipo 4 (son del mismo modelo) y se mueven en trayectoria de corazon
-    private Personaje p1T4;
-    private Personaje p2T4;
-    private Personaje p3T4;
+    ////Personajes de tipo 4 (son del mismo modelo) y se mueven en trayectoria de corazon
+    //private Personaje p1T4;
+    //private Personaje p2T4;
+    //private Personaje p3T4;
 
-    private Personaje p1T5;
-    private Personaje p2T5;
-    private Personaje p3T5;
+    //private Personaje p1T5;
+    //private Personaje p2T5;
+    //private Personaje p3T5;
 
     //Variables internas a la clase
     private Personaje[] pT; //Arreglo de los personajes de tipo 1 
     private Vector3[] pT1initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 1
     private Vector3[] pT2initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 2
     private Vector3[] pT3initialOffset; //Arreglo para guardar las posiciones iniciales de los modelos tipo 3
-    private Vector3[] pT4initialOffset;
-    private Vector3[] pT5initialOffset;
+    //private Vector3[] pT4initialOffset;
+    //private Vector3[] pT5initialOffset;
 
-
+    //Es un arreglo y no un único valor pq no queremos que los tamaños de movimiento sean iguales
     private float[] pT1Radio; //Arreglo de los radios para los movimientos para los personajes tipo 1
     private float[] pT1Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 1
     private float[] pT2Arista; //Arreglo de las aristas para los movimientos para los personajes tipo 2
     private float[] pT2Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 2
     private float[] pT3Arista; //Arreglo de las aristas para los movimientos para los personajes tipo 2
     private float[] pT3Speed; //Arreglo de las velocidades para los movimientos de los personajes tipo 2
-    private float[] pT4Radio;
-    private float[] pT5Arista;
+    //private float[] pT4Radio;
+    //private float[] pT5Arista;
 
 
     private Boolean gano = false;
@@ -128,26 +134,31 @@ public class GameController : MonoBehaviour
     //Se llama al inicio (1 vez) cuando se carga el juego
     private void Start()
     {
-        //UI
+        //Se agregan los elementos de la UI a un arreglo para manejarlo más facilmente
         btnModelo = new Button[] { btnModelo1, btnModelo2, btnModelo3 };
         btnTrayectoria = new Button[] { btnTrayectoria3, btnTrayectoria1, btnTrayectoria2, };
+
+        //CHECAR EL PQ DE ESTOS
         btnModeloExtra = new Button[] { btnModelo1, btnModelo2 };
         btnTrayectoriaExtra = new Button[] {btnTrayectoria2, btnTrayectoria1 };
 
+        //Si el botón fue seleccionado, cambia su color
         foreach (Button btn in btnModelo)
         {
             Button currentBtn = btn;
-            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); // Change to your desired color for the Modelo buttons
+            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); 
         }
 
         foreach (Button btn in btnTrayectoria)
         {
             Button currentBtn = btn;
-            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); // Change to your desired color for the Trayectoria buttons
+            btn.onClick.AddListener(() => ChangePressedColor(currentBtn)); 
         }
 
+        //Reinicia la selección de patrones
         btnReset.onClick.AddListener(() => ResetBtnClicked());
 
+        //Revisa la selección de patrones
         btnCheck.onClick.AddListener(() => CheckAnswers());
 
         //Para que la velocidad de cada personaje sea diferente entre partidas
@@ -172,8 +183,7 @@ public class GameController : MonoBehaviour
         if (nivel == 1 || nivel ==  2) {
             if (nivel == 1)
             {
-                //Toma los game objects dados y los guarda como personajes
-                //Ahoritan son esferas pero van a ser modelos .fbx
+                //Toma los game objects dados (ej. los modelos) y los guarda como personajes
                 p1T1 = personaje1Tipo1.gameObject.GetComponent<Personaje>();
                 p2T1 = personaje2Tipo1.gameObject.GetComponent<Personaje>();
                 p3T1 = personaje3Tipo1.gameObject.GetComponent<Personaje>();
@@ -186,6 +196,7 @@ public class GameController : MonoBehaviour
                 p2T3 = personaje2Tipo3.gameObject.GetComponent<Personaje>();
                 p3T3 = personaje3Tipo3.gameObject.GetComponent<Personaje>();
 
+                //Hay que recalcular la posición de los modelos para que estén en relación del "piso" virtual y no del origen
                 pT1initialOffset = new Vector3[] {
                     p1T1.gameObject.transform.position - suelo.transform.position,
                     p2T1.gameObject.transform.position - suelo.transform.position,
@@ -221,50 +232,45 @@ public class GameController : MonoBehaviour
 
 
             }
-            else if (nivel == 2)
-            {
-                p1T4 = personaje1Tipo4.gameObject.GetComponent<Personaje>();
-                p2T4 = personaje2Tipo4.gameObject.GetComponent<Personaje>();
-                p3T4 = personaje3Tipo4.gameObject.GetComponent<Personaje>();
+            //else if (nivel == 2)
+            //{
+            //    p1T4 = personaje1Tipo4.gameObject.GetComponent<Personaje>();
+            //    p2T4 = personaje2Tipo4.gameObject.GetComponent<Personaje>();
+            //    p3T4 = personaje3Tipo4.gameObject.GetComponent<Personaje>();
 
-                p1T5 = personaje1Tipo5.gameObject.GetComponent<Personaje>();
-                p2T5 = personaje2Tipo5.gameObject.GetComponent<Personaje>();
-                p3T5 = personaje3Tipo5.gameObject.GetComponent<Personaje>();
+            //    p1T5 = personaje1Tipo5.gameObject.GetComponent<Personaje>();
+            //    p2T5 = personaje2Tipo5.gameObject.GetComponent<Personaje>();
+            //    p3T5 = personaje3Tipo5.gameObject.GetComponent<Personaje>();
 
-                pT4initialOffset = new Vector3[] {
-                    p1T4.gameObject.transform.position - suelo.transform.position,
-                    p2T4.gameObject.transform.position - suelo.transform.position,
-                    p3T4.gameObject.transform.position - suelo.transform.position
-                };
+            //    pT4initialOffset = new Vector3[] {
+            //        p1T4.gameObject.transform.position - suelo.transform.position,
+            //        p2T4.gameObject.transform.position - suelo.transform.position,
+            //        p3T4.gameObject.transform.position - suelo.transform.position
+            //    };
 
-                pT5initialOffset = new Vector3[] {
-                    p1T5.gameObject.transform.position - suelo.transform.position,
-                    p2T5.gameObject.transform.position - suelo.transform.position,
-                    p3T5.gameObject.transform.position - suelo.transform.position
-                };
+            //    pT5initialOffset = new Vector3[] {
+            //        p1T5.gameObject.transform.position - suelo.transform.position,
+            //        p2T5.gameObject.transform.position - suelo.transform.position,
+            //        p3T5.gameObject.transform.position - suelo.transform.position
+            //    };
 
-                pT4Radio = new float[3];
-                pT5Arista = new float[3];
+            //    pT4Radio = new float[3];
+            //    pT5Arista = new float[3];
 
 
-                //Para que la trayectoria circular de cada personaje sea diferente entre partidas
-                for (int i = 0; i < 3; i++)
-                {
-                    pT4Radio[i] = restrictCircularMovement(pT4initialOffset[i]);
-                    pT5Arista[i] = restrictCircularMovement(pT5initialOffset[i]);
+            //    //Para que la trayectoria circular de cada personaje sea diferente entre partidas
+            //    for (int i = 0; i < 3; i++)
+            //    {
+            //        pT4Radio[i] = restrictCircularMovement(pT4initialOffset[i]);
+            //        pT5Arista[i] = restrictCircularMovement(pT5initialOffset[i]);
 
-                }
-            }
+            //    }
+            //}
 
 
         }
         
-
-        
-
-
-        
-    }
+    } //FIN DEL METODO START
 
     public void ButtonClicked(ButtonClickHandler btnHandler)
     {
