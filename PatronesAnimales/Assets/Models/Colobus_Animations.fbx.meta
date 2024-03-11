@@ -63,6 +63,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: M_Alpaca
     second: {fileID: 2100000, guid: 3898d9a8370af9a4bba9dc6a2d84bced, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Colobus
+    second: {fileID: 2100000, guid: fd1c8abba3cacb847a1c1796d0d8257d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 1
