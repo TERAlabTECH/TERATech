@@ -6,6 +6,8 @@ Cuando realices un proceso que consideres puede ser repetitivo o que sea necesar
 
 Si quieres agregar imágenes a este `.md` o al `README.md` agrega las imágenes a la carpeta `imgs` y no vayas a cambiar el nombre de las imágenes que ya están ahí porque seguramente en algún archivo ya se hizo referencia a esas imágenes.
 
+Cada experiencia debe tener su documentación específica. Dentro de la carpeta del proyecto hay que elaborar un `README.md` específico para la experiencia en cuestión. Los que sean aprendizajes más generales que puedan ser útiles para otras experiencias deberían de estar documentados en este archivo.
+
 ## Pruebas
 
 Para probar en Unity las experiencias de AR que usan como target el suelo, se usa el target de [`GroundPlaneTarge`](Targets/GroundPlaneTarget.pdf).
@@ -42,3 +44,15 @@ Para resolver este problema:
 ### Problema en paquetes de Unity
 
 Si aparece un error del tipo ![errorPackage](imgs/ErrorPackage.png) hay que entrar al `Package Manager`, encontrar el paquete que esté dando error y actualizarlo/instalarlo.
+
+### No cargan escenas
+
+Este error aparece a veces cuando se le da `play` a una experiencia y se quiere pasar de una escena a otra.
+![errorCargarEscenas](imgs/ErrorAlCargarEscenas.png)
+
+Para solucionarlo hay que irse a `Build Settings`
+![abrirBuildSettings](imgs/AbrirBuildSettings.png)
+
+Aquí vamos a poder ver que escenas están incluidas en el build.
+![escenasBuildSettings](imgs/NingunaEscena.png) En este caso en particular, solo está agregada la escena principal, para corregir esto nos salimos de la ventana de Build Settings y le damos doble click a todas las escenas que querramos agregar (esto para abrirlas). Posteriormente volvemos a Build Settings y le damos click a `Add Open Scenes`
+![escenasBuildSettings](imgs/EscenasAgregadas.png)
