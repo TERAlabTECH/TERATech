@@ -80,7 +80,7 @@ public class GameController : MonoBehaviour
 
     private Button[] btnModelo;
     private Button[] btnTrayectoria;
-    private Button[] btnModeloExtra;
+    //private Button[] btnModeloExtra;
     private Button[] btnTrayectoriaExtra;
     private int selectedButtons = 0;
 
@@ -135,12 +135,13 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         //Se agregan los elementos de la UI a un arreglo para manejarlo más facilmente
+        //la respuesta correcta es modelo1-trayectoria3, modelo2-trayectoria1, etc. 
         btnModelo = new Button[] { btnModelo1, btnModelo2, btnModelo3 };
         btnTrayectoria = new Button[] { btnTrayectoria3, btnTrayectoria1, btnTrayectoria2, };
 
-        //CHECAR EL PQ DE ESTOS
-        btnModeloExtra = new Button[] { btnModelo1, btnModelo2 };
-        btnTrayectoriaExtra = new Button[] {btnTrayectoria2, btnTrayectoria1 };
+        ////CHECAR EL PQ DE ESTOS
+        //btnModeloExtra = new Button[] { btnModelo1, btnModelo2 };
+        //btnTrayectoriaExtra = new Button[] {btnTrayectoria2, btnTrayectoria1 };
 
         //Si el botón fue seleccionado, cambia su color
         foreach (Button btn in btnModelo)
@@ -272,11 +273,6 @@ public class GameController : MonoBehaviour
         
     } //FIN DEL METODO START
 
-    public void ButtonClicked(ButtonClickHandler btnHandler)
-    {
-        // Your logic here
-    }
-
     //Se llama en cada frame
     void Update()
     {
@@ -287,13 +283,20 @@ public class GameController : MonoBehaviour
                 moverPersonajeTipo1();
                 moverPersonajeTipo2();
                 moverPersonajeTipo3();
-            } else if (nivel == 2) {
-                moverPersonajeTipo4();
-                moverPersonajeTipo5();
             }
+            //else if (nivel == 2) {
+            //    moverPersonajeTipo4();
+            //    moverPersonajeTipo5();
+            //}
 
         }
         
+    }
+
+    //Necesita estar este metodo para que Unity compile
+    public void ButtonClicked(ButtonClickHandler btnHandler)
+    {
+        // Your logic here
     }
 
     private void Awake()
@@ -309,7 +312,9 @@ public class GameController : MonoBehaviour
     {
         float x, z;
         float radioCirculo;
-        for (int i = 0; i < 3; i++)
+
+        //Esta en un for para que el movimiento de cada tipo sea igual pero en diferentes magnitudes
+        for (int i = 0; i < 3; i++) 
         {
             radioCirculo = pT1Radio[i];
             x = suelo.gameObject.transform.position.x + pT1initialOffset[i].x - (float)Math.Pow(-1, i) * (radioCirculo * Mathf.Cos(timeCounter * pT1Speed[i]));
@@ -426,74 +431,74 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void moverPersonajeTipo4() {
-        float x, z;
-        for (int i = 0; i < 3; i++) // Solo para un personaje, ajusta según lo necesites
-        {
-            float radioCirculo = pT4Radio[i];
-            float r = radioCirculo * Mathf.Cos(2 * timeCounter);
-            x = r * Mathf.Cos(timeCounter);
-            z = r * Mathf.Sin(timeCounter);
+    //public void moverPersonajeTipo4() {
+    //    float x, z;
+    //    for (int i = 0; i < 3; i++) // Solo para un personaje, ajusta según lo necesites
+    //    {
+    //        float radioCirculo = pT4Radio[i];
+    //        float r = radioCirculo * Mathf.Cos(2 * timeCounter);
+    //        x = r * Mathf.Cos(timeCounter);
+    //        z = r * Mathf.Sin(timeCounter);
 
-            // Ajusta la posición basada en la posición del suelo o algún punto de referencia.
-            x = suelo.gameObject.transform.position.x + pT4initialOffset[i].x + x;
-            z = suelo.gameObject.transform.position.z + pT4initialOffset[i].z + z;
+    //        // Ajusta la posición basada en la posición del suelo o algún punto de referencia.
+    //        x = suelo.gameObject.transform.position.x + pT4initialOffset[i].x + x;
+    //        z = suelo.gameObject.transform.position.z + pT4initialOffset[i].z + z;
 
-            switch (i)
-            {
-                case 0:
-                    p1T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-                case 1:
-                    p2T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-                case 2:
-                    p3T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-            }
-        }
-    }
+    //        switch (i)
+    //        {
+    //            case 0:
+    //                p1T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //            case 1:
+    //                p2T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //            case 2:
+    //                p3T4.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //        }
+    //    }
+    //}
 
-    public void moverPersonajeTipo5()
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            float x = pT5initialOffset[i].x;
-            float z = pT5initialOffset[i].z;
-            float aristaSize = pT5Arista[i];
-            float speed = pT2Speed[i];
+    //public void moverPersonajeTipo5()
+    //{
+    //    for (int i = 0; i < 3; i++)
+    //    {
+    //        float x = pT5initialOffset[i].x;
+    //        float z = pT5initialOffset[i].z;
+    //        float aristaSize = pT5Arista[i];
+    //        float speed = pT2Speed[i];
 
-            // Calcular el progreso del personaje.
-            float progress = (timeCounter + i) * speed % 5;
+    //        // Calcular el progreso del personaje.
+    //        float progress = (timeCounter + i) * speed % 5;
 
-            // Calcular el ángulo de giro del personaje.
-            float angle = progress * 2 * Mathf.PI / 5;
+    //        // Calcular el ángulo de giro del personaje.
+    //        float angle = progress * 2 * Mathf.PI / 5;
 
-            // Limitar el ángulo de giro.
-            angle = Mathf.Repeat(angle, 2 * Mathf.PI);
+    //        // Limitar el ángulo de giro.
+    //        angle = Mathf.Repeat(angle, 2 * Mathf.PI);
 
-            // Calcular la posición del personaje en la trayectoria del pentágono.
-            x = pT5initialOffset[i].x + aristaSize * Mathf.Cos(angle);
-            z = pT5initialOffset[i].z + aristaSize * Mathf.Sin(angle);
+    //        // Calcular la posición del personaje en la trayectoria del pentágono.
+    //        x = pT5initialOffset[i].x + aristaSize * Mathf.Cos(angle);
+    //        z = pT5initialOffset[i].z + aristaSize * Mathf.Sin(angle);
 
-            // Actualizar la posición del personaje.
-            x += suelo.gameObject.transform.position.x;
-            z += suelo.gameObject.transform.position.z;
+    //        // Actualizar la posición del personaje.
+    //        x += suelo.gameObject.transform.position.x;
+    //        z += suelo.gameObject.transform.position.z;
 
-            switch (i)
-            {
-                case 0:
-                    p1T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-                case 1:
-                    p2T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-                case 2:
-                    p3T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
-                    break;
-            }
-        }
-    }
+    //        switch (i)
+    //        {
+    //            case 0:
+    //                p1T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //            case 1:
+    //                p2T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //            case 2:
+    //                p3T5.transform.position = new Vector3(x, suelo.gameObject.transform.position.y + 0.04f, z);
+    //                break;
+    //        }
+    //    }
+    //}
 
     //Toma la posición del personaje y se asegura que el radio sea menor al espacio que queda
     //entre el personaje y el borde del suelo.
@@ -513,11 +518,14 @@ public class GameController : MonoBehaviour
         return UnityEngine.Random.Range(0.05f, res);
     }
 
+    //Cada par de botones seleccionado se colorea del mismo tono
     private void ChangePressedColor(Button btn)
     {
         if (selectedButtons >= 0 && selectedButtons < 6) {
             Color newColor = Color.white;
-            if (selectedButtons == 0 || selectedButtons == 1)
+
+            //El primer y segundo boton seleccionados están del mismo color
+            if (selectedButtons == 0 || selectedButtons == 1) 
             {
                 newColor = makeRGBcolor(247,249,166);
             }
@@ -545,6 +553,7 @@ public class GameController : MonoBehaviour
     {
         selectedButtons = 0;
 
+        //Regresa el color de los botones a blanco
         if (nivel == 1) {
             foreach (Button btn in btnModelo)
             {
@@ -561,23 +570,24 @@ public class GameController : MonoBehaviour
                 cb.normalColor = Color.white;
                 btn.colors = cb;
             }
-        } else if (nivel==2) {
-            foreach (Button btn in btnModeloExtra)
-            {
-                Button currentBtn = btn;
-                ColorBlock cb = currentBtn.colors;
-                cb.normalColor = Color.white;
-                btn.colors = cb;
-            }
-
-            foreach (Button btn in btnTrayectoriaExtra)
-            {
-                Button currentBtn = btn;
-                ColorBlock cb = currentBtn.colors;
-                cb.normalColor = Color.white;
-                btn.colors = cb;
-            }
         }
+        //if (nivel==2) {
+        //    foreach (Button btn in btnModeloExtra)
+        //    {
+        //        Button currentBtn = btn;
+        //        ColorBlock cb = currentBtn.colors;
+        //        cb.normalColor = Color.white;
+        //        btn.colors = cb;
+        //    }
+
+        //    foreach (Button btn in btnTrayectoriaExtra)
+        //    {
+        //        Button currentBtn = btn;
+        //        ColorBlock cb = currentBtn.colors;
+        //        cb.normalColor = Color.white;
+        //        btn.colors = cb;
+        //    }
+        //}
         
     }
 
@@ -589,65 +599,67 @@ public class GameController : MonoBehaviour
         //Checa que en efecto todos los botones estén clickeados
         String mensaje = "Nivel 1";
         int size = btnModelo.Length;
-        if (nivel == 2) {
-            size = 2;
-            int i = 0;
-            Boolean todosClick = true;
-            while (i < size && todosClick)
-            {
-                ColorBlock cb1 = btnModeloExtra[i].colors;
-                ColorBlock cb2 = btnTrayectoriaExtra[i].colors;
+        //if (nivel == 2) {
+        //    size = 2;
+        //    int i = 0;
+        //    Boolean todosClick = true;
+        //    while (i < size && todosClick)
+        //    {
+        //        ColorBlock cb1 = btnModeloExtra[i].colors;
+        //        ColorBlock cb2 = btnTrayectoriaExtra[i].colors;
 
-                if (cb1.normalColor == Color.white || cb2.normalColor == Color.white)
-                {
-                    todosClick = false;
-                }
+        //        if (cb1.normalColor == Color.white || cb2.normalColor == Color.white)
+        //        {
+        //            todosClick = false;
+        //        }
 
-                i++;
-            }
+        //        i++;
+        //    }
 
-            if (!todosClick)
-            {
-                mensaje = "Empareja a todos los animales";
-            }
-            else
-            {
-                i = 0;
-                Boolean seleccionCorrecta = true;
-                while (i < size && seleccionCorrecta)
-                {
-                        ColorBlock cb1 = btnModeloExtra[i].colors;
-                        ColorBlock cb2 = btnTrayectoriaExtra[i].colors;
+        //    if (!todosClick)
+        //    {
+        //        mensaje = "Empareja a todos los animales";
+        //    }
+        //    else
+        //    {
+        //        i = 0;
+        //        Boolean seleccionCorrecta = true;
+        //        while (i < size && seleccionCorrecta)
+        //        {
+        //                ColorBlock cb1 = btnModeloExtra[i].colors;
+        //                ColorBlock cb2 = btnTrayectoriaExtra[i].colors;
                     
 
 
-                    if (cb1.normalColor != cb2.normalColor)
-                    {
-                        seleccionCorrecta = false;
-                    }
+        //            if (cb1.normalColor != cb2.normalColor)
+        //            {
+        //                seleccionCorrecta = false;
+        //            }
 
-                    i++;
-                }
+        //            i++;
+        //        }
 
-                if (!seleccionCorrecta)
-                {
-                    mensaje = "La selección de patrones no es correcta";
-                }
-                else
-                {
-                    mensaje = "La selección de patrones es correcta";
-                    gano = true;
-                    if (referenciaCargarNivel != null)
-                    {
-                        referenciaCargarNivel.nivelGanado();
-                    }
+        //        if (!seleccionCorrecta)
+        //        {
+        //            mensaje = "La selección de patrones no es correcta";
+        //        }
+        //        else
+        //        {
+        //            mensaje = "La selección de patrones es correcta";
+        //            gano = true;
+        //            if (referenciaCargarNivel != null)
+        //            {
+        //                referenciaCargarNivel.nivelGanado();
+        //            }
 
-                }
+        //        }
 
-            }
+        //    }
 
-            txtNivel.text = mensaje;
-        } else if (nivel == 1) {
+        //    txtNivel.text = mensaje;
+        //}
+        //else
+        if (nivel == 1) {
             int i = 0;
             Boolean todosClick = true;
             while (i < size && todosClick)
@@ -655,6 +667,7 @@ public class GameController : MonoBehaviour
                 ColorBlock cb1 = btnModelo[i].colors;
                 ColorBlock cb2 = btnTrayectoria[i].colors;
 
+                //Si algun botón está en blanco quiere decir que no está seleccionado
                 if (cb1.normalColor == Color.white || cb2.normalColor == Color.white)
                 {
                     todosClick = false;
@@ -666,9 +679,7 @@ public class GameController : MonoBehaviour
             if (!todosClick)
             {
                 mensaje = "Empareja a todos los animales";
-            }
-            else
-            {
+            } else {
                 i = 0;
                 Boolean seleccionCorrecta = true;
                 while (i < size && seleccionCorrecta)
@@ -676,8 +687,6 @@ public class GameController : MonoBehaviour
                     ColorBlock cb1 =  btnModelo[i].colors;
                     ColorBlock cb2 = btnTrayectoria[i].colors;
                     
-
-
                     if (cb1.normalColor != cb2.normalColor)
                     {
                         seleccionCorrecta = false;
