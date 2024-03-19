@@ -22,6 +22,11 @@ En los proyectos de Vuforia es necesario que las carpetas de `Editor`, `XR`, `Te
 
 ## Errores comunes
 
+### Al hacer push a Azure
+
+Si al intentar realizar un _push_ y aparecen estos errores
+`error: RPC failed; HTTP 413 curl 22 The requested URL returned error: 413` quiere decir que lo que se está intentando empujar al `remote` es demasiado grande/pesado. Primero se recomienda disminuir la cantidad de `commits` a los que se les quiere hacer push. Si aún no se logra el `push` es recomendable copiar los cambios (hacer una copia de la carpeta del repo) y volver a clonar el repo pero [SSH](https://learn.microsoft.com/en-us/azure/devops/repos/git/use-ssh-keys-to-authenticate?view=azure-devops) y pegar los cambios e intentar hacer push de pocos commits a la vez.
+
 ### Problema en Paquete de Vuforia
 
 A veces al querer abrir el proyecto aparece una advertencia de que no se encuentra el paquete de Vuforia. Ya que las experiencias de AR que hacemos en TERA dependen en el momento de este paquete, es importante resolver el problema porque si no no funcionará la experiencia.
