@@ -11,13 +11,7 @@ public class Controller : MonoBehaviour
     {
         // Get input from the WASD keys
         float moveX = Input.GetAxisRaw("Horizontal"); // A/D keys for left/right movement
-        float moveY = Input.GetAxisRaw("Vertical");   // W/S keys for up/down movement
-
-       
-
-        
-
-       
+        float moveY = Input.GetAxisRaw("Vertical");   // W/S keys for up/down movement       
 
         //  up/down arrow avanzar atrazarse
         Vector2 movement = new Vector2(0, moveY).normalized;
