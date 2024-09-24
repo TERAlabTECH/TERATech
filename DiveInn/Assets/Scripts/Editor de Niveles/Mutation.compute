@@ -1,0 +1,429 @@
+#pragma kernel CSInit
+#pragma kernel MutatationVariant
+#pragma kernel FillCorals
+#pragma enable_d3d11_debug_symbols 
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//------------DATA STRUCTURES USED
+//---------------------------------------------------------------------------------------------------------------------------------
+
+RWTexture2D<float4> Input;
+RWTexture2D<float4> Result;
+
+// Screen variables defined in C# script
+uint height;
+uint width;
+
+float checkAVgs;
+uint debuggerVar;
+
+
+//Neighborhoodbuffers
+StructuredBuffer<int2> NeighborhoodBuffer1;
+StructuredBuffer<int2> NeighborhoodBuffer2;
+StructuredBuffer<int2> NeighborhoodBuffer3;
+StructuredBuffer<int2> NeighborhoodBuffer4;
+
+//possible neighbrohoods
+StructuredBuffer<int2> NeighborhoodPreCalc;
+
+
+uint NeighborhoodBuffer1Size;
+uint NeighborhoodBuffer2Size;
+uint NeighborhoodBuffer3Size;
+uint NeighborhoodBuffer4Size;
+
+StructuredBuffer<int> ringSizes;
+
+//RandomDataBuffer
+StructuredBuffer<uint> RandomDataBuffer0;
+StructuredBuffer<uint> RandomDataBuffer1;
+StructuredBuffer<uint> RandomDataBuffer2;
+StructuredBuffer<uint> RandomDataBuffer3;
+
+
+// Mouse interactions
+float mousePosX;
+float mousePosY;
+bool clickedLeft;
+bool clickedRight;
+
+
+
+
+
+
+
+
+
+cbuffer Counters{
+    int counter1;
+    int counter2;
+};
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//------------FUNCTIONS AND STRUCTURES TO GENRALIZE CONDITION DATA 
+//---------------------------------------------------------------------------------------------------------------------------------
+float remapRange(uint number){
+    return float(number)/127.0f;
+}
+
+
+float4 get4ValuesOutOf32Bits(uint data){
+    uint mask= 0x7F;
+    float4 result;
+
+    result[0]=(remapRange(data & mask)); //127 is 1111111 in binary and 7F in hex
+    result[1]=(remapRange((data>>7)& mask));
+    result[2]=(remapRange((data>>14)& mask));
+    result[3]=(remapRange((data>>21)& mask));
+
+    return result;
+}
+
+
+
+struct thresholdsArray{
+    float thresholds[96];
+};
+
+
+void SetThresholds(inout thresholdsArray thArray, StructuredBuffer<uint> data){
+    for(uint i= 0; i<96; i+=4){
+        float4 addToArray=get4ValuesOutOf32Bits(data[i/4]);
+        thArray.thresholds[i]=addToArray.r;
+        thArray.thresholds[i+1]=addToArray.g;
+        thArray.thresholds[i+2]=addToArray.b;
+        thArray.thresholds[i+3]=addToArray.a;
+
+    }
+}
+
+struct outputValueArray{
+    int outputValArray[64];
+};
+
+void SetOutputValueArray(inout outputValueArray valArray, StructuredBuffer<uint> data){
+    for(uint i=0; i<32; i++){
+        valArray.outputValArray[i]=(data[28]>>i)&1;
+        valArray.outputValArray[i+32]=(data[29]>>i)&1;
+
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//------------FUNCTIONS AND STRUCTURES TO GENRALIZE NEIGHBORHOOD DATA
+//---------------------------------------------------------------------------------------------------------------------------------
+/*WORKFLOW--
+1-First we convert the received data into size  8 binary representation array using SetNeighborhoodBinary
+2-Then we get the sums fot the 16 possible rings using the compute shader dispatch id using SetNeighborsSum
+3-Then given a neighborhood binary representation, we add the respective sums of rings i.e [0,0,0,1] we would add the third
+ring's sum to the last index of the neighborhoodBinar representation i.e [0,0,0,1,5]. theres is five neighbors in ring 5.
+4- 
+
+are alive, th
+
+*/
+
+
+struct neighborhoodBinary{
+    int nh[9];
+};
+
+
+
+//struuct of binary representation arraysfor eight neighborhoods
+struct neighborhoodBinaryArray{
+    //last index contains the sum of neighbors
+    neighborhoodBinary neighborhoodArrayRep[12];
+};
+
+//Gets the binary array representation of the neighborhoods
+void SetNeighborhoodBinary(inout neighborhoodBinaryArray nhBinary, StructuredBuffer<uint> data){
+    uint data24 = data[24];
+    uint data25 = data[25];
+    uint data26 = data[26];
+    uint data27 = data[27];
+
+    for (uint i = 0; i < 9; i++) {
+        uint shift_i = 1 << i;
+        uint shift_i_9 = 1 << (i + 9);
+        uint shift_i_18 = 1 << (i + 18);
+
+        nhBinary.neighborhoodArrayRep[0].nh[i] = (data24 & shift_i) >> i;
+        nhBinary.neighborhoodArrayRep[1].nh[i] = (data24 & shift_i_9) >> (i + 9);
+        nhBinary.neighborhoodArrayRep[2].nh[i] = (data24 & shift_i_18) >> (i + 18);
+        
+        nhBinary.neighborhoodArrayRep[3].nh[i] = (data25 & shift_i) >> i;
+        nhBinary.neighborhoodArrayRep[4].nh[i] = (data25 & shift_i_9) >> (i + 9);
+        nhBinary.neighborhoodArrayRep[5].nh[i] = (data25 & shift_i_18) >> (i + 18);
+        
+        nhBinary.neighborhoodArrayRep[6].nh[i] = (data26 & shift_i) >> i;
+        nhBinary.neighborhoodArrayRep[7].nh[i] = (data26 & shift_i_9) >> (i + 9);
+        nhBinary.neighborhoodArrayRep[8].nh[i] = (data26 & shift_i_18) >> (i + 18);
+        
+        nhBinary.neighborhoodArrayRep[9].nh[i] = (data27 & shift_i) >> i;
+        nhBinary.neighborhoodArrayRep[10].nh[i] = (data27 & shift_i_9) >> (i + 9);
+        nhBinary.neighborhoodArrayRep[11].nh[i] = (data27 & shift_i_18) >> (i + 18);
+    }
+}
+
+
+
+struct sumRingNeighbors{
+
+    int sumsPerRing[9];
+
+};
+
+//Goes through the flat matrix checking offsets and adds to its respective avsPerRing[i], when finds flag 73
+// jumps to next index of multiple 93 --  93 cause its the biggest neighborhood possible
+void SetNeighborsSum(inout sumRingNeighbors sumRings, StructuredBuffer<int2> coords, RWTexture2D<float4> inData, uint2 id){
+
+  
+
+    for (int i = 0; i < 9; i++) {
+        int offset = i * 93;
+        for (int j = 0; j < 93; j++) {
+            int2 coord = coords[offset + j];
+            if (coord.x == 73) {
+                break;
+            }
+
+            
+            if (inData[id + coord].x >= 0.5) {
+                sumRings.sumsPerRing[i]++;
+            }
+        }
+    }
+}
+
+
+//now a function to get the avarege given a binary neighbrohood and an array of totalALive 
+float GetAvg(sumRingNeighbors sumRings, neighborhoodBinary nhBinary, StructuredBuffer<int> ringPass){
+    float totalAliveSum=0;
+    float totalPossibleSum=0;
+    for(int i=0; i<9; i++){
+        if(nhBinary.nh[i]==1){
+            totalAliveSum+=sumRings.sumsPerRing[i];
+            totalPossibleSum+=ringPass[i];
+
+        }
+    }
+    float result= totalAliveSum/totalPossibleSum;
+
+    return result;
+}
+
+
+
+
+
+
+
+
+//---------------------------------------------------------------------------------------------------------------------------------
+//------------KERNELS
+//---------------------------------------------------------------------------------------------------------------------------------
+
+//CONWAYS
+[numthreads(8,8,1)]
+void CSInit(uint3 id : SV_DispatchThreadID) {
+    
+    int outputVal=Input[id.xy].r;
+
+
+    bool inRadius = (distance(float2(mousePosX, mousePosY), id.xy) < 7);
+
+
+
+    if (clickedLeft && inRadius) {
+        outputVal = 0;
+    }
+    if (clickedRight && inRadius) {
+        outputVal = 1;  
+    }
+
+    Result[id.xy]=float4(outputVal,outputVal, outputVal,outputVal);
+    
+
+}
+
+
+[numthreads(8,8,1)]
+void MutatationVariant(uint3 id : SV_DispatchThreadID){
+    
+    float avg[12]={0,0,0,0,0,0,0,0,0,0,0,0};
+
+
+    //Setting variables needed for thread division
+    neighborhoodBinaryArray nhBinary;
+    sumRingNeighbors sumRings;
+
+    thresholdsArray thArray;
+    outputValueArray valArray;
+
+    
+
+
+    //Dividing screen in four
+    uint threadRegion= id.x/(width/2) +2*(id.y/(height/2));
+
+
+    
+
+    //this sets the thresholds, outputValue array and neighborhoodSum
+    if (threadRegion == 0)
+    {
+        SetNeighborhoodBinary(nhBinary, RandomDataBuffer0);
+        SetThresholds(thArray, RandomDataBuffer0);
+        SetOutputValueArray(valArray, RandomDataBuffer0);
+
+
+    }
+    else if (threadRegion == 1)
+    {
+        SetNeighborhoodBinary(nhBinary, RandomDataBuffer1);
+        SetThresholds(thArray, RandomDataBuffer1);
+        SetOutputValueArray(valArray, RandomDataBuffer1);
+    }
+    else if (threadRegion == 2)
+    {
+        SetNeighborhoodBinary(nhBinary, RandomDataBuffer2);
+        SetThresholds(thArray, RandomDataBuffer2);
+        SetOutputValueArray(valArray, RandomDataBuffer2);
+    }
+    else if(threadRegion == 3)
+    {
+        SetNeighborhoodBinary(nhBinary, RandomDataBuffer3);
+        SetThresholds(thArray, RandomDataBuffer3);
+        SetOutputValueArray(valArray, RandomDataBuffer3);
+    }
+
+    //Getting sum for each ring
+    SetNeighborsSum(sumRings, NeighborhoodPreCalc, Input, id.xy);
+
+
+
+    //Getting avarages per neighborhood
+    
+
+    for(int i=0; i<counter1; i++){
+        
+        avg[i]= GetAvg(sumRings, nhBinary.neighborhoodArrayRep[i], ringSizes);
+    }
+
+
+ 
+
+    //Fetching initial output value
+    uint outputVal= Input[id.xy].x;
+
+    //applying rules   we have 40 conditions cause 5neighborhoods*4conditions= 40 conditions
+    for (uint condition = 0; condition <counter2; condition += 2) {
+        if (avg[condition / 8] >= thArray.thresholds[condition] &&
+            avg[condition / 8] <= thArray.thresholds[condition + 1]) {
+            outputVal = valArray.outputValArray[condition / 2];
+        }
+    }
+    
+    
+    // Mouse logic to kill/birth in a radius
+    bool inRadius = (distance(float2(mousePosX, mousePosY), id.xy) < 4);
+
+    
+    
+    if (clickedLeft && inRadius) {
+        outputVal = 0;
+    }
+    if (clickedRight && inRadius) {
+        outputVal = 1;  
+    }
+
+
+
+    float debugValue=ringSizes[debuggerVar]/checkAVgs;
+    
+    // if(outputVal==0){
+    //     Result[id.xy] = float4(0.09178828, 0.995283, 0.9789958, 1);
+        
+    // }else{
+
+    //     Result[id.xy] = float4(outputVal, outputVal, outputVal, 1);
+    // }
+    
+    Result[id.xy] = float4(outputVal, outputVal, outputVal, outputVal);
+    
+    
+
+}
+[numthreads(8,8,1)]
+void FillCorals(uint3 id : SV_DispatchThreadID){
+    float CellValue=Input[id.xy].r;
+
+    
+    int2 offsets[1681];
+    int index = 0;
+
+
+    for (int y = -20; y <= 20; y++) {
+        for (int x = -20; x <= 20; x++) {
+            offsets[index++] = int2(x, y);
+        }
+    }
+
+
+    float avg=0;
+
+    for(int j=0; j<1681; j++){
+        if(Input[id.xy + offsets[j]].r>0){
+            avg++;
+        }
+
+    }
+    avg/=1681;
+
+
+   
+
+    if(avg>0.3 && CellValue==0){
+        CellValue=0.4;
+        Result[id.xy]=float4(CellValue,CellValue,CellValue,1);
+
+    } 
+    if(CellValue==1 || CellValue==0){
+        Result[id.xy]=float4(CellValue,CellValue,CellValue,CellValue);
+    }else{
+        Result[id.xy]=float4(CellValue,CellValue,CellValue,1);
+    }
+        
+        
+    
+    
+
+
+}
+    
+
