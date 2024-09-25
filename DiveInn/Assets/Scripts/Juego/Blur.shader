@@ -1,17 +1,19 @@
-Shader "Unlit/BlurWithClampedEdges"
+Shader "Unlit/Blur"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _BlurAmount ("Blur Amount", Range(0, 1)) = 0.005
-        _EdgeSharpness ("Edge Sharpness", Range(0, 1)) = 0.2
-        _NumSamples ("Number of Blur Samples", Range(1, 20)) = 9
-        _ClampUVs ("Clamp UVs", Float) = 1
+        _BlurSize ("Blur Size", Float) = 0.005
+        _MaxDistance ("Max Distance", Float) = 0.5
+        _Center ("Gradient Center", Vector) = (0.5, 0.5, 0, 0)
+        
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Transparent" "Queue"="Transparent" }
         LOD 100
+        Blend SrcAlpha OneMinusSrcAlpha
+
         Pass
         {
             CGPROGRAM
@@ -31,17 +33,18 @@ Shader "Unlit/BlurWithClampedEdges"
             struct v2f
             {
                 float2 uv : TEXCOORD0;
-                float4 color : COLOR;
                 UNITY_FOG_COORDS(1)
                 float4 vertex : SV_POSITION;
+                float4 color : COLOR;
             };
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
-            float _BlurAmount;
-            float _EdgeSharpness;
-            int _NumSamples;
-            float _ClampUVs;  // Flag to control UV clamping
+            float _BlurSize;
+            float _MaxDistance;
+            float4 _Center;
+           
+            
 
             v2f vert (appdata v)
             {
@@ -52,61 +55,58 @@ Shader "Unlit/BlurWithClampedEdges"
                 UNITY_TRANSFER_FOG(o, o.vertex);
                 return o;
             }
+            float shadowGradient(float2 uv, float2 center, float maxDistance)
+            {
+                // Calculate distance from the center of the UV space
+                float dist = distance(uv, center);
+
+                // Normalize the distance by dividing by the max distance (radius for full fade out)
+                float normalizedDistance = saturate(dist / maxDistance);
+
+                // Invert the normalized distance so that it becomes lighter towards the center
+                float shadowStrength = 1.0 - normalizedDistance;
+
+                return shadowStrength;
+            }
 
             fixed4 frag (v2f i) : SV_Target
             {
-                float offset = _BlurAmount * 0.5;
+                // sample the texture
+                fixed4 col = tex2D(_MainTex, i.uv);
 
-                float2 offsets[9] = {
-                    float2(-offset, -offset),
-                    float2(0, -offset),
-                    float2(offset, -offset),
-                    float2(-offset, 0),
-                    float2(0, 0),
-                    float2(offset, 0),
-                    float2(-offset, offset),
-                    float2(0, offset),
-                    float2(offset, offset)
-                };
-
-                fixed4 color = 0;
-
-                // Iterate over the samples
-                for (int j = 0; j < min(_NumSamples, 9); j++)
+                // Shadow implementation
+                
+                if (col.a < 0.5)
                 {
-                    float2 sampleUV = i.uv + offsets[j];
-
-                    // Check if the UV is within the boundary (with a margin near edges)
-                    if (_ClampUVs > 0)
-                    {
-                        if (sampleUV.x < 0.01 || sampleUV.x > 0.99 || sampleUV.y < 0.01 || sampleUV.y > 0.99)
-                        {
-                            // Ignore samples that are out of bounds or too close to the boundary
-                            continue;
-                        }
-                    }
-
-                    // Accumulate the sampled color
-                    color += tex2D(_MainTex, sampleUV) * (1.0 / _NumSamples);
+                    return fixed4(0.0, 0.0, 0.0, 0.0);
                 }
+                else
+                {
+                    fixed3 blurredColor = fixed3(0,0,0);
+                    float2 uv = i.uv;
+                    // Sampling offsets for simple blur
+                    blurredColor += tex2D(_MainTex, uv + float2(-_BlurSize, _BlurSize)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(_BlurSize, _BlurSize)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(_BlurSize, -_BlurSize)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(-_BlurSize, -_BlurSize)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(-_BlurSize, 0)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(_BlurSize, 0)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(0, _BlurSize)).rgb;
+                    blurredColor += tex2D(_MainTex, uv + float2(0, -_BlurSize)).rgb;
 
-                // Edge suppression: decrease blur at edges
-                float edgeDistance = min(i.uv.x, 1.0 - i.uv.x); 
-                edgeDistance = min(edgeDistance, min(i.uv.y, 1.0 - i.uv.y)); 
-                float edgeFactor = smoothstep(0.0, _EdgeSharpness, edgeDistance);
+                    blurredColor /= 8; // Average the samples for blur
+                    
+                    blurredColor*= i.color;
 
-                // Use the edge factor to reduce blur near edges
-                color *= edgeFactor;
+                    float shadowStrenght= shadowGradient(i.uv, _Center, _MaxDistance);
 
-                // Multiply by vertex color to maintain tint
-                color *= i.color;
+                    blurredColor*= shadowStrenght;
+                    
 
-                // Apply fog
-                UNITY_APPLY_FOG(i.fogCoord, color);
-                return color;
+                    return fixed4(blurredColor, col.a);
+                }
             }
             ENDCG
         }
     }
-    FallBack "Diffuse"
 }

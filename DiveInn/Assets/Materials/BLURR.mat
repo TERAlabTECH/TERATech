@@ -42,14 +42,25 @@ Material:
     m_Ints: []
     m_Floats:
     - PixelSnap: 0
+    - _AlphaThreshold: 0.71
     - _BlurAmount: 0.005
+    - _BlurSize: 0.0007
+    - _BlurStrength: 0.43
     - _ClampUVs: 1
+    - _ColorShift: 6.67
     - _Cutoff: 0
     - _EdgeSharpness: 0.189
     - _EnableExternalAlpha: 0
     - _NumSamples: 2.6
+    - _ShadowFalloff: 635.1
+    - _ShadowRadius: 56
+    - _ShadowStrength: 980.8
+    - _WaveAmplitude: 0
+    - _WaveFrequency: 0.06
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+    - _ShadowCenter: {r: 0, g: 0, b: 0, a: 0}
+    - _ShadowColor: {r: 0.49394095, g: 0.24747826, b: 0.61006284, a: 0.5}
   m_BuildTextureStacks: []
