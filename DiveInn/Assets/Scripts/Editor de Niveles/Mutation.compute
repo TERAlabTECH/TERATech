@@ -413,7 +413,7 @@ void FillCorals(uint3 id : SV_DispatchThreadID){
         Result[id.xy]=float4(CellValue,CellValue,CellValue,1);
 
     } 
-    if(CellValue==1 || CellValue==0){
+     if(CellValue==1 || CellValue==0){
         Result[id.xy]=float4(CellValue,CellValue,CellValue,CellValue);
     }else{
         Result[id.xy]=float4(CellValue,CellValue,CellValue,1);

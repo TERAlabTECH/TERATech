@@ -51,7 +51,7 @@ Material:
     - _Cutoff: 0
     - _EdgeSharpness: 0.189
     - _EnableExternalAlpha: 0
-    - _MaxDistance: 0.4
+    - _MaxDistance: 0.52
     - _NumSamples: 2.6
     - _ShadowFalloff: 635.1
     - _ShadowRadius: 56

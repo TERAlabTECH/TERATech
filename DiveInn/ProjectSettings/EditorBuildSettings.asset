@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Juego.unity
     guid: 941c2fad43a868d4e8f7da9c3f1f48a2
   - enabled: 0
-    path: Assets/Scenes/Editor de Niveles.unity
+    path: Assets/Scenes/Inicio.unity
     guid: 85da023422eb4164787bad5b9a7c5755
   m_configObjects: {}
