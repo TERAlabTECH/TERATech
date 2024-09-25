@@ -51,6 +51,7 @@ Material:
     - _Cutoff: 0
     - _EdgeSharpness: 0.189
     - _EnableExternalAlpha: 0
+    - _MaxDistance: 0.4
     - _NumSamples: 2.6
     - _ShadowFalloff: 635.1
     - _ShadowRadius: 56
@@ -58,6 +59,7 @@ Material:
     - _WaveAmplitude: 0
     - _WaveFrequency: 0.06
     m_Colors:
+    - _Center: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}

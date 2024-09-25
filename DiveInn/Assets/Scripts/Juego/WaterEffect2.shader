@@ -107,7 +107,7 @@ Shader "Unlit/WaterEffect2"
                 // col.rgb= clamp(col +float3(0.0,0.0,0.0), 0,1.0);
                 col.g-=0.2;
                 col.b+=0.4;
-                col.a = 0.035; // Adjust alpha for transparency
+                col.a = 0.03; // Adjust alpha for transparency
                 
                 // Apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
