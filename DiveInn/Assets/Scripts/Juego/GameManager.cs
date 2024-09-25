@@ -7,12 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public GameObject selectorDeNiveles;
     public GameObject menuPrincipal;
+    public GameObject aguaShader;
 
     
     // Start is called before the first frame updat
     void Start()
     {
-        
+        aguaShader.SetActive(true);
     }
 
     // Update is called once per frame
