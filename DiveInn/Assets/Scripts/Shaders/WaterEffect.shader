@@ -77,7 +77,7 @@ Shader "Unlit/WaterEffect"
                 col.rgb *= colour;
                 
 
-                col.a=.35;
+                col.a=.05;
                 // apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
                 return col;

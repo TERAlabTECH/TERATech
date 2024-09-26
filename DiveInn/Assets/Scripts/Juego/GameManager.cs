@@ -27,6 +27,10 @@ public class GameManager : MonoBehaviour
         menuPrincipal.SetActive(false);
         selectorDeNiveles.SetActive(true);
     }
+    public void AbreMenu(){
+        selectorDeNiveles.SetActive(false);
+        menuPrincipal.SetActive(true);
+    }
     public void OpenScene(){
         string sceneName="Juego";
         if (Application.CanStreamedLevelBeLoaded(sceneName))
