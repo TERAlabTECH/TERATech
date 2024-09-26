@@ -3,6 +3,7 @@ Shader "Unlit/WaterEffect2"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _AlphaLevel("AlphaLevel", float)= 0.05
     }
     SubShader
     {
@@ -37,6 +38,7 @@ Shader "Unlit/WaterEffect2"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            float _AlphaLevel;
 
             // Length squared of a 2D vector
             float length2(float2 p) {
@@ -107,7 +109,7 @@ Shader "Unlit/WaterEffect2"
                 // col.rgb= clamp(col +float3(0.0,0.0,0.0), 0,1.0);
                 col.g-=0.2;
                 col.b+=0.4;
-                col.a = 0.05; // Adjust alpha for transparency
+                col.a = _AlphaLevel; // Adjust alpha for transparency
                 
                 // Apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
