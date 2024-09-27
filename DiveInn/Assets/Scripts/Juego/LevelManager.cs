@@ -8,6 +8,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     public GameObject aguaEffect;
     public GameObject UI;
+    public bool paused=false;
     void Start()
     {
         aguaEffect.SetActive(true);
@@ -26,8 +27,10 @@ public class LevelManager : MonoBehaviour
     public void ToggleUi(){
         if(UI.activeSelf){ 
             UI.SetActive(false);
+            paused=false;
         }else{
             UI.SetActive(true);
+            paused=true;
         }
 
     
