@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E943A745-8F75-AC7D-7906-FDAB2A9728DD}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\diveinn\\assets\\scripts\\galeria\\galeriamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E943A745-8F75-AC7D-7906-FDAB2A9728DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\galeria\\galeriamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E943A745-8F75-AC7D-7906-FDAB2A9728DD}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\assets\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E943A745-8F75-AC7D-7906-FDAB2A9728DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scenes\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GaleriaManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\Assets\\Scripts\\Galeria\\GaleriaManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Galeria\\GaleriaManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\Assets\\Scripts\\Galeria\\GaleriaManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Galeria\\GaleriaManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T19:31:09.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\Assets\\Scenes\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scenes\\GameManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\DiveInn\\Assets\\Scenes\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scenes\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-27T09:36:41.697Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
