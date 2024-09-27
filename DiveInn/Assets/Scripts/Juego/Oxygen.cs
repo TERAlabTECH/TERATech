@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using System;
 
 public class Oxygen : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject levelManager;
     public LevelManager lvlManager;
-    [Range(1,240)]public float tiempoDeOxigeno=120f;
+    float tiempoDeOxigeno;
 
     Image imagen;
     Material oxygenBar;
@@ -19,8 +20,12 @@ public class Oxygen : MonoBehaviour
     {
         lvlManager=levelManager.GetComponent<LevelManager>();
         imagen= GetComponent<Image>();
+
+        tiempoDeOxigeno=lvlManager.tiempoInicialDeOxigeno;
+
         percentage=100;
         oxygenBar= imagen.materialForRendering;
+
     }
 
     // Update is called once per frame
@@ -28,11 +33,18 @@ public class Oxygen : MonoBehaviour
     {
         if(!lvlManager.paused){
             percentage -= (100f / tiempoDeOxigeno) * Time.deltaTime;
-            Debug.Log(percentage);
             oxygenBar.SetFloat("_AlphaCutoff", percentage);
+            lvlManager.porcentajeDeOxigeno=percentage;
         }
     }
     void OnApplicationQuit(){
         percentage=100;
+    }
+
+    void OnEnable(){
+        LevelManager.OnRestart+=Start;
+    }
+    void OnDisable(){
+        LevelManager.OnRestart-=Start;
     }
 }
