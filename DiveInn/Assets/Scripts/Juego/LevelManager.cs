@@ -36,6 +36,11 @@ public class LevelManager : MonoBehaviour
 
         aguaEffect.SetActive(true);
         SetDiversPosition();
+
+        SwitchCameras();
+        SwitchCameras();
+
+        ActivateAllObjectsWithTag("collectibles");
         
         
     }
@@ -106,6 +111,8 @@ public class LevelManager : MonoBehaviour
         gameOverOxigenoUI.SetActive(false);
 
         porcentajeDeOxigeno=100;
+        
+        
 
         Start();
     }
@@ -181,5 +188,24 @@ public class LevelManager : MonoBehaviour
             info.SetActive(false);
         }
     }
+    void ActivateAllObjectsWithTag(string tag)
+    {
+        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag(tag);
+        Debug.Log($"Activating {objectsWithTag.Length} objects with tag {tag}");
+        foreach (GameObject obj in objectsWithTag)
+        {
+            Debug.Log(obj.name);
+            obj.SetActive(true);
+        }
+    }
+
+    
+    public void OpenNivel1(){
+        SceneManager.LoadScene("Nivel1");
+    }
+    public void OpenNivel2(){
+        SceneManager.LoadScene("Nivel2");
+    }
+
 
 }

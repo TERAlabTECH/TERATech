@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerToCollectibleCollider : MonoBehaviour
 {
@@ -23,8 +24,9 @@ public class PlayerToCollectibleCollider : MonoBehaviour
             
             lvlManager.SwitchCameras();
 
-            
+           
             other.gameObject.SetActive(false);
         }
     }
+  
 }

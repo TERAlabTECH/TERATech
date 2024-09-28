@@ -41,4 +41,7 @@ public class GameManager : MonoBehaviour
     public void OpenNivel1(){
         SceneManager.LoadScene("Nivel1");
     }
+    public void OpenNivel2(){
+        SceneManager.LoadScene("Nivel2");
+    }
 }

@@ -42,15 +42,15 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaLevel: 0.029
-    - _AlphaValue: 1.32
+    - _AlphaValue: 0.52
     - _Cutoff: 0.5
     - _EnableExternalAlpha: 0
     - _Pixelation: 1203
-    - _Radius: 3.06
+    - _Radius: 5.66
     m_Colors:
     - _AddColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _DiverPosition: {r: -8.258661, g: 1.4101495, b: 0, a: 0}
+    - _DiverPosition: {r: 4.8378825, g: -7.791122, b: 0, a: 0}
     - _Flip: {r: 1, g: 1, b: 1, a: 1}
     - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []

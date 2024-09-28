@@ -152,7 +152,6 @@ public class RotarBuzo : MonoBehaviour
 
     private void SendDiverCoord(){
         if(aguaFractal != null && aguaFractalFondo!=null){
-            Debug.Log("pero si las mandas");
             aguaFractal.SetVector("_DiverPosition", new Vector4(transform.position.x, transform.position.y, 0,0));
             aguaFractalFondo.SetVector("_DiverPosition", new Vector4(transform.position.x, transform.position.y, 0,0));
         }
