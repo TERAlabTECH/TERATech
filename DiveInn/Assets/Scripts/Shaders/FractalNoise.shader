@@ -1,11 +1,12 @@
-Shader "Custom/FractalNoiseShader"
+Shader "Custom/FractalNoiseShaderWithPixelation"
 {
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _AlphaValue("AlphaValue", float)=0.3
+        _AlphaValue("AlphaValue", float) = 0.3
         _DiverPosition ("Diver Position", Vector) = (0,0,0,0)
-        _Radius("FogRadius", float)=1
+        _Radius("FogRadius", float) = 1
+        _Pixelation("Pixelation", Float) = 10.0
     }
     SubShader
     {
@@ -33,7 +34,7 @@ Shader "Custom/FractalNoiseShader"
                 float2 uv : TEXCOORD0;
                 float4 vertex : SV_POSITION;
                 float4 color : COLOR; 
-                float4 worldPos:TEXCOORD1;
+                float4 worldPos : TEXCOORD1;
             };
 
             v2f vert (appdata v)
@@ -41,7 +42,7 @@ Shader "Custom/FractalNoiseShader"
                 v2f o;
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = v.uv;
-                o.color=v.color;
+                o.color = v.color;
                 o.worldPos = float4(mul(unity_ObjectToWorld, v.vertex).xyz, 0); //calculates world pos
                 return o;
             }
@@ -50,7 +51,7 @@ Shader "Custom/FractalNoiseShader"
             float _AlphaValue;
             float4 _DiverPosition;
             float _Radius;
-            
+            float _Pixelation;
 
             float rand(float2 p)
             {
@@ -74,31 +75,34 @@ Shader "Custom/FractalNoiseShader"
                 float a = 1.0;
                 for(int i = 0; i < 4; ++i)
                 {
-                    p = 1.5 * p + 15.;
+                    p = 1.8 * p + 15.;
                     a *= 0.5;
                     v += a * noise(p);
                 }
                 return v;
             }
 
-
             float4 frag(v2f i) : SV_Target
             {
-                float2 p = 2. * i.uv;
-                float2 r1 = float2(fbm(p + 0.02 * _Time), fbm(p + 0.005 * _Time));
-                float2 r2 = float2(fbm(p + 0.15 * _Time + 10. * r1), fbm(p + 0.12 * _Time + 12. * r1));
-                float4 result= float4(1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.0);
+                // Pixelation effect
+                float2 pixelatedUV = floor(i.uv * _Pixelation) / _Pixelation;
 
-                result*=i.color;
-                result.a=_AlphaValue;
+                float2 p = 2. * pixelatedUV;
+                float2 r1 = float2(fbm(p + 0.01 * _Time), fbm(p + 0.005 * _Time));
+                float2 r2 = float2(fbm(p + 0.05 * _Time + 10. * r1), fbm(p + 0.12 * _Time + 12. * r1));
+                float4 result = float4(1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.8 * pow(fbm(p + r2), 2.) + 0.03, 1.0);
+
+                result *= i.color;
+                result.a = _AlphaValue;
 
                 float dist = distance(_DiverPosition.xy, i.worldPos.xy);
-                float ALphaRadius = smoothstep(0.0, _Radius, dist);
-                result.a= smoothstep(-0.02, result.a,ALphaRadius );
+                float alphaRadius = smoothstep(0.0, _Radius, dist);
+                result.a = smoothstep(-0.02, result.a, alphaRadius);
 
                 return result;
-            }   
+            }
             ENDCG
+            //
         }
     }
     FallBack "Diffuse"
