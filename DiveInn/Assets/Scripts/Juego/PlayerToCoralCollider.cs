@@ -23,22 +23,22 @@ public class PlayerToCoralCollider : MonoBehaviour
     {
         Debug.Log("Collision detected");
 
-        // Attempt to get the SpriteRenderer from the object we collided with
-        SpriteRenderer coralRenderer = other.gameObject.GetComponent<SpriteRenderer>();
-
-        // If the object has a SpriteRenderer component
-        if (coralRenderer != null)
+        if (other.gameObject.CompareTag("coral"))
         {
-            originalCoralColor = coralRenderer.color;
-            coralRenderer.color = Color.white;
+            // Attempt to get the SpriteRenderer from the coral object
+            SpriteRenderer coralRenderer = other.gameObject.GetComponent<SpriteRenderer>();
 
-            // Start the coroutine to reset the color
-            StartCoroutine(ResetColorNextFrames(coralRenderer));
+            if (coralRenderer != null)
+            {
+                originalCoralColor = coralRenderer.color;
+                coralRenderer.color = Color.white;
+                // Start the coroutine to reset the color
+                StartCoroutine(ResetColorNextFrames(coralRenderer));
+            }
+
+            // Invoke the coral damage function on the LevelManager
+            levelManagerObject.GetComponent<LevelManager>().LastimoCoral();
         }
-
-
-        levelManagerObject.GetComponent<LevelManager>().LastimoCoral();
-
         
     }
 

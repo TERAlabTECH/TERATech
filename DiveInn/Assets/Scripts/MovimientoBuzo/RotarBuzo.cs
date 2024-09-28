@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -33,6 +34,8 @@ public class RotarBuzo : MonoBehaviour
     [SerializeField] private float _RotationSpeed=50f;
     [SerializeField] private bool _inverted;
     [SerializeField] private float _moveSpeed = 5f; // Speed of forward movement
+    [SerializeField] LevelManager lvlManager;
+
 
     private void Awake()
     {
@@ -93,12 +96,15 @@ public class RotarBuzo : MonoBehaviour
 
     private void Update()
     {
+        
+        SendDiverCoord();
         // Rotate if allowed
-        if (_rotateAllowed)
+        if (_rotateAllowed && !lvlManager.paused)
         {
-            swimming.Play("DiverSwiming");
-            Debug.Log($"New MouseDELta {GetPointerVector()}");
-
+            
+            if(swimming)
+            swimming.Play("DiverSwimming");
+            
             //subtract 90 cause sprite is rotated
             directionAngle= Mathf.Atan2(GetPointerVector().y, GetPointerVector().x)*180/Mathf.PI-90;
             //euler angles are in degrees
@@ -138,6 +144,17 @@ public class RotarBuzo : MonoBehaviour
             return false;
         }else{
             return true;
+        }
+    }
+
+    [SerializeField] Material aguaFractal;
+    [SerializeField] Material aguaFractalFondo;
+
+    private void SendDiverCoord(){
+        if(aguaFractal != null && aguaFractalFondo!=null){
+            Debug.Log("pero si las mandas");
+            aguaFractal.SetVector("_DiverPosition", new Vector4(transform.position.x, transform.position.y, 0,0));
+            aguaFractalFondo.SetVector("_DiverPosition", new Vector4(transform.position.x, transform.position.y, 0,0));
         }
     }
 }

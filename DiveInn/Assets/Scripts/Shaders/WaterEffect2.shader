@@ -4,6 +4,7 @@ Shader "Unlit/WaterEffect2"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _AlphaLevel("AlphaLevel", float)= 0.05
+        _AddColor("addColor", Color)=(1,1,1,1)
     }
     SubShader
     {
@@ -41,7 +42,7 @@ Shader "Unlit/WaterEffect2"
             sampler2D _MainTex;
             float4 _MainTex_ST;
             float _AlphaLevel;
-
+            float4 _AddColor;
             // Length squared of a 2D vector
             float length2(float2 p) {
                 return dot(p, p);
@@ -116,7 +117,7 @@ Shader "Unlit/WaterEffect2"
                 
                 // Apply fog
                 UNITY_APPLY_FOG(i.fogCoord, col);
-                col.rgb*=i.color.rgb;
+                col.rgb*=i.color.rgb*_AddColor.rgb;
                 
                 return col;
             }

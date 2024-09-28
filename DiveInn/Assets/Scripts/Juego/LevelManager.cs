@@ -2,7 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
+
 
 public class LevelManager : MonoBehaviour
 {
@@ -13,12 +15,17 @@ public class LevelManager : MonoBehaviour
     public GameObject gameOverOxigenoUI;
     public GameObject gameOverCoralesUI;
     public GameObject diver;
-    public GameObject infoCorales1;
-    public GameObject infoCorales2;
 
     public int coralesLastimados=0;
     
     public bool paused=false;
+
+    public GameObject DiverCam;
+    public GameObject GalleryCam;
+
+    public GameObject DiverCanvas;
+    public GameObject GalleryCanvas;
+    public bool diverCamBool=true;
 
     [Range(1,240)]public float tiempoInicialDeOxigeno=180f;
     public float porcentajeDeOxigeno;
@@ -43,6 +50,13 @@ public class LevelManager : MonoBehaviour
         if(!gameOverOxigenoUI.activeSelf && coralesLastimados>=5){
             OpenCoralesGameOver();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("spaceBar");
+            SwitchCameras();
+            // Add additional actions you want to perform when space is pressed
+        }
+
     }
     void OnApplicationQmenuPrincipalt(){
         aguaEffect.SetActive(false);
@@ -58,6 +72,8 @@ public class LevelManager : MonoBehaviour
                 paused=true;
             }
         }
+
+        
 
     
     }
@@ -101,10 +117,8 @@ public class LevelManager : MonoBehaviour
         if(coralesLastimados<5){
             coralesLastimados++;
             Debug.Log($"lastimo {coralesLastimados} corales");
-            if(coralesLastimados==1){
-                infoCorales1.SetActive(true);
-            }else if (coralesLastimados==4){
-                infoCorales2.SetActive(true);
+            if(coralesLastimados==1 || coralesLastimados==2 || coralesLastimados==4){
+                ShowInfoCorales();
             }else{
                 ShowWarningCorales();
 
@@ -116,11 +130,56 @@ public class LevelManager : MonoBehaviour
         
     }
     public void ShowInfoCorales(){
-        Debug.Log("info corales display");
-        infoCorales1.SetActive(true);
+        paused=true;
+        foreach (GameObject info in infoCorales)
+        {
+            info.SetActive(false);
+        }
+
+        // Create an instance of the Random class
+        System.Random randm = new System.Random();
+        // Generate a random index based on the number of items in your list
+        int randomIndex = randm.Next(infoCorales.Count);
+
+        // Activate the randomly selected coral info panel
+        infoCorales[randomIndex].SetActive(true);
     }
+    
     public void ShowWarningCorales(){
 
     } 
+
+    public void SwitchCameras(){
+        if(DiverCam.activeSelf){
+            paused=true;
+            DiverCanvas.SetActive(false);
+            GalleryCanvas.SetActive(true);
+            diverCamBool=false;
+            DiverCam.SetActive(false);
+            GalleryCam.SetActive(true);
+        }else{
+            HideInfoPeces();
+            paused=false;
+            GalleryCanvas.SetActive(false);
+            DiverCanvas.SetActive(true);
+            diverCamBool=true;
+            GalleryCam.SetActive(false);
+            DiverCam.SetActive(true);
+        }
+    }
+
+    [SerializeField] List<GameObject> modelosInfoPeces;
+    public void HideInfoPeces(){
+        foreach(GameObject info in modelosInfoPeces){
+            info.SetActive(false);
+        }
+    }
+    [SerializeField] List<GameObject> infoCorales;
+    public void HideInfoCorale(){
+        paused=false;
+        foreach(GameObject info in infoCorales){
+            info.SetActive(false);
+        }
+    }
 
 }

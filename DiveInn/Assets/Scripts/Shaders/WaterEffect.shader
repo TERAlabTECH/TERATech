@@ -70,7 +70,7 @@ Shader "Unlit/WaterEffect"
                 c /= 5.0;
                 c = 1.17 - pow(c, 1.4);
                 float3 colour = pow(abs(c), 8.0);
-                colour = clamp(colour + float3(0.0, 0.35, 0.5), 0.0, 1.);
+                colour = clamp(colour + float3(0.6, 0.35, 0.7), 0.0, 1.);
 
                 // sample the texture and modulate with calculated color
                 fixed4 col = tex2D(_MainTex, i.uv);
