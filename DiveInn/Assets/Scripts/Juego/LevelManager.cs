@@ -53,7 +53,7 @@ public class LevelManager : MonoBehaviour
             menuPrincipal.SetActive(false);
             paused=false;
         }else{
-            if(!gameOverOxigenoUI.activeSelf && !gameOverCoralesUI){
+            if(!gameOverOxigenoUI.activeSelf && !gameOverCoralesUI.activeSelf){
                 menuPrincipal.SetActive(true);
                 paused=true;
             }

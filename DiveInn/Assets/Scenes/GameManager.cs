@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     public GameObject menuPrincipal;
     public GameObject aguaShader;
 
-    public float tiempoDeOxigeno;
+    
 
     bool paused=false;
 

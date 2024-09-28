@@ -1,0 +1,96 @@
+{
+    "name": "rotarBuzo",
+    "maps": [
+        {
+            "name": "Rotacion",
+            "id": "01acb7d0-87ad-4868-b630-5f14a44f7fa7",
+            "actions": [
+                {
+                    "name": "Left Click",
+                    "type": "Button",
+                    "id": "c7f8b525-3b81-48e7-bb1a-2a96a47cc611",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Mouse Look",
+                    "type": "Value",
+                    "id": "6364e1a8-955f-49a9-a3fe-cb5010e68073",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Position",
+                    "type": "Value",
+                    "id": "834d39d8-d38e-4160-b9a2-4a24e85b758c",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "901428b9-18cd-4392-87ce-89fad336d007",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4232e47f-ab20-4e81-8caa-b520b2a5355f",
+                    "path": "<Touchscreen>/Press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Left Click",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fbd4884c-98c1-4b17-9c1b-5c3613eb4398",
+                    "path": "<Mouse>/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "881fabf1-0469-414e-88b0-82c6ff05a19a",
+                    "path": "<Touchscreen>/primaryTouch/delta",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Mouse Look",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "3b481efd-51dd-4f14-81ee-fe57c315fcaa",
+                    "path": "<Pointer>/position",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Position",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

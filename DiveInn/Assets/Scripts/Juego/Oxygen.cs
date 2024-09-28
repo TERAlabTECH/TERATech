@@ -54,7 +54,7 @@ public class Oxygen : MonoBehaviour
 
     void BlinkAguaShader()
     {
-        aguaShaderRenderer.color=LowOxygenColor;
+        // aguaShaderRenderer.color=LowOxygenColor;
         blinkTimer += Time.deltaTime;
 
         if (blinkTimer >= 0.5f) // Change color every 0.5 seconds
