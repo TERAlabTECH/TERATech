@@ -255,7 +255,7 @@ void CSInit(uint3 id : SV_DispatchThreadID) {
     int outputVal=Input[id.xy].r;
 
 
-    bool inRadius = (distance(float2(mousePosX, mousePosY), id.xy) < 7);
+    bool inRadius = (distance(float2(mousePosX, mousePosY), id.xy) < 4);
 
 
 
