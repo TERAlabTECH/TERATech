@@ -19,17 +19,17 @@ public class Rotation : MonoBehaviour
 
     void Update()
     {
-        // Add randomization to the radius using Perlin noise
-        float randomRadius = Mathf.PerlinNoise(0, Time.time*randomFactor) * 0.5f;
+        // // Add randomization to the radius using Perlin noise
+        // float randomRadius = Mathf.PerlinNoise(0, Time.time*randomFactor) * 0.5f;
 
-        // Calculate the new position in the XZ plane (horizontal circle)
-        float newX = Mathf.Cos(Time.time * speed) * randomRadius;
-        float newZ = Mathf.Sin(Time.time * speed) * randomRadius;
+        // // Calculate the new position in the XZ plane (horizontal circle)
+        // float newX = Mathf.Cos(Time.time * speed) * randomRadius;
+        // float newZ = Mathf.Sin(Time.time * speed) * randomRadius;
 
-        // For Y-axis movement, we add independent oscillation using sine
-        float newY = Mathf.Sin(Time.time * speed) * randomRadius;
+        // // For Y-axis movement, we add independent oscillation using sine
+        // float newY = Mathf.Sin(Time.time * speed) * randomRadius;
 
-        // Update the object's position with both circular and vertical movement
-        transform.position = new Vector3(originalPosition.x + newX, originalPosition.y + newY, originalPosition.z + newZ);
+        // // Update the object's position with both circular and vertical movement
+        // transform.position = new Vector3(originalPosition.x + newX, originalPosition.y + newY, originalPosition.z + newZ);
     }
 }

@@ -82,6 +82,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
+    - _Alfa: 0
+    - _Alpha: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
     - _Blend: 0
@@ -115,8 +117,9 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BloomCol: {r: 6.964404, g: 0, b: 0, a: 0}
     - _BloomColor: {r: 0, g: 1.7041563, b: 2.1185474, a: 0}
-    - _Color: {r: 0.36431506, g: 0.5541091, b: 1.5045744, a: 1}
+    - _Color: {r: 0.9274489, g: 1.0150158, b: 1.4528512, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
