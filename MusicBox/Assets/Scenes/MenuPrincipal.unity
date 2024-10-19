@@ -2129,17 +2129,17 @@ PrefabInstance:
     - target: {fileID: 4047168674346331176, guid: 990ce364963d7dc4594fa98b6d8abd86,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.8015145
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 4047168674346331176, guid: 990ce364963d7dc4594fa98b6d8abd86,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.8015145
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 4047168674346331176, guid: 990ce364963d7dc4594fa98b6d8abd86,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.8015145
+      value: 0.49
       objectReference: {fileID: 0}
     - target: {fileID: 4047168674346331176, guid: 990ce364963d7dc4594fa98b6d8abd86,
         type: 3}
@@ -2472,7 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
