@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SimonDIce.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/MenuPrincipal.unity
+    guid: 403d10a98b05de24888e0ceaa1a7a3b2
+  - enabled: 1
+    path: Assets/Scenes/NivelTambores.unity
+    guid: 307a81fb55c78584b9c7f94e7f3ad5fa
   m_configObjects: {}

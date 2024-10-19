@@ -117,7 +117,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _BloomCol: {r: 6.964404, g: 0, b: 0, a: 0}
+    - _BloomCol: {r: 0.28963172, g: 4.3858614, b: 0.8850411, a: 0}
     - _BloomColor: {r: 0, g: 1.7041563, b: 2.1185474, a: 0}
     - _Color: {r: 0.9274489, g: 1.0150158, b: 1.4528512, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

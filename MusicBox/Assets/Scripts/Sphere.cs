@@ -11,23 +11,21 @@ public class Sphere : MonoBehaviour
 
     Renderer sphereRenderer;
     public UnityEvent onTriggerSphere; 
+    public AudioSource sound;
     void Start()
     {
         sphereRenderer= GetComponent<Renderer>();
         onTriggerSphere.AddListener(()=>StartCoroutine(changeAlpha()));
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
     public void triggerSphere(){
         onTriggerSphere.Invoke();
     }   
     
          
     IEnumerator changeAlpha(){
+        sound.Play();
         
         // Gradually increase alpha from 0 to 1 over 'duration' seconds
         float elapsedTime = 0f;
@@ -48,7 +46,9 @@ public class Sphere : MonoBehaviour
             elapsedTime += Time.deltaTime;
             yield return null;
         }
+        sound.Stop();
     
     }
+   
 
 }
