@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.Analytics;
+using UnityEngine.SceneManagement;
 using UnityEngine.Events;
 
 public class LevelManager : MonoBehaviour
@@ -44,7 +45,12 @@ public class LevelManager : MonoBehaviour
         mainMenu.SetActive(true);
         sequence.playingSequence=true;
     }
-    
+
+    public void Menu()
+    {
+        SceneManager.LoadScene("MenuPrincipal");
+    }
+
     void SetNivelTexto(){
         nivelTexto.GetComponent<TMPro.TextMeshProUGUI>().SetText($"Nivel {sequence.sequenceLenght}");
     }
@@ -55,7 +61,5 @@ public class LevelManager : MonoBehaviour
         mainMenu.SetActive(false);
         nextSequence();
     }
-    
-    
 }
 
