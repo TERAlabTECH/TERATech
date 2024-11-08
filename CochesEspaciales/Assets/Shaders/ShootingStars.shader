@@ -3,6 +3,9 @@ Shader "Custom/ShootingStars"
     Properties
     {
         _Speed("Speed", float) = 1
+        _LineThickness("Line Thickness", float) = 0.1
+        _StarMultiplier("Star Multiplier", float ) = 1
+        _Bloom("Bloom", float) = 1 
 
     }
     SubShader
@@ -51,6 +54,9 @@ Shader "Custom/ShootingStars"
                 return o;
             }
             float _Speed;
+            float _LineThickness;
+            float _Bloom;
+            float _StarMultiplier;
 
             // Fragment shader
             fixed4 frag (v2f i) : SV_Target
@@ -65,7 +71,7 @@ Shader "Custom/ShootingStars"
                 float2 st = fragCoord / _ScreenParams.y;
 
                 // Line dimensions (box)
-                float2 b = float2(0.0, 0.1);
+                float2 b = float2(0.0, _LineThickness);
 
                 float dist;
                 float2 loopST;
@@ -75,13 +81,13 @@ Shader "Custom/ShootingStars"
                 for (float idx = 0.9; idx < 21.0; idx += 1.0)
                 {
                     // Calculate rotation using cosine function
-                    float4 cosValues = cos(idx + float4(0.0, 33.0, 11.0, 0.0));
+                    float4 cosValues = _Bloom*cos(idx + float4(0.0, 33.0, 11.0, 0.0));
 
                     // Construct the rotation matrix
                     rotation = float2x2(cosValues.x, cosValues.y, cosValues.z, cosValues.w);
 
                     // Scale the space
-                    loopST = st * idx * 0.5;
+                    loopST = st * idx * _StarMultiplier;
 
                     // Translate downward over time
                     loopST.y += _Time.y * 1.2*_Speed;
@@ -102,7 +108,7 @@ Shader "Custom/ShootingStars"
                     
                     float colorSum = outColor.r + outColor.g + outColor.b;
 
-                    outColor.a = step(0.0, colorSum);
+                    outColor.a = lerp(1,1, colorSum);
                 }
 
                 // Ensure the color components are within the [0,1] range

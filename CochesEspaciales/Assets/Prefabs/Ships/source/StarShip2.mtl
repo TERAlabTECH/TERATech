@@ -1,0 +1,14 @@
+# Blender 3.4.1 MTL File: 'StarShip2.blend'
+# www.blender.org
+
+newmtl Material.003
+Ka 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.450000
+d 1.000000
+illum 2
+map_Kd C:/Users/dovgo/OneDrive/Desktop/3D/Texture/StarShip2/Material.001_Base_color.jpg
+map_Ns C:/Users/dovgo/OneDrive/Desktop/3D/Texture/StarShip2/Material.001_Roughness.jpg
+map_refl C:/Users/dovgo/OneDrive/Desktop/3D/Texture/StarShip2/Material.001_Metallic.jpg
+map_Ke C:/Users/dovgo/OneDrive/Desktop/3D/Texture/StarShip2/Material.001_Emissive.jpg
+map_Bump -bm 1.000000 C:/Users/dovgo/OneDrive/Desktop/3D/Texture/StarShip2/Material.001_Normal_DirectX.jpg
