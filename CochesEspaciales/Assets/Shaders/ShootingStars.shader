@@ -17,13 +17,15 @@ Shader "Custom/ShootingStars"
         {
             ZWrite Off
             Blend SrcAlpha OneMinusSrcAlpha
-
+            Cull off
+            
             CGPROGRAM
             // Define the shader model
             #pragma target 3.0
             // Specify the vertex and fragment shaders
             #pragma vertex vert
             #pragma fragment frag
+            
 
             // Include Unity's shader library
             #include "UnityCG.cginc"
@@ -108,7 +110,7 @@ Shader "Custom/ShootingStars"
                     
                     float colorSum = outColor.r + outColor.g + outColor.b;
 
-                    outColor.a = lerp(1,1, colorSum);
+                    outColor.a = lerp(0.2,1, colorSum);
                 }
 
                 // Ensure the color components are within the [0,1] range
