@@ -1,61 +1,64 @@
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
+using Unity.XR.CoreUtils;
 
-public class ArMovement : MonoBehaviour
+public class Movement : MonoBehaviour
 {
     public GameObject fireTrail;
-    public GameObject spaceship;
-    public ARSessionOrigin arSessionOrigin;
-
+    public XROrigin arSessionOrigin;
     Vector3 direction;
+
     [SerializeField] float moveSpeed = 5f;
-    private float rotationSpeed = 5f;
+    public float rotationSpeed = 1f;
+
     private float angleToRotateOnZ = 0;
     private float angleToRotateOnX = 0;
 
     void Start()
     {
-        Input.gyro.enabled = true;
+        if (arSessionOrigin == null)
+        {
+            Debug.LogError("AR Session Origin is not assigned. Please assign it in the inspector.");
+        }
     }
 
     void Update()
     {
-        // Obtener la rotaci髇 del dispositivo
-        Quaternion deviceRotation = Input.gyro.attitude;
+        if (arSessionOrigin == null)
+            return;
 
-        // Ajustar la rotaci髇 del dispositivo
+        // Obtener la rotaci贸n de la c谩mara
+        Quaternion deviceRotation = arSessionOrigin.Camera.transform.rotation;
+
+        // Ajustar la rotaci贸n del dispositivo para que sea coherente con el espacio del juego
         deviceRotation = Quaternion.Euler(90f, 0f, 0f) * new Quaternion(-deviceRotation.x, -deviceRotation.y, deviceRotation.z, deviceRotation.w);
 
-        // Aplicar la rotaci髇 al origen de la sesi髇
-        arSessionOrigin.transform.localRotation = deviceRotation;
+        // Calcular la direcci贸n en un espacio 2D basado en la rotaci贸n del dispositivo
+        direction = new Vector3(deviceRotation.x, deviceRotation.y, 0).normalized;
 
-        InterpolateRotationOnXY();
+        // Mover la nave espacial en la direcci贸n calculada sin cambiar la distancia hacia la c谩mara
+        transform.position += direction * moveSpeed * Time.deltaTime;
 
-        // Obtener la direcci髇 del movimiento solo en X e Y
-        direction = arSessionOrigin.transform.right * deviceRotation.x + arSessionOrigin.transform.up * deviceRotation.y;
-        direction.z = 0; // Aseg鷕ate de que la direcci髇 en el eje Z sea cero
-
-        // Mover la nave espacial con la rotaci髇 del dispositivo en X e Y solamente
-        spaceship.transform.position += direction * moveSpeed * Time.deltaTime;
+        // Interpolar suavemente a la rotaci贸n objetivo
+        InterpolateRotationOnXY(deviceRotation);
     }
 
-    void InterpolateRotationOnXY()
+    void InterpolateRotationOnXY(Quaternion deviceRotation)
     {
-        // Obtener las distancias basadas en la rotaci髇 del dispositivo
-        float distToX = Input.gyro.attitude.x;
-        float distToY = Input.gyro.attitude.y;
-
-        // Calcular los 醤gulos de rotaci髇
-        angleToRotateOnZ = Mathf.InverseLerp(-2.7f, 2.7f, distToX) - 0.5f;
+        // Calcular los 谩ngulos objetivo en funci贸n de la rotaci贸n del dispositivo
+        angleToRotateOnZ = Mathf.InverseLerp(-2.7f, 2.7f, deviceRotation.x) - 0.5f;
         angleToRotateOnZ *= 120;
 
-        angleToRotateOnX = Mathf.InverseLerp(-0.4f, 0.4f, distToY) - 0.5f;
+        angleToRotateOnX = Mathf.InverseLerp(-0.4f, 0.4f, deviceRotation.y) - 0.5f;
         angleToRotateOnX *= -60;
 
-        // Crear la rotaci髇 objetivo basada en los 醤gulos calculados
-        Quaternion targetRotation = Quaternion.Euler(angleToRotateOnX, 180, angleToRotateOnZ);
+        // Log de rotaci贸n objetivo
+        Debug.Log($"Rotating x by: {angleToRotateOnX}, z by: {angleToRotateOnZ}");
 
-        // Interpolar suavemente a la rotaci髇 objetivo
+        // Crear la rotaci贸n objetivo basada en los 谩ngulos calculados
+        Quaternion targetRotation = Quaternion.Euler(angleToRotateOnX, 0, angleToRotateOnZ);
+
+        // Interpolar suavemente a la rotaci贸n objetivo
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
 }
