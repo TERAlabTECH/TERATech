@@ -2,9 +2,9 @@ Shader "Custom/ShootingStars"
 {
     Properties
     {
-        _Speed("Speed", float) = 1
+        _Speed("Speed", float) = 0.01
         _LineThickness("Line Thickness", float) = 0.1
-        _StarMultiplier("Star Multiplier", float ) = 1
+        _StarMultiplier("Star Multiplier", float ) = 0.05
         _Bloom("Bloom", float) = 1 
 
     }
