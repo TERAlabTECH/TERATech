@@ -38,7 +38,7 @@ Material:
     m_TexEnvs: []
     m_Ints: []
     m_Floats:
-    - _Bloom: 0.8
+    - _Bloom: 0.75
     - _LineThickness: 0.03
     - _Speed: 0.05
     - _StarMultiplier: 0.26
