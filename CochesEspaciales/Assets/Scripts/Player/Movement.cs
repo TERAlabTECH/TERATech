@@ -45,14 +45,7 @@ public class Movement : MonoBehaviour
             // Interpolacion hacia la posición del mouse 
             transform.position = Vector3.Lerp(transform.position, mouseWorldPos, moveSpeed * Time.deltaTime);
         }
-        else
-        {
-            // fireTrail.SetActive(false);
-        }
-        // if(Input.GetKeyDown(KeyCode.Space)){
-        //     Debug.Log($"{}");
-        // }
-
+        
        
     }
     
@@ -67,7 +60,7 @@ public class Movement : MonoBehaviour
         distToY = mouseWorldPos.y - playerPos.y;
         angleToRotateOnX = Mathf.InverseLerp(-.4f, .4f, distToY) - 0.5f;
         angleToRotateOnX *= -60;
-        Debug.Log($"Rotating x by: {angleToRotateOnX}" );
+        // Debug.Log($"Rotating x by: {angleToRotateOnX}" );
 
         // Create the target rotation based on the calculated angles
         Quaternion targetRotation = Quaternion.Euler(angleToRotateOnX, 180, angleToRotateOnZ);
