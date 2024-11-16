@@ -41,7 +41,7 @@ public class Movement : MonoBehaviour
 
             // fireTrail.SetActive(true);
             direction = (mouseWorldPos - playerPos).normalized;
-
+            
             // Interpolacion hacia la posición del mouse 
             transform.position = Vector3.Lerp(transform.position, mouseWorldPos, moveSpeed * Time.deltaTime);
         }

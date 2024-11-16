@@ -4,16 +4,24 @@ using UnityEngine;
 
 public class Gyroscope : MonoBehaviour
 {
+    Camera mainCam;
+    Quaternion rotationFix;
     void Start()
     {
         if(SystemInfo.supportsGyroscope){
             Input.gyro.enabled = true;
         }
+        rotationFix= new Quaternion(0,0,1,0);
+        mainCam=Camera.main;
     }
 
     
     void Update()
     {
-        transform.rotation=Input.gyro.attitude; 
+        if(SystemInfo.supportsGyroscope){
+            transform.rotation=Input.gyro.attitude*rotationFix; 
+        }
+        
     }
+
 }

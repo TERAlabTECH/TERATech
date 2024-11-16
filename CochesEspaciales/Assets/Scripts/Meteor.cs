@@ -31,12 +31,12 @@ public class Meteor : MonoBehaviour
     void Update()
     {
         
-        if(Input.GetKey(KeyCode.Space)){
+       
             timePassed+=Time.deltaTime*0.4f;
             //posision actual del meteorito
             GetPosition(timePassed);
             SetBrightness();
-        }
+            // Debug.DrawLine(transform.position, playerShip.transform.position);
 
     }
     void SetDirectionVector(){
@@ -68,7 +68,6 @@ public class Meteor : MonoBehaviour
 
     float ClosenessToCenter(){
         float dist= (Vector3.Distance(destination,screenCenter));
-        Debug.Log($"{destination} x {screenCenter}============ dist:  {dist}"); 
         return dist;
     }
     

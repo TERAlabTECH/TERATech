@@ -17,7 +17,7 @@ public class MeteorSpawner : MonoBehaviour
     {
         timePassed+=Time.deltaTime;
 
-        if(timePassed>0.001){
+        if(timePassed>0.01){
             timePassed=0; 
             SpawnMeteor();
 
@@ -34,7 +34,6 @@ public class MeteorSpawner : MonoBehaviour
         float y= Random.Range(-99, -80);
         float z= -469.089f;
         Vector3 destination= new Vector3(x,y,z);
-        // Debug.Log($"Destination: {destination}");
         return destination;
     }
 }

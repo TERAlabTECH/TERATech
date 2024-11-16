@@ -1,69 +1,89 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class GyroMovement : MonoBehaviour
 {
-    // Reference objects
-    public Transform referenceObject;
-    public Transform spaceship;
+    // Start is called before the first frame update
+    public  GameObject fireTrail;
+    Vector3 rayEndpoint; 
+    Vector3 playerPos;
+    Vector3 direction;
+    [SerializeField] float moveSpeed= 5f;
 
-    // Movement settings
-    public float moveSpeed = 5f;
-    public float rotationSpeed = 5f;
-    public float stoppingDistance = 0.1f;
-    public float referenceObjectOffset = 5f;
+    [SerializeField] Camera mainCam;
+    public float rotationSpeed=1;
+    private float distToRay;
+    private float distToX;
+    private float distToY;
 
-    private Camera mainCam;
-
-    void Start()
-    {
-        mainCam = Camera.main;
+    private float angleToRotateOnZ=0;
+    private float angleToRotateOnX=0;
+    void Start(){
+        mainCam=Camera.main;
     }
-
-    void LateUpdate()
+    void Update()
     {
-        // Update ReferenceObject position
-        Vector3 forward = mainCam.transform.forward;
-        Vector3 targetPosition = mainCam.transform.position + forward * referenceObjectOffset;
-        referenceObject.position = Vector3.Lerp(referenceObject.position, targetPosition, moveSpeed * Time.deltaTime);
+        // Rotate constantly on the z-axis
+        // transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
 
-        // Calculate distance to ReferenceObject
-        float distanceToReference = Vector3.Distance(spaceship.position, referenceObject.position);
+        // Obtener la posición del mouse en el mundo
+        rayEndpoint = ShootRay();
+        playerPos = transform.position;
+        distToRay = Vector3.Distance(rayEndpoint, playerPos);
+       
 
-        // Update spaceship position and rotation if beyond stopping distance
-        if (distanceToReference > stoppingDistance)
+        InterpolateRotationOnXY();
+
+
+        if(distToRay > 0.01f)
         {
-            Vector3 direction = (referenceObject.position - spaceship.position).normalized;
-            spaceship.position = Vector3.Lerp(spaceship.position, referenceObject.position, moveSpeed * Time.deltaTime);
 
-            // Interpolate rotation to simulate tilt effect
-            InterpolateRotationOnXY(referenceObject.position);
+            // fireTrail.SetActive(true);
+            direction = (rayEndpoint - playerPos).normalized;
+            
+            // Interpolacion hacia la posición del mouse 
+            transform.position = Vector3.Lerp(transform.position, rayEndpoint, moveSpeed * Time.deltaTime);
         }
-        else
-        {
-            // Stabilize spaceship to face forward with no tilt when close enough
-            Quaternion stabilizeRotation = Quaternion.Euler(0, 180, 0);
-            spaceship.rotation = Quaternion.Slerp(spaceship.rotation, stabilizeRotation, rotationSpeed * Time.deltaTime);
-        }
+        
+       
     }
+    
 
-    void InterpolateRotationOnXY(Vector3 targetPosition)
+    void InterpolateRotationOnXY()
     {
-        // Calculate tilt angle based on the X and Y distance to the target position
-        Vector3 playerPos = spaceship.position;
-        float distToX = targetPosition.x - playerPos.x;
-        float distToY = targetPosition.y - playerPos.y;
+        // First, calculate the target angles based on the distances
+        distToX = rayEndpoint.x - playerPos.x;
+        angleToRotateOnZ = Mathf.InverseLerp(-2.7f, 2.7f, distToX) - 0.5f;
+        angleToRotateOnZ *= 120;
 
-        // Apply InverseLerp for smoother and limited tilt effects
-        float angleToRotateOnZ = Mathf.InverseLerp(-3f, 3f, distToX) - 0.5f;
-        angleToRotateOnZ *= 90;  // Adjust Z-axis tilt strength
+        distToY = rayEndpoint.y - playerPos.y;
+        angleToRotateOnX = Mathf.InverseLerp(-.4f, .4f, distToY) - 0.5f;
+        angleToRotateOnX *= -60;
+        // Debug.Log($"Rotating x by: {angleToRotateOnX}" );
 
-        float angleToRotateOnX = Mathf.InverseLerp(-0.5f, 0.5f, distToY) - 0.5f;
-        angleToRotateOnX *= -45; // Adjust X-axis tilt strength
-
-        // Create target rotation with calculated tilt angles
+        // Create the target rotation based on the calculated angles
         Quaternion targetRotation = Quaternion.Euler(angleToRotateOnX, 180, angleToRotateOnZ);
 
-        // Smoothly interpolate to target rotation
-        spaceship.rotation = Quaternion.Slerp(spaceship.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-    }
+        // Interpolate smoothly to the target rotation using Quaternion.Lerp or Quaternion.Slerp
+        float rotationSpeed = 5f; // Adjust this speed as needed for smoothness
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+    }
+
+
+    [SerializeField]float distToShip;
+    Vector3 ShootRay(){
+        Vector3 screenCenter = new Vector3(Screen.width / 2f, Screen.height / 2f, 0);
+
+
+        Ray ray = mainCam.ScreenPointToRay(screenCenter);
+        Vector3 rayEndpoint = ray.origin + ray.direction * distToShip;
+        Debug.DrawRay(ray.origin, ray.direction * distToShip, Color.red); 
+        Debug.Log("ShotRay");
+
+        return rayEndpoint;
+    }
+
+
+    
 }
