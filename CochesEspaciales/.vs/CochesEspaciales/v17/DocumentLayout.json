@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\momenttwomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\momenttwomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\movementmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movementmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
@@ -15,12 +23,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Runtime\\ARFoundation\\SubsystemLifecycleManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\shaders\\shootingstars.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\shaders\\shootingstars.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\shaders\\shootingstars.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\movementmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\movementmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\movement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,11 +38,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "MomentTwoManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MomentTwoManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MomentTwoManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MomentTwoManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MomentTwoManager.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-16T00:31:05.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "SubsystemLifecycleManager.cs",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Runtime\\ARFoundation\\SubsystemLifecycleManager.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Runtime\\ARFoundation\\SubsystemLifecycleManager.cs",
@@ -46,12 +63,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Runtime\\ARFoundation\\SubsystemLifecycleManager.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAtwDAAAAD5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T06:01:55.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T06:01:55.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "SimulationURPLit.shader",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Assets\\Shaders\\SimulationURPLit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Assets\\Shaders\\SimulationURPLit.shader",
@@ -59,12 +75,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.xr.arfoundation@5.1.5\\Assets\\Shaders\\SimulationURPLit.shader",
               "ViewState": "AgIAACcAAAAAAAAAAAAAAAUAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-11-11T05:48:57.426Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T05:48:57.426Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Lit.shader",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
@@ -72,12 +87,11 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-11-11T05:33:32.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T05:33:32.31Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ShootingStars.shader",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Shaders\\ShootingStars.shader",
               "RelativeDocumentMoniker": "Assets\\Shaders\\ShootingStars.shader",
@@ -85,25 +99,23 @@
               "RelativeToolTip": "Assets\\Shaders\\ShootingStars.shader",
               "ViewState": "AgIAAGMAAAAAAAAAAAAAAHwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
-              "WhenOpened": "2024-11-11T05:24:00.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T05:24:00.439Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "MovementManager.cs",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MovementManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MovementManager.cs",
               "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MovementManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MovementManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAACMAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-11T03:54:35.726Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-11T03:54:35.726Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Movement.cs",
               "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\Movement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Movement.cs",
@@ -111,8 +123,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Movement.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T17:19:37.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-10T17:19:37.899Z"
             }
           ]
         }
