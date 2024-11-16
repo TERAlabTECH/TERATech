@@ -19,7 +19,7 @@ public class Gyroscope : MonoBehaviour
     void Update()
     {
         if(SystemInfo.supportsGyroscope){
-            transform.rotation=Input.gyro.attitude*rotationFix; 
+            transform.rotation=Input.gyro.attitude*rotationFix*Quaternion.Euler(90,0,0); 
         }
         
     }
