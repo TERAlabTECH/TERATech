@@ -45,8 +45,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.99607843, g: 0.6039216, b: 0.3764706, a: 1}
-  m_Intensity: 3.2516081
-  m_Range: 8.4984665
+  m_Intensity: 0
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc359a3f7d7eb3141987088a7922713e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireTrail: {fileID: 0}
+  fireTrail: {fileID: 8661449496204438670}
   moveSpeed: 5
   mainCam: {fileID: 0}
   rotationSpeed: 1

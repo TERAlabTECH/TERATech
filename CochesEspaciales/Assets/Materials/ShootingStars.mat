@@ -112,7 +112,7 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _LineThickness: 0.09
+    - _LineThickness: 0.06
     - _Metallic: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.005
@@ -124,7 +124,7 @@ Material:
     - _Speed: 0.68
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
-    - _StarMultiplier: 1.47
+    - _StarMultiplier: 0.2
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1

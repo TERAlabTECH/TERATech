@@ -17,10 +17,9 @@ public class MeteorSpawner : MonoBehaviour
     {
         timePassed+=Time.deltaTime;
 
-        if(timePassed>0.01){
+        if(timePassed>0.1){
             timePassed=0; 
             SpawnMeteor();
-
         }
     }
     void SpawnMeteor(){
