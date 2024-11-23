@@ -3,19 +3,31 @@
   "WorkspaceRootPath": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\spaceshipgyrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceshipgyrocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\gyromovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\gyromovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gyromovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\gyroscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gyroscope.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\rotatecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotatecamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\cochesespaciales\\assets\\scripts\\meteorspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\gyrocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gyrocamera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\assets\\scripts\\meteorspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C3B6301E-79B3-90F2-D34F-8D6D8D91D589}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\meteorspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,46 +38,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MeteorSpawner.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MeteorSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MeteorSpawner.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MeteorSpawner.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MeteorSpawner.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "GyroCamera.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\GyroCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GyroCamera.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\GyroCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GyroCamera.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAC0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:50:10.226Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "SpaceshipGyroController.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\SpaceshipGyroController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceshipGyroController.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\SpaceshipGyroController.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\SpaceshipGyroController.cs*",
-              "ViewState": "AgIAABYAAAAAAAAAAAAQwCgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T22:47:32.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Gyroscope.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\Gyroscope.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Gyroscope.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\Gyroscope.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Gyroscope.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T02:13:29.692Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T17:55:10.739Z"
             },
             {
               "$type": "Document",
@@ -75,10 +60,70 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GyroMovement.cs",
               "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\GyroMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\GyroMovement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADsAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-16T02:12:36.491Z",
+              "WhenOpened": "2024-11-23T17:54:56.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RotateCamera.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\RotateCamera.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\RotateCamera.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\RotateCamera.cs",
+              "RelativeToolTip": "Assets\\Scripts\\RotateCamera.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T17:50:26.087Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainMenuManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MainMenuManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T17:29:41.375Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\QuizManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\QuizManager.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAswH8AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:39:13.455Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HealthManager.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\HealthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthManager.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\HealthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T13:02:13.463Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MeteorSpawner.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MeteorSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MeteorSpawner.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\CochesEspaciales\\Assets\\Scripts\\MeteorSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MeteorSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T22:50:10.226Z"
             }
           ]
         }

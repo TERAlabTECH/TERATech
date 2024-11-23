@@ -32,9 +32,7 @@ public class GyroMovement : MonoBehaviour
         playerPos = transform.position;
         distToRay = Vector3.Distance(rayEndpoint, playerPos);
        
-
         InterpolateRotationOnXY();
-
 
         if(distToRay > 0.01f)
         {
@@ -78,8 +76,8 @@ public class GyroMovement : MonoBehaviour
 
         Ray ray = mainCam.ScreenPointToRay(screenCenter);
         Vector3 rayEndpoint = ray.origin + ray.direction * distToShip;
-        Debug.DrawRay(ray.origin, ray.direction * distToShip, Color.red); 
-        Debug.Log("ShotRay");
+        //Debug.DrawRay(ray.origin, ray.direction * distToShip, Color.red); 
+        //Debug.Log("ShotRay");
 
         return rayEndpoint;
     }

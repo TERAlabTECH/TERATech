@@ -5,10 +5,14 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Game.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 5b6da137b5e04c84d98168d575a321df
   - enabled: 1
     path: Assets/Scenes/GyroscopeVersion.unity
     guid: 52dec64643aaf784095e08e26ced6d9c
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 12dc2c0f55f3b9442bac79dcf43f2e9a,
+      type: 2}
+    com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 38d5a790b077caf40ad7165f94f19409,
+      type: 2}

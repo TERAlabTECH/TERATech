@@ -40,14 +40,14 @@ public class SpaceshipGyroController : MonoBehaviour
         Quaternion gyroRotation = Input.gyro.attitude * rotationFix;
 
         // Invertir los ejes necesarios
-        gyroRotation.x *= -1; // Corregir inversión del eje X
-        gyroRotation.y *= -1; // Corregir inversión del eje Y
+        //gyroRotation.x *= -1; // Corregir inversión del eje X
+        //gyroRotation.y *= -1; // Corregir inversión del eje Y
 
         // Ajustar con la orientación inicial
         gyroRotation = Quaternion.Inverse(initialRotation) * gyroRotation;
 
         // Rotar la cámara
-        mainCam.transform.rotation = Quaternion.Euler(90, 0, 0) * gyroRotation;
+        mainCam.transform.rotation = Quaternion.Euler(90, 0, 0) * gyroRotation; //lo multiplicamos por 90 en x p
 
         // Calcular la posición deseada de la nave con un offset
         targetPosition = mainCam.transform.position + mainCam.transform.forward * offsetDistance;
