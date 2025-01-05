@@ -11,8 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GyroscopeVersion.unity
     guid: 52dec64643aaf784095e08e26ced6d9c
+  - enabled: 1
+    path: Assets/Scenes/AR.unity
+    guid: ace7d1f94d4fb7e4fafb15110d1c4bf1
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 12dc2c0f55f3b9442bac79dcf43f2e9a,
       type: 2}
     com.unity.xr.arfoundation.simulation_settings: {fileID: 11400000, guid: 38d5a790b077caf40ad7165f94f19409,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b8c017b13cc8d05469dfd1a30ba5f10d,
       type: 2}
