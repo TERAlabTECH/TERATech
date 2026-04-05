@@ -7,19 +7,19 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\musicbox\\assets\\botonmusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\botonmusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\botonmusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1FB62FA4-B4F8-9F8C-F20B-AF5621398618}|Assembly-CSharp-Editor.csproj|d:\\documentos\\github\\teratech\\teratech\\musicbox\\assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1FB62FA4-B4F8-9F8C-F20B-AF5621398618}|Assembly-CSharp-Editor.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1FB62FA4-B4F8-9F8C-F20B-AF5621398618}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\musicbox\\assets\\sonidos random\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\sonidos random\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\sonidos random\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|d:\\documentos\\github\\teratech\\teratech\\musicbox\\assets\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,8 +46,7 @@
               "RelativeToolTip": "Assets\\BotonMusica.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T07:21:24.636Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T07:21:24.636Z"
             },
             {
               "$type": "Document",
@@ -59,8 +58,7 @@
               "RelativeToolTip": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
               "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T07:15:21.496Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T07:15:21.496Z"
             },
             {
               "$type": "Document",
@@ -72,8 +70,7 @@
               "RelativeToolTip": "Assets\\Sonidos random\\NewBehaviourScript.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T07:14:52.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T07:14:52.761Z"
             },
             {
               "$type": "Document",
@@ -110,8 +107,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Rotation.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-05T06:21:35.78Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-05T06:21:35.78Z"
             }
           ]
         }
