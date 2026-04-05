@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\levelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\botonmusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\botonmusica.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FB62FA4-B4F8-9F8C-F20B-AF5621398618}|Assembly-CSharp-Editor.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1FB62FA4-B4F8-9F8C-F20B-AF5621398618}|Assembly-CSharp-Editor.csproj|solutionrelative:assets\\tutorialinfo\\scripts\\editor\\readmeeditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\sonidos random\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\sonidos random\\newbehaviourscript.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\rotation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\assets\\scripts\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{517EB4CE-C546-5EA1-6D99-D04B4E81A879}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +34,80 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LevelManager.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\LevelManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\LevelManager.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\LevelManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\LevelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Title": "BotonMusica.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\BotonMusica.cs",
+              "RelativeDocumentMoniker": "Assets\\BotonMusica.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\BotonMusica.cs",
+              "RelativeToolTip": "Assets\\BotonMusica.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8BAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T08:36:45.45Z"
+              "WhenOpened": "2026-04-05T07:21:24.636Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ReadmeEditor.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "RelativeToolTip": "Assets\\TutorialInfo\\Scripts\\Editor\\ReadmeEditor.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T07:15:21.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "NewBehaviourScript.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Sonidos random\\NewBehaviourScript.cs",
+              "RelativeDocumentMoniker": "Assets\\Sonidos random\\NewBehaviourScript.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Sonidos random\\NewBehaviourScript.cs",
+              "RelativeToolTip": "Assets\\Sonidos random\\NewBehaviourScript.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T07:14:52.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Sphere.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\Sphere.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Sphere.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\Sphere.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Sphere.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwDEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T06:41:51.47Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainMenuManager.cs",
-              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
-              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\MainMenuManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T05:45:24.439Z",
+              "Title": "Lit.shader",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
+              "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
+              "RelativeToolTip": "Library\\PackageCache\\com.unity.render-pipelines.universal@14.0.11\\Shaders\\Lit.shader",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFAAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2026-04-05T06:24:17.253Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rotation.cs",
+              "DocumentMoniker": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\Rotation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Rotation.cs",
+              "ToolTip": "D:\\Documentos\\GitHub\\TERATech\\TERATech\\MusicBox\\Assets\\Scripts\\Rotation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Rotation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-05T06:21:35.78Z"
             }
           ]
         }

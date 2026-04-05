@@ -262,7 +262,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9347351, g: 0.93962264, b: 0.93430406, a: 1}
-  m_Intensity: 7000
+  m_Intensity: 9000
   m_Range: 1000
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
@@ -322,7 +322,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7052273, y: -0.051521443, z: -0.051521454, w: 0.7052273}
   m_LocalPosition: {x: 1898, y: 1002, z: -749}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.80197, y: 0.80197, z: 0.80197}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1052,7 +1052,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.4152041, b: 0, a: 1}
   m_Intensity: 15000
-  m_Range: 100
+  m_Range: 138.11115
   m_SpotAngle: 30
   m_InnerSpotAngle: 0
   m_CookieSize: 10
@@ -1743,6 +1743,7 @@ PrefabInstance:
     - {fileID: 4344362367557487074, guid: d1efee11d6026c947b97d41f5e1d86a6, type: 3}
     - {fileID: -5494294992754833848, guid: d1efee11d6026c947b97d41f5e1d86a6, type: 3}
     - {fileID: 7327798748120481214, guid: d1efee11d6026c947b97d41f5e1d86a6, type: 3}
+    - {fileID: 330432958197550311, guid: d1efee11d6026c947b97d41f5e1d86a6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1efee11d6026c947b97d41f5e1d86a6, type: 3}
